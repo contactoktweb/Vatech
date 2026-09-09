@@ -1,0 +1,702 @@
+[
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Green-X-el-equipo-con-el-voxel-mas-pequeno-del-mercado.mp4",
+    "local": "assets/product-details/green-x12/Green-X-el-equipo-con-el-voxel-mas-pequeno-del-mercado.mp4"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/GreenX12.png",
+    "local": "assets/product-details/green-x12/GreenX12.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/RX_GreenX12.png",
+    "local": "assets/product-details/green-x12/RX_GreenX12.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Vision-1.png",
+    "local": "assets/product-details/green-x12/Vision-1.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/ENdo.png",
+    "local": "assets/product-details/green-x12/ENdo.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/FOV-qpv1emgsdutyct3yphtvz396hvpeetpbxwlhykkvcc.png",
+    "local": "assets/product-details/green-x12/FOV-qpv1emgsdutyct3yphtvz396hvpeetpbxwlhykkvcc.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/Escaneo-1-qpv1emgqfoskijsukyby8qftgahilfq2om1rd297i2.png",
+    "local": "assets/product-details/green-x12/Escaneo-1-qpv1emgqfoskijsukyby8qftgahilfq2om1rd297i2.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/GreenX12-Dimensiones.png",
+    "local": "assets/product-details/green-x12/GreenX12-Dimensiones.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/08/Green-X12-Catalogo.pdf",
+    "local": "assets/product-details/green-x12/Green-X12-Catalogo.pdf"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/2_Features.png",
+    "local": "assets/product-details/green-16/2_Features.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des1.png",
+    "local": "assets/product-details/green-16/3_Des1.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des3.png",
+    "local": "assets/product-details/green-16/3_Des3.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/hasta-menos-radiacion-01-qpv1emgrnjkfnymansintpg63s8xzaylyx53hi7gw2.png",
+    "local": "assets/product-details/green-16/hasta-menos-radiacion-01-qpv1emgrnjkfnymansintpg63s8xzaylyx53hi7gw2.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des5.png",
+    "local": "assets/product-details/green-16/3_Des5.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des6.png",
+    "local": "assets/product-details/green-16/3_Des6.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des7.png",
+    "local": "assets/product-details/green-16/3_Des7.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Green_16.pdf",
+    "local": "assets/product-details/green-16/Green_16.pdf"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/2_Features-1.png",
+    "local": "assets/product-details/smart-plus/2_Features-1.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/insight_video.mp4",
+    "local": "assets/product-details/smart-plus/insight_video.mp4"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des1-2.png",
+    "local": "assets/product-details/smart-plus/3_Des1-2.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des1-1.png",
+    "local": "assets/product-details/smart-plus/3_Des1-1.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des2.png",
+    "local": "assets/product-details/smart-plus/3_Des2.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des3-1.png",
+    "local": "assets/product-details/smart-plus/3_Des3-1.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des4.png",
+    "local": "assets/product-details/smart-plus/3_Des4.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des5-1.png",
+    "local": "assets/product-details/smart-plus/3_Des5-1.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/3_Des6-1-qpv1emgkcex8rhpm6reebve26todo3je92l2quhxwy.png",
+    "local": "assets/product-details/smart-plus/3_Des6-1-qpv1emgkcex8rhpm6reebve26todo3je92l2quhxwy.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des7-1.png",
+    "local": "assets/product-details/smart-plus/3_Des7-1.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des8.png",
+    "local": "assets/product-details/smart-plus/3_Des8.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/4_Des1-1.png",
+    "local": "assets/product-details/smart-plus/4_Des1-1.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/4_Des2-1.png",
+    "local": "assets/product-details/smart-plus/4_Des2-1.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Smart-Plus_Optimizado.pdf",
+    "local": "assets/product-details/smart-plus/Smart-Plus_Optimizado.pdf"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Vatech-A9.mp4",
+    "local": "assets/product-details/a9/Vatech-A9.mp4"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/A9_.png",
+    "local": "assets/product-details/a9/A9_.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/A9-02.png",
+    "local": "assets/product-details/a9/A9-02.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/A9-03-qpv1emgp7u0pd4zei458nrfgssq37khjeayf8mazmi.png",
+    "local": "assets/product-details/a9/A9-03-qpv1emgp7u0pd4zei458nrfgssq37khjeayf8mazmi.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/A9-04-qpv1emgp7u0pd4zei458nrfgssq37khjeayf8maz1y.png",
+    "local": "assets/product-details/a9/A9-04-qpv1emgp7u0pd4zei458nrfgssq37khjeayf8maz1y.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/A9-05-qpv1emgnzz8u7q5yf9yj2sf45ayntp903zv346cpa2.png",
+    "local": "assets/product-details/a9/A9-05-qpv1emgnzz8u7q5yf9yj2sf45ayntp903zv346cpa2.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/DimensionesA9.png",
+    "local": "assets/product-details/a9/DimensionesA9.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/A9-catalogo.pdf",
+    "local": "assets/product-details/a9/A9-catalogo.pdf"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/BI_Green_CT.png",
+    "local": "assets/product-details/green-x21/BI_Green_CT.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2026/03/Green_X_21_03.webp",
+    "local": "assets/product-details/green-x21/Green_X_21_03.webp"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Green-X-03.png",
+    "local": "assets/product-details/green-x21/Green-X-03.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2026/03/tabla-X21.jpg",
+    "local": "assets/product-details/green-x21/tabla-X21.jpg"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2026/03/un-escaneo-tres-imagenes.jpg",
+    "local": "assets/product-details/green-x21/un-escaneo-tres-imagenes.jpg"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2026/03/tecnologia-one-shot.jpg",
+    "local": "assets/product-details/green-x21/tecnologia-one-shot.jpg"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2026/03/puddle-lamp.jpg",
+    "local": "assets/product-details/green-x21/puddle-lamp.jpg"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2026/03/escaneo-facial-x21.jpg",
+    "local": "assets/product-details/green-x21/escaneo-facial-x21.jpg"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2026/03/topwithceph.jpg",
+    "local": "assets/product-details/green-x21/topwithceph.jpg"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2026/03/topwithoutceph.jpg",
+    "local": "assets/product-details/green-x21/topwithoutceph.jpg"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2026/03/frontwithceph.jpg",
+    "local": "assets/product-details/green-x21/frontwithceph.jpg"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2026/03/frontwithoutceph.jpg",
+    "local": "assets/product-details/green-x21/frontwithoutceph.jpg"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/pax-i-f1.png",
+    "local": "assets/product-details/pax-i/pax-i-f1.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/pax-i-f2.png",
+    "local": "assets/product-details/pax-i/pax-i-f2.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/pax-i-new-standard-panoramic-image-qpv1emgnzz8u7q5yf9yj2sf45ayntp903zv346cpny.png",
+    "local": "assets/product-details/pax-i/pax-i-new-standard-panoramic-image-qpv1emgnzz8u7q5yf9yj2sf45ayntp903zv346cpny.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/pax-i-bitewing-mode.png",
+    "local": "assets/product-details/pax-i/pax-i-bitewing-mode.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/pax-i-tmj-mode.png",
+    "local": "assets/product-details/pax-i/pax-i-tmj-mode.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/pax-i-lateral.png",
+    "local": "assets/product-details/pax-i/pax-i-lateral.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/pax-i-full-lateral.png",
+    "local": "assets/product-details/pax-i/pax-i-full-lateral.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/pax-i-op.png",
+    "local": "assets/product-details/pax-i/pax-i-op.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/pax-i-pa.png",
+    "local": "assets/product-details/pax-i/pax-i-pa.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/pax-i-carpus.png",
+    "local": "assets/product-details/pax-i/pax-i-carpus.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/pax-i-smv.png",
+    "local": "assets/product-details/pax-i/pax-i-smv.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/PaX-i_Optimizado.pdf",
+    "local": "assets/product-details/pax-i/PaX-i_Optimizado.pdf"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/EzSensor_HD_Version_Final.mp4",
+    "local": "assets/product-details/ezsensor-hd/EzSensor_HD_Version_Final.mp4"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/2_Des1.png",
+    "local": "assets/product-details/ezsensor-hd/2_Des1.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/2_Des2.png",
+    "local": "assets/product-details/ezsensor-hd/2_Des2.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/2_Des3.png",
+    "local": "assets/product-details/ezsensor-hd/2_Des3.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/2_Des4.png",
+    "local": "assets/product-details/ezsensor-hd/2_Des4.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/2_Des6.png",
+    "local": "assets/product-details/ezsensor-hd/2_Des6.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/EzSensor_HD_Optimizado.pdf",
+    "local": "assets/product-details/ezsensor-hd/EzSensor_HD_Optimizado.pdf"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/EzSensor_Classic_F.mp4",
+    "local": "assets/product-details/ezsensor-classic/EzSensor_Classic_F.mp4"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/slim-qpv1emgkcex8rhpm6reebve26todo3je92l2quhxew.png",
+    "local": "assets/product-details/ezsensor-classic/slim-qpv1emgkcex8rhpm6reebve26todo3je92l2quhxew.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/diente-qpv1emglk9p3wwj29ll3wueeubft1yrxjdoevag7fo.png",
+    "local": "assets/product-details/ezsensor-classic/diente-qpv1emglk9p3wwj29ll3wueeubft1yrxjdoevag7fo.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/uno.bmp",
+    "local": "assets/product-details/ezsensor-classic/uno.bmp"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/dos-qpv1emggouncp1a4ygvn69v1dvqpc5rc6lskge8000.png",
+    "local": "assets/product-details/ezsensor-classic/dos-qpv1emggouncp1a4ygvn69v1dvqpc5rc6lskge8000.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/EzSensor_Classic_Optimizado.pdf",
+    "local": "assets/product-details/ezsensor-classic/EzSensor_Classic_Optimizado.pdf"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/EzRay_Air_Portable.mp4",
+    "local": "assets/product-details/ezray-air-portatil/EzRay_Air_Portable.mp4"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/ez-ray-air-portable.png",
+    "local": "assets/product-details/ezray-air-portatil/ez-ray-air-portable.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/EzRay-Air-P-R6_ligero.png",
+    "local": "assets/product-details/ezray-air-portatil/EzRay-Air-P-R6_ligero.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/hexagonos-qpv1emgp197boxczhotfmez7p9uz3osuwk3bmcplpu.png",
+    "local": "assets/product-details/ezray-air-portatil/hexagonos-qpv1emgp197boxczhotfmez7p9uz3osuwk3bmcplpu.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/triangulo-qpv1emgp197boxczhotfmez7p9uz3osuwk3bmcpm8q.png",
+    "local": "assets/product-details/ezray-air-portatil/triangulo-qpv1emgp197boxczhotfmez7p9uz3osuwk3bmcpm8q.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/caras-qpv1emgp197boxczhotfmez7p9uz3osuwk3bmcpmae.png",
+    "local": "assets/product-details/ezray-air-portatil/caras-qpv1emgp197boxczhotfmez7p9uz3osuwk3bmcpmae.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/EzRay-Air-P-R6_2021.png",
+    "local": "assets/product-details/ezray-air-portatil/EzRay-Air-P-R6_2021.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/EzRay-Air-P.pdf",
+    "local": "assets/product-details/ezray-air-portatil/EzRay-Air-P.pdf"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/2_Features-2.png",
+    "local": "assets/product-details/ezray-air-wall/2_Features-2.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des2-2.png",
+    "local": "assets/product-details/ezray-air-wall/3_Des2-2.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des2-1.png",
+    "local": "assets/product-details/ezray-air-wall/3_Des2-1.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des5-2.png",
+    "local": "assets/product-details/ezray-air-wall/3_Des5-2.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/EzRay_Air_Wall_Optimizado.pdf",
+    "local": "assets/product-details/ezray-air-wall/EzRay_Air_Wall_Optimizado.pdf"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/brazo-C.png",
+    "local": "assets/product-details/ezray-air-c/brazo-C.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des2-2.png",
+    "local": "assets/product-details/ezray-air-c/3_Des2-2.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des2-1.png",
+    "local": "assets/product-details/ezray-air-c/3_Des2-1.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/EzCam-e1691432848381.png",
+    "local": "assets/product-details/ezcam/EzCam-e1691432848381.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Diente_EzCam.png",
+    "local": "assets/product-details/ezcam/Diente_EzCam.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/dos-botones-EzCam-qpv1emgnzz8u7q5yf9yj2sf45ayntp903zv346cpji.png",
+    "local": "assets/product-details/ezcam/dos-botones-EzCam-qpv1emgnzz8u7q5yf9yj2sf45ayntp903zv346cpji.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/EzCam_interfaz-qpv1emgj4k5dm2w63x7oqwdpjbwya8auyrhqmejnoe.png",
+    "local": "assets/product-details/ezcam/EzCam_interfaz-qpv1emgj4k5dm2w63x7oqwdpjbwya8auyrhqmejnoe.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/EzCam_cable-qpv1emgkcex8rhpm6reebve26todo3je92l2quhxuq.png",
+    "local": "assets/product-details/ezcam/EzCam_cable-qpv1emgkcex8rhpm6reebve26todo3je92l2quhxuq.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/Flecha-negativa-qpv1emgj4k5dm2w63x7oqwdpjbwya8auyrhqmejoos.png",
+    "local": "assets/product-details/ezcam/Flecha-negativa-qpv1emgj4k5dm2w63x7oqwdpjbwya8auyrhqmejoos.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/EzCam-lente-asferica-qpv1emgp7u0pd4zei458nrfgssq37khjeayf8mazci.png",
+    "local": "assets/product-details/ezcam/EzCam-lente-asferica-qpv1emgp7u0pd4zei458nrfgssq37khjeayf8mazci.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/EzCam-configuracion.png",
+    "local": "assets/product-details/ezcam/EzCam-configuracion.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/08/EzCam-Catalogo.pdf",
+    "local": "assets/product-details/ezcam/EzCam-Catalogo.pdf"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Video_EzScan.mp4",
+    "local": "assets/product-details/ezscan/Video_EzScan.mp4"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/Interfaz-qpv1emghwpdigo2q130z5xdcvu5iwd2bogeehyley0.png",
+    "local": "assets/product-details/ezscan/Interfaz-qpv1emghwpdigo2q130z5xdcvu5iwd2bogeehyley0.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/Uso-qpv1emghwpdigo2q130z5xdcvu5iwd2bogeehyley0.png",
+    "local": "assets/product-details/ezscan/Uso-qpv1emghwpdigo2q130z5xdcvu5iwd2bogeehyley0.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/Escaneo-qpv1emghwpdigo2q130z5xdcvu5iwd2bogeehyley0.png",
+    "local": "assets/product-details/ezscan/Escaneo-qpv1emghwpdigo2q130z5xdcvu5iwd2bogeehyley0.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/Plataforma-qpv1emghwpdigo2q130z5xdcvu5iwd2bogeehyley0.png",
+    "local": "assets/product-details/ezscan/Plataforma-qpv1emghwpdigo2q130z5xdcvu5iwd2bogeehyley0.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/EzScan-caracteristicas-02-qpv1emgp3g548zwghtxdav4mqg5cgzd32h1otrwqdk.png",
+    "local": "assets/product-details/ezscan/EzScan-caracteristicas-02-qpv1emgp3g548zwghtxdav4mqg5cgzd32h1otrwqdk.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/Dientes-qpv1emgp3g548zwghtxdav4mqg5cgzd32h1otrwqwg.png",
+    "local": "assets/product-details/ezscan/Dientes-qpv1emgp3g548zwghtxdav4mqg5cgzd32h1otrwqwg.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/EzScan.pdf",
+    "local": "assets/product-details/ezscan/EzScan.pdf"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Vatech-Zirconia.mp4",
+    "local": "assets/product-details/perfit-zr/Vatech-Zirconia.mp4"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Perfit-ZR-ST.png",
+    "local": "assets/product-details/perfit-zr/Perfit-ZR-ST.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Perfit-ZR-STML.png",
+    "local": "assets/product-details/perfit-zr/Perfit-ZR-STML.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/s_sec_02_01_img.jpg",
+    "local": "assets/product-details/perfit-zr/s_sec_02_01_img.jpg"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Muestra_zirconia.png",
+    "local": "assets/product-details/perfit-zr/Muestra_zirconia.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/s_sec_02_01_01_txt_img_04.jpg",
+    "local": "assets/product-details/perfit-zr/s_sec_02_01_01_txt_img_04.jpg"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/s_sec_02_01_01_txt_img_03.jpg",
+    "local": "assets/product-details/perfit-zr/s_sec_02_01_01_txt_img_03.jpg"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Translucidez.png",
+    "local": "assets/product-details/perfit-zr/Translucidez.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Perfit_Optimizado.pdf",
+    "local": "assets/product-details/perfit-zr/Perfit_Optimizado.pdf"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/bloques.png",
+    "local": "assets/product-details/perfit-fs/bloques.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Linea_Trabajo_FS.png",
+    "local": "assets/product-details/perfit-fs/Linea_Trabajo_FS.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/3-LINEAS-qpv1emgp7u0pd4zei458nrfgssq37khjeayf8maxrk.png",
+    "local": "assets/product-details/perfit-fs/3-LINEAS-qpv1emgp7u0pd4zei458nrfgssq37khjeayf8maxrk.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Zirconia_1.jpg",
+    "local": "assets/product-details/perfit-fs/Zirconia_1.jpg"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Zirconia_2.jpg",
+    "local": "assets/product-details/perfit-fs/Zirconia_2.jpg"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Zirconia_3.jpg",
+    "local": "assets/product-details/perfit-fs/Zirconia_3.jpg"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/Zirconia_grietas-qpv1emgp7u0pd4zei458nrfgssq37khjeayf8maxv6.png",
+    "local": "assets/product-details/perfit-fs/Zirconia_grietas-qpv1emgp7u0pd4zei458nrfgssq37khjeayf8maxv6.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Zirconia_surcos_1.jpg",
+    "local": "assets/product-details/perfit-fs/Zirconia_surcos_1.jpg"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Zirconia_surcos_2.jpg",
+    "local": "assets/product-details/perfit-fs/Zirconia_surcos_2.jpg"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Zirconia_surcos_3.jpg",
+    "local": "assets/product-details/perfit-fs/Zirconia_surcos_3.jpg"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Zirconia_surcos_4.jpg",
+    "local": "assets/product-details/perfit-fs/Zirconia_surcos_4.jpg"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Zirconia_temperatura_1.png",
+    "local": "assets/product-details/perfit-fs/Zirconia_temperatura_1.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Zirconia_temperatura_2.png",
+    "local": "assets/product-details/perfit-fs/Zirconia_temperatura_2.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Zirconia_indicaciones.png",
+    "local": "assets/product-details/perfit-fs/Zirconia_indicaciones.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Zirconia_indicaciones_2.png",
+    "local": "assets/product-details/perfit-fs/Zirconia_indicaciones_2.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/08/Perfit-FS-Catalogo.pdf",
+    "local": "assets/product-details/perfit-fs/Perfit-FS-Catalogo.pdf"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/Imagen_1-qpv1emgqogjqqtyqliroyj1hkzn02lyzc9v86r1pgs.png",
+    "local": "assets/product-details/ezortho/Imagen_1-qpv1emgqogjqqtyqliroyj1hkzn02lyzc9v86r1pgs.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Imagen_2.png",
+    "local": "assets/product-details/ezortho/Imagen_2.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Imagen_2_3.png",
+    "local": "assets/product-details/ezortho/Imagen_2_3.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Imagen_3.png",
+    "local": "assets/product-details/ezortho/Imagen_3.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Imagen_4.png",
+    "local": "assets/product-details/ezortho/Imagen_4.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Imagen_5.png",
+    "local": "assets/product-details/ezortho/Imagen_5.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Imagen_6.png",
+    "local": "assets/product-details/ezortho/Imagen_6.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Imagen_7.png",
+    "local": "assets/product-details/ezortho/Imagen_7.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/1_Top-e1690710662295.png",
+    "local": "assets/product-details/ez3d-i/1_Top-e1690710662295.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/ez-3di.png",
+    "local": "assets/product-details/ez3d-i/ez-3di.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/2_Des1-1.png",
+    "local": "assets/product-details/ez3d-i/2_Des1-1.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/2_Des2-1.png",
+    "local": "assets/product-details/ez3d-i/2_Des2-1.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/2_Des3-1.png",
+    "local": "assets/product-details/ez3d-i/2_Des3-1.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/2_Des4-1.png",
+    "local": "assets/product-details/ez3d-i/2_Des4-1.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/2_Des5.png",
+    "local": "assets/product-details/ez3d-i/2_Des5.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/2_Des6-1.png",
+    "local": "assets/product-details/ez3d-i/2_Des6-1.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/2_Des7.png",
+    "local": "assets/product-details/ez3d-i/2_Des7.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/2_Des8.png",
+    "local": "assets/product-details/ez3d-i/2_Des8.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/2_Des9.png",
+    "local": "assets/product-details/ez3d-i/2_Des9.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/2_Des10.png",
+    "local": "assets/product-details/ez3d-i/2_Des10.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/2_Des11.png",
+    "local": "assets/product-details/ez3d-i/2_Des11.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/2_Des12.png",
+    "local": "assets/product-details/ez3d-i/2_Des12.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/2_Des13.png",
+    "local": "assets/product-details/ez3d-i/2_Des13.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/2_Des14.png",
+    "local": "assets/product-details/ez3d-i/2_Des14.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/2_Des15.png",
+    "local": "assets/product-details/ez3d-i/2_Des15.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/2_Des16.png",
+    "local": "assets/product-details/ez3d-i/2_Des16.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/2_Des17.png",
+    "local": "assets/product-details/ez3d-i/2_Des17.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/top-e1690712468111.png",
+    "local": "assets/product-details/ezdent-i/top-e1690712468111.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/ez-dent-i.png",
+    "local": "assets/product-details/ezdent-i/ez-dent-i.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Des1.png",
+    "local": "assets/product-details/ezdent-i/Des1.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Des2.png",
+    "local": "assets/product-details/ezdent-i/Des2.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Des3.png",
+    "local": "assets/product-details/ezdent-i/Des3.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2023/07/Des4.png",
+    "local": "assets/product-details/ezdent-i/Des4.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2026/08/main-banner.mp4",
+    "local": "assets/product-details/clever-rc/main-banner.mp4"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2026/08/features-v2-1.mp4",
+    "local": "assets/product-details/clever-rc/features-v2-1.mp4"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2026/08/mybox-v2-1.mp4",
+    "local": "assets/product-details/clever-rc/mybox-v2-1.mp4"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2026/08/Vatech-America.png",
+    "local": "assets/product-details/clever-rc/Vatech-America.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2026/08/red-mundial.png",
+    "local": "assets/product-details/clever-rc/red-mundial.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2026/08/unir.png",
+    "local": "assets/product-details/clever-rc/unir.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2026/08/gestion.png",
+    "local": "assets/product-details/clever-rc/gestion.png"
+  },
+  {
+    "remote": "https://vatechmexico.com/wp-content/uploads/2026/08/informacion.png",
+    "local": "assets/product-details/clever-rc/informacion.png"
+  }
+]
