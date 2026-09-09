@@ -87,3 +87,4 @@ Las rutas de Green X16 / X18 y PaX-i Plus ya son internas y muestran una ficha b
 - El Home usa renders de producto de mayor resolución para las composiciones grandes, evitando ampliar las miniaturas históricas de 179×200 px.
 - La cronología del Home conserva los 11 hitos originales de 2005 a 2022 y mantiene los recursos históricos cerca de su tamaño nativo.
 - Se incrementó ligeramente el tamaño de la tipografía de lectura en Home, fichas de producto, catálogo y subpáginas.
+# Vatech
