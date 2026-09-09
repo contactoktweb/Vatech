@@ -88,3 +88,4 @@ Las rutas de Green X16 / X18 y PaX-i Plus ya son internas y muestran una ficha b
 - La cronología del Home conserva los 11 hitos originales de 2005 a 2022 y mantiene los recursos históricos cerca de su tamaño nativo.
 - Se incrementó ligeramente el tamaño de la tipografía de lectura en Home, fichas de producto, catálogo y subpáginas.
 # Vatech
+# Vatech
