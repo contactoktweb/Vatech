@@ -1,6 +1,6 @@
-# VATECH México — Rediseño Next.js
+# VATECH Colombia — Rediseño Next.js
 
-Rediseño visual premium para VATECH México con la paleta de marca: rojo `#C92C36`, carbón `#1A1A1D` y blanco.
+Rediseño visual premium para VATECH Colombia con la paleta de marca: rojo `#C92C36`, carbón `#1A1A1D` y blanco.
 
 ## Ejecutar
 
@@ -28,7 +28,7 @@ npm run assets:force
 - `/instituto-vatech` — Instituto VATECH
 - `/productos` — Equipos Vatech, Zirconia y Software
 - `/servicio-tecnico` — Servicio técnico
-- `/distribuidores` — Distribuidores México / Latinoamérica
+- `/distribuidores` — Distribuidores Colombia / Latinoamérica
 - `/media` — Promociones, noticias, fotos y videos
 
 ## Menú

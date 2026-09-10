@@ -25,7 +25,7 @@ export default function SubpageShell({ eyebrow, title, lead, children, heroAside
           <p className="eyebrow red">{eyebrow}</p>
           <h1>{title}</h1>
           <p>{lead}</p>
-          <div className="subhero-line"><i /><span>VATECH · MEXICO</span></div>
+          <div className="subhero-line"><i /><span>VATECH · COLOMBIA</span></div>
         </div>
         {heroAside && <div className="subhero-aside">{heroAside}</div>}
       </section>

@@ -74,7 +74,7 @@ export default function ProductDetailPage({ product }: { product: ProductDetail 
           <p className="pd-summary">{product.summary}</p>
           <div className="pd-actions">
             <a href="#caracteristicas" className="pd-primary">Ver características <span>↓</span></a>
-            <a href="mailto:contacto@vatechmexico.com?subject=Información%20sobre%20VATECH" className="pd-secondary">Solicitar información <span>→</span></a>
+            <a href="mailto:contacto@vatechcolombia.com?subject=Información%20sobre%20VATECH" className="pd-secondary">Solicitar información <span>→</span></a>
           </div>
         </div>
         <div className="pd-hero-stage">
@@ -167,8 +167,8 @@ export default function ProductDetailPage({ product }: { product: ProductDetail 
 
       <section className="pd-contact" data-pd-reveal>
         <div className="pd-contact-ring" />
-        <p>VATECH MÉXICO</p><h2>¿Quieres conocer<br/>este equipo?</h2>
-        <a href="mailto:contacto@vatechmexico.com">Hablar con un especialista <span>→</span></a>
+        <p>VATECH COLOMBIA</p><h2>¿Quieres conocer<br/>este equipo?</h2>
+        <a href="mailto:contacto@vatechcolombia.com">Hablar con un especialista <span>→</span></a>
       </section>
 
       {related.length > 0 && <section className="pd-related">

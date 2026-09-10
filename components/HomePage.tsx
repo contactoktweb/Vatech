@@ -124,7 +124,7 @@ export default function HomePage() {
             <span>imagenología dental.</span>
           </h1>
           <p className="hero-lead hero-reveal delay-3">
-            Líder mundial en innovación radiológica dental en México y Latinoamérica.
+            Líder mundial en innovación radiológica dental en Colombia y Latinoamérica.
           </p>
           <div className="hero-actions hero-reveal delay-4">
             <a className="btn btn-primary" href="#products">Explorar productos <Arrow /></a>
@@ -159,7 +159,7 @@ export default function HomePage() {
         <div className="section-copy" data-reveal>
           <p className="eyebrow red">DISEÑADO PARA TI</p>
           <h2>Tu mejor aliado<br />en el consultorio.</h2>
-          <p>Más de 15 años de innovación constante a nivel global. Desarrollamos y fabricamos cada componente de nuestros equipos, con presencia total en México, oficinas en CDMX y una red nacional de distribuidores.</p>
+          <p>Más de 15 años de innovación constante a nivel global. Desarrollamos y fabricamos cada componente de nuestros equipos, con presencia en Colombia, soporte especializado en Bogotá y una red nacional de distribuidores.</p>
           <a href="/distribuidores" className="text-link">Conoce nuestra red <Arrow /></a>
         </div>
         <div className="ally-visual" data-reveal>
@@ -323,7 +323,7 @@ export default function HomePage() {
           <p>Descubre cómo la tecnología VATECH puede transformar tu práctica.</p>
         </div>
         <div className="cta-actions" data-reveal>
-          <a className="btn btn-white" href="mailto:contacto@vatechmexico.com">Hablar con un especialista <Arrow /></a>
+          <a className="btn btn-white" href="mailto:contacto@vatechcolombia.com">Hablar con un especialista <Arrow /></a>
           <a className="btn btn-red-outline" href="/productos">Explorar productos <Arrow /></a>
         </div>
       </section>

@@ -117,7 +117,7 @@ export default function ProductsPage(){
         </a>)}</div>
       </section>
 
-      <section className="products-final-cta"><div className="products-final-ring"/><div><p className="eyebrow light">VATECH MÉXICO</p><h2>Encuentra la tecnología<br/>ideal para tu práctica.</h2></div><a href="mailto:contacto@vatechmexico.com" className="btn btn-white">Hablar con un especialista <span>→</span></a></section>
+      <section className="products-final-cta"><div className="products-final-ring"/><div><p className="eyebrow light">VATECH COLOMBIA</p><h2>Encuentra la tecnología<br/>ideal para tu práctica.</h2></div><a href="mailto:contacto@vatechcolombia.com" className="btn btn-white">Hablar con un especialista <span>→</span></a></section>
     </main>
     <SiteFooter/>
   </>;

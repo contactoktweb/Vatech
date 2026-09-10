@@ -45,7 +45,7 @@ export default function MediaPage(){
     <main className="media-page">
       <section className="media-hero">
         <div className="media-hero-noise"/>
-        <div><p className="eyebrow red">MEDIA / VATECH MÉXICO</p><h1>Historias que<br/><span>mueven la innovación.</span></h1><p>Promociones, noticias, fotografías y videos que conectan a VATECH con la comunidad odontológica.</p><div className="media-hero-links"><a href="#promociones">Promociones ↓</a><a href="#noticias">Noticias ↓</a><a href="#fotos">Fotos y videos ↓</a></div></div>
+        <div><p className="eyebrow red">MEDIA / VATECH COLOMBIA</p><h1>Historias que<br/><span>mueven la innovación.</span></h1><p>Promociones, noticias, fotografías y videos que conectan a VATECH con la comunidad odontológica.</p><div className="media-hero-links"><a href="#promociones">Promociones ↓</a><a href="#noticias">Noticias ↓</a><a href="#fotos">Fotos y videos ↓</a></div></div>
         <div className="media-hero-art"><span className="media-word">MEDIA</span><i className="media-cross c1"/><i className="media-cross c2"/><i className="media-cross c3"/><div className="media-orbit"/></div>
       </section>
 
@@ -74,7 +74,7 @@ export default function MediaPage(){
         </a>)}</div>
       </section>
 
-      <section className="media-final"><div className="media-final-line"/><p className="eyebrow light">SIGUE CONECTADO</p><h2>Innovación que también<br/>se comparte.</h2><div><a href="https://www.instagram.com/vatech.mexico/">Instagram ↗</a><a href="https://www.youtube.com/channel/UCUoUvlHzian9vm7rkKLRFQw?view_as=subscriber">YouTube ↗</a><a href="https://www.facebook.com/vatechmx">Facebook ↗</a></div></section>
+      <section className="media-final"><div className="media-final-line"/><p className="eyebrow light">SIGUE CONECTADO</p><h2>Innovación que también<br/>se comparte.</h2><div><a href="https://www.instagram.com/vatechcolombia/">Instagram ↗</a><a href="https://www.youtube.com/channel/UCUoUvlHzian9vm7rkKLRFQw?view_as=subscriber">YouTube ↗</a><a href="https://www.facebook.com/vatechcolombia">Facebook ↗</a></div></section>
     </main>
     <SiteFooter/>
   </>;

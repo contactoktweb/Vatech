@@ -60,7 +60,7 @@ const menu: MenuGroup[] = [
   {
     label: "Media",
     href: "/media",
-    intro: "Promociones, noticias y contenido audiovisual de VATECH México.",
+    intro: "Promociones, noticias y contenido audiovisual de VATECH Colombia.",
     items: [
       { label: "Promociones", href: "/media#promociones" },
       { label: "Noticias", href: "/media#noticias" },
@@ -94,7 +94,7 @@ export default function SiteHeader() {
   return (
     <>
       <header className={`site-header ${scrolled ? "scrolled" : ""}`}>
-        <Link href="/" className="brand" aria-label="VATECH México">
+        <Link href="/" className="brand" aria-label="VATECH Colombia">
           <img src="/brand/vatech-logo.png" alt="VATECH" />
         </Link>
 
@@ -104,7 +104,7 @@ export default function SiteHeader() {
               <SmartLink href={group.href} className="nav-dropdown-trigger">{group.label} <span>⌄</span></SmartLink>
               <div className="nav-dropdown-panel">
                 <div className="nav-dropdown-intro">
-                  <small>VATECH MÉXICO</small>
+                  <small>VATECH COLOMBIA</small>
                   <strong>{group.intro}</strong>
                 </div>
                 <div className="nav-dropdown-links">
@@ -122,7 +122,7 @@ export default function SiteHeader() {
           ) : <SmartLink href={group.href} key={group.label}>{group.label}</SmartLink>)}
         </nav>
 
-        <a href="mailto:contacto@vatechmexico.com" className="header-cta">Contacto <span className="arrow">→</span></a>
+        <a href="mailto:contacto@vatechcolombia.com" className="header-cta">Contacto <span className="arrow">→</span></a>
         <button className={`menu-button ${menuOpen ? "active" : ""}`} onClick={() => setMenuOpen(v => !v)} aria-label={menuOpen ? "Cerrar menú" : "Abrir menú"} aria-expanded={menuOpen}>
           <span /><span />
         </button>
