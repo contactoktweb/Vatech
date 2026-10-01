@@ -218,375 +218,192 @@
     }
   },
   {
-    "slug": "green-16",
-    "name": "Green 16",
+    "slug": "green-x-12-se",
+    "name": "Green X-12 SE",
     "category": "Sistema de imagen 3D",
-    "eyebrow": "INNOVACIÓN GREEN DE NUEVA GENERACIÓN",
-    "tagline": "MODEL SCAN 3D",
-    "summary": "Green 16 es un sistema de imagen de rayos X digital 4 en 1 que incorpora PANO, CEPH (opcional), CBCT y MODEL Scan.",
+    "eyebrow": "TECNOLOGÍA GREEN 4 EN 1",
+    "tagline": "IMAGENOLOGÍA 3D DE ALTA PRECISIÓN Y MÍNIMA DOSIS DE RADIACIÓN",
+    "summary": "El sistema Green X-12 SE integra 4 modalidades en un único equipo (PANO, CEPH opcional, CBCT y escaneo de modelos 3D) con CST para acelerar la reconstrucción y optimizar el diagnóstico de tu clínica.",
     "intro": [],
     "heroImage": {
-      "local": "/assets/product-details/green-16/2_Features.png",
-      "source": "https://vatechmexico.com/wp-content/uploads/2023/07/2_Features.png",
-      "alt": "Green 16"
+      "local": "/assets/product-details/green-x12/GreenX12.png",
+      "source": "https://vatechmexico.com/wp-content/uploads/2023/07/GreenX12.png",
+      "alt": "Green X-12 SE"
     },
-    "heroVideo": null,
+    "heroVideo": {
+      "local": "/assets/product-details/green-x12/Green-X-el-equipo-con-el-voxel-mas-pequeno-del-mercado.mp4",
+      "source": "https://vatechmexico.com/wp-content/uploads/2023/07/Green-X-el-equipo-con-el-voxel-mas-pequeno-del-mercado.mp4"
+    },
     "highlights": [],
     "features": [
       {
-        "title": "AVANZADO SISTEMA DE IMÁGENES DIGITALES 4 EN 1",
+        "title": "EL SISTEMA MÁS AVANZADO DE RAYOS X DIGITAL 4 EN 1",
         "text": [
-          "Green 16 es un avanzado sistema digital 4 en 1 que incorpora Pano, Ceph (opcional), CBCT y Model Scan. Proporciona imágenes de alta calidad con menor exposición de radiación, esto al combinar el procesamiento de imágenes y la experiencia en imágenes dentales de Vatech. Obtendrás un diagnóstico que te permita una mejor planificación del tratamiento y la satisfacción del cliente."
+          "Green X12 es un sistema de imágenes de rayos X digitales 4-en-1 que incorpora Pano, Ceph (opcional), CBCT y Escaneo de Modelos.",
+          "Proporciona imágenes de alta calidad con menor radiación al combinar el procesamiento de imágenes, mejorando la precisión de tu diagnóstico y una mejor planificación del tratamiento."
         ],
         "images": [
           {
-            "local": "/assets/product-details/green-16/3_Des1.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des1.png",
-            "alt": "Green 16"
+            "local": "/assets/product-details/green-x12/RX_GreenX12.png",
+            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/RX_GreenX12.png",
+            "alt": "Green X12"
+          }
+        ]
+      },
+      {
+        "title": "TECNOLOGÍA DE DETECCIÓN DE IMAGEN MEJORADA (CST)",
+        "text": [
+          "Vatech mejora drásticamente su calidad de imagen con mucho menos artefactos y ruido a través de su tecnología de detección de imagen mejorada (CST), repitiendo su proceso de reconstrucción 10 veces más que la cantidad normal para demostrar la verdadera representación del objeto."
+        ],
+        "images": [
+          {
+            "local": "/assets/product-details/green-x12/Vision-1.png",
+            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/Vision-1.png",
+            "alt": "Green X12"
+          }
+        ]
+      },
+      {
+        "title": "MODO ENDO DE ALTA RESOLUCIÓN",
+        "text": [
+          "Con su FOV de 4×4 y el tamaño de vóxel de 50 micras, el modo endo optimiza el tratamiento en regiones de interés altamente enfocadas. Es ideal para uso en endodoncia porque el dentista puede lograr una imagen extraordinaria",
+          "en un tamaño de vóxel de alta resolución."
+        ],
+        "images": [
+          {
+            "local": "/assets/product-details/green-x12/ENdo.png",
+            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/ENdo.png",
+            "alt": "Green X12"
           }
         ]
       },
       {
         "title": "MULTI FOV",
         "text": [
-          "Con Green 16 puedes seleccionar el tipo de FOV que necesites. Multi FOV te permite seleccionar el modo óptimo y con ello minimiza la exposición en áreas que no están dentro de la región de interés. Selecciona el tamaño adecuado entre 16×9, 12×9, 8×9 y 5×5 en función a tu necesidad de diagnóstico."
+          "El Green X12 ofrece una variedad de campos de visión. La opción Multi FOV permite a los usuarios seleccionar el FOV óptimo mientras minimiza la exposición a áreas que no están en la región de interés. La selección incluye los siguientes tamaños de FOV para necesidades de diagnóstico: 12×14, 12×8.5, 8×8, 8×5 y 4×4. Estas opciones cubren la región del arco completo, el seno y ATM izquierda/derecha, además de que se adaptan a",
+          "la mayoría de los casos de cirugía oral y de implantes múltiples."
         ],
-        "images": []
+        "images": [
+          {
+            "local": "/assets/product-details/green-x12/FOV-qpv1emgsdutyct3yphtvz396hvpeetpbxwlhykkvcc.png",
+            "source": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/FOV-qpv1emgsdutyct3yphtvz396hvpeetpbxwlhykkvcc.png",
+            "alt": "FOV"
+          }
+        ]
       },
       {
         "title": "ESCANEO GREEN",
         "text": [
-          "Green 16 minimiza los artefactos de movimiento y permite un flujo de trabajo más rápido gracias al tiempo de escaneo. Produce excelentes imágenes para un mejor diagnóstico que le dará más tranquilidad a tus pacientes. Centrándose en la más alta calidad de atención al paciente, atrévete a experimentar la avanzada tecnología de Vatech y aprovecha la excelente calidad de imagen."
+          "Debido a su tiempo de escaneo, Green X12 minimiza el artefacto de movimiento y permite un flujo de trabajo más rápido. Produce magníficas imágenes de diagnóstico, que serán motivo de orgullo para cualquier consulta dental. Centrándose en la más alta calidad de atención al paciente, Vatech se esfuerza por mejorar la salud y seguridad de sus pacientes."
         ],
         "images": [
           {
-            "local": "/assets/product-details/green-16/3_Des3.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des3.png",
-            "alt": "Green 16"
+            "local": "/assets/product-details/green-x12/Escaneo-1-qpv1emgqfoskijsukyby8qftgahilfq2om1rd297i2.png",
+            "source": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/Escaneo-1-qpv1emgqfoskijsukyby8qftgahilfq2om1rd297i2.png",
+            "alt": "Escaneo"
           }
         ]
-      },
-      {
-        "title": "BAJA DOSIS Y ALTA CALIDAD DE IMAGEN",
-        "text": [
-          "La tecnología que desarrollamos en Vatech rompe con los paradigmas de la radiografía dental. Siempre se creyó que con baja radiación se obtiene un imagen de mala calidad. Sin embargo, Green 16 proporciona escaneos clínicamente diagnosticables con baja dosis de rayos X, marcando un nuevo estándar en calidad de imagen.",
-          "DATOS DE DOSIS EFECTIVA"
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/green-16/hasta-menos-radiacion-01-qpv1emgrnjkfnymansintpg63s8xzaylyx53hi7gw2.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/hasta-menos-radiacion-01-qpv1emgrnjkfnymansintpg63s8xzaylyx53hi7gw2.png",
-            "alt": "hasta menos radiacion-01"
-          }
-        ]
-      },
-      {
-        "title": "THE ART-V",
-        "text": [
-          "Los artefactos metálicos dificultan la visualización y, naturalmente, reducen la confianza en el diagnóstico. Una imagen clara proporciona más seguridad para realizar un diagnóstico preciso, así la planificación de implantes y la creación de una guía quirúrgica es más eficiente.",
-          "*ART-V ES EL NUEVO NOMBRE DE LA FUNCIÓN MAR (TECNOLOGÍA DE REDUCCIÓN DE ARTEFACTOS) DE VATECH"
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/green-16/3_Des5.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des5.png",
-            "alt": "Green 16"
-          }
-        ]
-      },
-      {
-        "title": "MODEL SCAN 3D",
-        "text": [
-          "Permiten almacenar yesos con modelos digitales para facilitar tu administración."
-        ],
-        "images": []
-      },
-      {
-        "title": "VENTA DE DIGITALIZACIÓN",
-        "text": [
-          "*Escaneo 3D para yeso con FOV 8×9 (cm)"
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/green-16/3_Des6.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des6.png",
-            "alt": "Green 16"
-          }
-        ]
-      },
-      {
-        "title": "INTEGRACIÓN CAD/CAM",
-        "text": [
-          "Nivel suficiente de detalle para el diseño de la guía quirúrgica"
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/green-16/3_Des7.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des7.png",
-            "alt": "Green 16"
-          }
-        ]
-      },
-      {
-        "title": "PLANTILLA ESPECIALMENTE DISEÑADA",
-        "text": [
-          "Protección estable de modelo parcial a modelo completo"
-        ],
-        "images": []
       }
     ],
     "configurationImages": [],
     "specifications": [
       [
         [
-          "FUNCIÓN",
-          "ct + pano + ceph + model scan"
+          "Función",
+          "CT + Pano + Ceph + Model Scan"
         ],
         [
-          "PUNTO FOCAL",
+          "Punto Focal",
           "0.5 mm (IEC 60336)"
         ],
         [
-          "CT FOV SIZE",
-          "16x9 / 12x9 / 8x9 / 5x5"
+          "CT Tamaño FOV",
+          "Endo (4x4), 8x5, 8x8 12x8.5, Smart Focus, Double Scan (12x14)"
         ],
         [
-          "TAMAÑO DE VOXEL (MM)",
-          "16x9: 0.2 / 0.3 12x9: 0.2 / 0.3 8x9: 0.12 / 0.2 5x5: 0.08 / 0.12"
+          "Tamaño de vóxel",
+          "4x4",
+          "0.05 mm"
         ],
         [
-          "TIEMPO DE ESCANEO (SEC)",
-          "PANO 14.1 / 7.0 (opcional con magic pan) CEPH 3.9 / 1.9 CBCT 9.0 (16x9 ~ 12x9) / 4.9 (5x5~8x9)"
+          "8x5 / 8x8",
+          "0.12 mm / 0.2 mm"
         ],
         [
-          "ESCALA DE GRISES",
-          "14 Bit"
+          "12x8.5/DoubleScan/Smar Focus",
+          "0.2 mm / 0.3 mm / 0.07 mm"
         ],
         [
-          "VOLTAJE / CORRIENTE DEL TUBO",
-          "60 - 99 kvp / 4 ~ 16 ma"
+          "Tiempo de escaneo",
+          "Pano",
+          "4.0 sec. / 14.1 sec."
         ],
         [
-          "PESO",
-          "Sin ceph: 134 kg (295.4 lbs - sin base) / 187 kg (412.3 lbs ‒ con base) Con ceph: 159 kg (350.5 lbs - sin base) / 212 kg (467.4 lbs - con base)"
+          "Ceph",
+          "1.9 sec / 4.9 sec."
         ],
         [
-          "DIMENSIONES",
-          "Sin ceph: 1125 mm (l) x 1488.7 mm (w) x 2335.5 mm (h) Con ceph: 1874.1 mm (l) x 1488.7 mm (w) x 2335.5 mm (h)"
+          "CBCT",
+          "10.0 sec. (8x5 - 8x8) 15.5 sec. (12x8.5/DoubleScan/Smar Focus) 13.0 sec. (ENDO)"
+        ],
+        [
+          "Escala de grises",
+          "14 bit"
+        ],
+        [
+          "Volteje / Corriente del tubo",
+          "60-99 kvp / 4 - 16 mA"
+        ],
+        [
+          "Peso",
+          "Sin CEPH",
+          "359.13 lbs - sin Base"
+        ],
+        [
+          "480.38 libs - con Base"
+        ],
+        [
+          "Con CEPH",
+          "414.25 lbs - sin Base"
+        ],
+        [
+          "535.50 lbs - con Base"
+        ],
+        [
+          "Dimensiones",
+          "Con CEPH",
+          "75.02”(L) x 57.39”(W) x 91.24”(H) - sin Base"
+        ],
+        [
+          "75.02”(L) x 57.39”(W) x 92.34”(H) - con Base"
+        ],
+        [
+          "Sin CEPH",
+          "42.72”(L) x 57.39”(W) x 91.24”(H) - sin Base"
+        ],
+        [
+          "42.72”(L) x 57.39”(W) x 92.34”(H) - con Base"
         ]
       ]
     ],
-    "dimensionImages": [],
+    "dimensionImages": [
+      {
+        "local": "/assets/product-details/green-x12/GreenX12-Dimensiones.png",
+        "source": "https://vatechmexico.com/wp-content/uploads/2023/07/GreenX12-Dimensiones.png",
+        "alt": "Green X12"
+      }
+    ],
     "gallery": [],
     "catalogPdf": {
-      "local": "/assets/product-details/green-16/Green_16.pdf",
-      "source": "https://vatechmexico.com/wp-content/uploads/2023/07/Green_16.pdf"
+      "local": "/assets/product-details/green-x12/Green-X12-Catalogo.pdf",
+      "source": "https://vatechmexico.com/wp-content/uploads/2023/08/Green-X12-Catalogo.pdf"
     },
     "trainingVideos": [],
     "sourceComplete": true,
     "cardImage": {
-      "local": "/assets/products/16.png",
-      "source": "https://vatechmexico.com/wp-content/uploads/2026/07/16.png",
-      "alt": "Green 16"
-    }
-  },
-  {
-    "slug": "smart-plus",
-    "name": "Smart Plus",
-    "category": "Sistema de imagen 3D",
-    "eyebrow": "INNOVACIÓN SMART",
-    "tagline": "NO MÁS DE LO QUE QUIERES, NO MENOS DE LO QUE NECESITAS.",
-    "summary": "Un escaneo con Smart Plus puede proporcionar imagen CT e imagen Auto Pano para apoyar un diagnóstico más completo.",
-    "intro": [],
-    "heroImage": {
-      "local": "/assets/product-details/smart-plus/2_Features-1.png",
-      "source": "https://vatechmexico.com/wp-content/uploads/2023/07/2_Features-1.png",
-      "alt": "Smart Plus"
-    },
-    "heroVideo": null,
-    "highlights": [],
-    "features": [
-      {
-        "title": "SOLUCIÓN DE IMAGEN AVANZADA CON INSIGHT PAN",
-        "text": [
-          "El siguiente paso evolutivo en imágenes panorámicas Insight es capaz de tomar una imagen panorámica de varias capas llamada Insight PAN que proporciona una mirada única a profundidad a través de un único canal focal.",
-          "Debido a que cada paciente puede tener un arco ligeramente diferente, las imágenes de panorámicas convencionales ocasionalmente pueden perder detalles importantes que salen de una sola capa focal. Insight PAN es capaz de capturar una imagen panorámica de varias capas, asegurando que todos los detalles se capturen en una sola imagen panorámica."
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/smart-plus/3_Des1-2.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des1-2.png",
-            "alt": "Smart Plus"
-          }
-        ]
-      },
-      {
-        "title": "UNA TOMA, DOS IMÁGENES",
-        "text": [
-          "Un escaneo con Smart Plus no solamente le brinda una imagen CT, sino también una imagen Auto Pano. Esto significa que los pacientes que requieran ambas imágenes no se sometan a dos radiografías. Ambas imágenes CT y Auto Pano se muestran dentro de la función Over View"
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/smart-plus/3_Des1-1.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des1-1.png",
-            "alt": "Smart Plus"
-          },
-          {
-            "local": "/assets/product-details/smart-plus/3_Des2.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des2.png",
-            "alt": "Smart Plus"
-          }
-        ]
-      },
-      {
-        "title": "2D Y 3D EN UN VISOR",
-        "text": [
-          "La visualización de imágenes 2D y 3D juntas proporcionan muchos beneficios. No es necesario utilizar dos programas de software diferentes y la función de un visor representa un aspecto profesional para sus pacientes. Este diseño ayuda a los pacientes a comprender mejor las imágenes, lo que eventualmente dará como resultado un aumento de aceptación."
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/smart-plus/3_Des3-1.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des3-1.png",
-            "alt": "Smart Plus"
-          }
-        ]
-      },
-      {
-        "title": "INNOVACIÓN INTELIGENTE PARA EL DIAGNÓSTICO EXACTO",
-        "text": [
-          "TECNOLOGÍA INNOVADORA DE DETECCIÓN COMPRIMIDA",
-          "La calidad de imágenes 3D ha mejorado dramáticamente gracias a la innovadora tecnología de reconstrucción de imagen.",
-          "RECONSTRUCCIÓN DE IMAGEN NORMAL",
-          "RECONSTRUCCIÓN DE IMAGEN SMART"
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/smart-plus/3_Des4.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des4.png",
-            "alt": "Smart Plus"
-          },
-          {
-            "local": "/assets/product-details/smart-plus/3_Des5-1.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des5-1.png",
-            "alt": "Smart Plus"
-          }
-        ]
-      },
-      {
-        "title": "FOV DE ARCO EXTENDIDO",
-        "text": [
-          "El innovador FOV de Smart Plus proporciona un volumen en forma de arco, que muestra una vista más amplia de la dentición en comparación con otros dispositivos del mismo campo de visión. Para los terceros molares, existe una alta posibilidad de que el diente se corte de la imagen. El “FOV de arco extendido” elimina esta posibilidad y proporciona al médico toda la dentición necesaria para un diagnóstico completo."
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/smart-plus/3_Des6-1-qpv1emgkcex8rhpm6reebve26todo3je92l2quhxwy.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/3_Des6-1-qpv1emgkcex8rhpm6reebve26todo3je92l2quhxwy.png",
-            "alt": "3_Des6"
-          },
-          {
-            "local": "/assets/product-details/smart-plus/3_Des7-1.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des7-1.png",
-            "alt": "Smart Plus"
-          },
-          {
-            "local": "/assets/product-details/smart-plus/3_Des8.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des8.png",
-            "alt": "Smart Plus"
-          }
-        ]
-      },
-      {
-        "title": "ESCANEO DE MODELOS 3D",
-        "text": [
-          "El escaneo de modelos 3D permite a los usuarios almacenar yesos como modelos digitales",
-          "INTEGRACIÓN CAD/CAM",
-          "Nivel suficiente de detalle para el diseño de la guía quirúrgica",
-          "PLANTILLA ESPECIALMENTE DISEÑADA",
-          "Protección estable de modelo parcial a modelo completo."
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/smart-plus/4_Des1-1.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/4_Des1-1.png",
-            "alt": "Smart Plus"
-          },
-          {
-            "local": "/assets/product-details/smart-plus/4_Des2-1.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/4_Des2-1.png",
-            "alt": "Smart Plus"
-          }
-        ]
-      }
-    ],
-    "configurationImages": [],
-    "specifications": [
-      [
-        [
-          "FUNCIÓN",
-          "ct (con auto pano) + pano + ceph + model scan"
-        ],
-        [
-          "PUNTO FOCAL",
-          "0.5 mm (IEC 60336)"
-        ],
-        [
-          "CT FOV SIZE",
-          "5x5 cm / 10x8.5 cm (anatómico de 12x9 cm) / 10x7 cm"
-        ],
-        [
-          "TAMAÑO DE VOXEL",
-          "0.08 mm / 0.12 mm / 0.2 mm / 0.3 mm"
-        ],
-        [
-          "TIEMPO DE ESCANEO",
-          "CT 18 sec Pano 14.1 sec / 7 sec Ceph 1.9 sec / 3.9 sec"
-        ],
-        [
-          "ESCALA DE GRISES",
-          "14 bit"
-        ],
-        [
-          "VOLTAJE",
-          "60~99 kVp"
-        ],
-        [
-          "CORRIENTE",
-          "4~16 mA"
-        ],
-        [
-          "PESO",
-          "With Ceph Unit: 357.1 lbs"
-        ]
-      ]
-    ],
-    "dimensionImages": [],
-    "gallery": [
-      {
-        "title": "PANO",
-        "text": [],
-        "images": []
-      },
-      {
-        "title": "CT",
-        "text": [],
-        "images": []
-      }
-    ],
-    "catalogPdf": {
-      "local": "/assets/product-details/smart-plus/Smart-Plus_Optimizado.pdf",
-      "source": "https://vatechmexico.com/wp-content/uploads/2023/07/Smart-Plus_Optimizado.pdf"
-    },
-    "trainingVideos": [
-      {
-        "local": "/assets/product-details/smart-plus/insight_video.mp4",
-        "source": "https://vatechmexico.com/wp-content/uploads/2023/07/insight_video.mp4"
-      }
-    ],
-    "sourceComplete": true,
-    "cardImage": {
-      "local": "/assets/products/SMARTPLUS.png",
-      "source": "https://vatechmexico.com/wp-content/uploads/2026/07/SMARTPLUS.png",
-      "alt": "Smart Plus"
+      "local": "/assets/products/X12.png",
+      "source": "https://vatechmexico.com/wp-content/uploads/2026/07/X12.png",
+      "alt": "Green X-12 SE"
     }
   },
   {

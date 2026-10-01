@@ -763,3 +763,380 @@ body { font-size:16px; }
 .program-list p { font-size:14px; }
 .mobile-submenu > div > a { font-size:14px; }
 .mobile-submenu-nested a { font-size:12px !important; }
+
+/* ==========================================================================
+   WhatsApp Floating Widget & Buttons
+   ========================================================================== */
+.whatsapp-floating-widget {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+}
+
+.whatsapp-floating-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #25d366;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+  position: relative;
+  transition: transform 0.25s cubic-bezier(0.2, 0.7, 0.2, 1), box-shadow 0.25s ease, background 0.2s ease;
+}
+
+.whatsapp-floating-btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.5);
+  background: #20bd5a;
+}
+
+.whatsapp-floating-btn:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.whatsapp-pulse-ring {
+  position: absolute;
+  inset: -4px;
+  border-radius: 999px;
+  border: 2px solid #25d366;
+  opacity: 0.7;
+  animation: wa-pulse 2.2s infinite;
+  pointer-events: none;
+}
+
+@keyframes wa-pulse {
+  0% { transform: scale(0.96); opacity: 0.8; }
+  50% { transform: scale(1.12); opacity: 0; }
+  100% { transform: scale(1.18); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .whatsapp-pulse-ring { animation: none; display: none; }
+}
+
+@media (max-width: 640px) {
+  .whatsapp-floating-widget {
+    bottom: 18px;
+    right: 18px;
+  }
+  .whatsapp-floating-btn {
+    padding: 12px;
+  }
+  .whatsapp-floating-btn .whatsapp-label {
+    display: none;
+  }
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #25d366;
+  color: white !important;
+  border-radius: 999px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+.btn-whatsapp:hover {
+  background: #20bd5a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
+}
+
+/* ==========================================================================
+   Footer Custom Additions (WhatsApp & Construction Status)
+   ========================================================================== */
+.footer-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.82) !important;
+  font-size: 11px;
+  font-weight: 500;
+  max-width: 100% !important;
+}
+
+.footer-status-pulse {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #25d366;
+  box-shadow: 0 0 8px #25d366;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.footer-whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(37, 211, 102, 0.12);
+  border: 1px solid rgba(37, 211, 102, 0.35);
+  color: #25d366 !important;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  width: fit-content;
+  margin: 4px 0 8px;
+}
+
+.footer-whatsapp-btn:hover {
+  background: #25d366;
+  color: #ffffff !important;
+  border-color: #25d366;
+  transform: translateY(-1px);
+}
+
+.footer-link-highlight {
+  color: rgba(255, 255, 255, 0.75) !important;
+  text-decoration: none;
+}
+.footer-link-highlight:hover {
+  color: #ffffff !important;
+}
+
+.footer-site-construction {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 10px;
+}
+
+/* ==========================================================================
+   Filosofía Institucional (Misión, Visión, Calidad, Valores)
+   ========================================================================== */
+.corporate-philosophy-section {
+  padding: 60px 6.8vw 80px;
+  background: linear-gradient(180deg, #f7f7f8 0%, #ffffff 100%);
+  border-bottom: 1px solid var(--line);
+}
+
+.corp-section-head {
+  max-width: 760px;
+  margin-bottom: 48px;
+}
+
+.corp-section-head h2 {
+  font-size: clamp(34px, 3.8vw, 56px);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  margin: 10px 0 16px;
+  color: #111113;
+}
+
+.corp-section-head p:not(.eyebrow) {
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.corp-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.corp-pillar-card {
+  background: #ffffff;
+  border: 1px solid rgba(17, 17, 19, 0.08);
+  border-radius: 12px;
+  padding: 36px 32px;
+  box-shadow: 0 4px 20px rgba(17, 17, 19, 0.03);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  position: relative;
+}
+
+.corp-pillar-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(17, 17, 19, 0.07);
+  border-color: rgba(201, 44, 54, 0.25);
+}
+
+.corp-pillar-card.full-span {
+  grid-column: 1 / -1;
+}
+
+.corp-card-badge {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.corp-card-badge span {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--red);
+  background: rgba(201, 44, 54, 0.08);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.corp-pillar-card h3 {
+  font-size: clamp(22px, 2vw, 28px);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0 0 16px;
+  color: #111113;
+}
+
+.corp-quote-block {
+  margin-bottom: 18px;
+}
+
+.corp-subtag {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.corp-subtag.red-tag {
+  color: var(--red);
+}
+
+.corp-quote-block blockquote {
+  margin: 0;
+  padding: 0 0 0 16px;
+  border-left: 3px solid var(--red);
+  font-size: 16px;
+  line-height: 1.55;
+  font-weight: 600;
+  color: #1a1a1d;
+  font-style: italic;
+}
+
+.corp-card-desc {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* Quality Policy Dual Layout */
+.quality-dual-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 6px;
+}
+
+.quality-exec-column blockquote {
+  margin: 0;
+  padding: 0 0 0 16px;
+  border-left: 3px solid var(--red);
+  font-size: 16px;
+  line-height: 1.55;
+  font-weight: 600;
+  color: #1a1a1d;
+  font-style: italic;
+}
+
+.quality-full-column p {
+  font-size: 15px;
+  line-height: 1.65;
+  color: #333336;
+  margin: 0;
+}
+
+/* Corporate Values Wrap */
+.values-content-wrap {
+  display: grid;
+  grid-template-columns: 1.2fr 1.8fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.values-primary-statement {
+  margin-top: 8px;
+}
+
+.values-primary-statement strong {
+  display: block;
+  font-size: 20px;
+  color: var(--red);
+  margin-bottom: 8px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.values-primary-statement p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 0;
+}
+
+.values-items-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.value-chip {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: #fbfbfb;
+  border: 1px solid rgba(17, 17, 19, 0.06);
+  padding: 12px 16px;
+  border-radius: 8px;
+}
+
+.value-chip-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--red);
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+
+.value-chip strong {
+  display: block;
+  font-size: 14px;
+  color: #1a1a1d;
+}
+
+.value-chip small {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+  .corp-pillars-grid {
+    grid-template-columns: 1fr;
+  }
+  .quality-dual-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .values-content-wrap {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+}

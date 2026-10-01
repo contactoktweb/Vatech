@@ -77,7 +77,7 @@ Se creó una plantilla reutilizable en `components/ProductDetailPage.tsx` y la f
 
 Los HTML entregados se procesaron para extraer contenido, especificaciones, imágenes, videos y catálogos de 19 productos. Los recursos originales se registran en `data/product-assets.json` y `npm run assets` los guarda en `public/assets/product-details/<slug>/`.
 
-Productos con ficha HTML completa integrada actualmente: Green X12, Green 16, Smart Plus, A9, Green X21, PaX-i, Ez Sensor HD, Ez Sensor CLASSIC, EzRay Air Portátil, EzRay Air Wall, EzRay Air C, Ez Scan, EzCam, Perfit ZR, Perfit FS, EzOrtho, Ez3D-i, EzDent-i y Clever RC.
+Productos con ficha HTML completa integrada actualmente: Green X12, Green X-12 SE, A9, Green X21, PaX-i, Ez Sensor HD, Ez Sensor CLASSIC, EzRay Air Portátil, EzRay Air Wall, EzRay Air C, Ez Scan, EzCam, Perfit ZR, Perfit FS, EzOrtho, Ez3D-i, EzDent-i y Clever RC.
 
 Las rutas de Green X16 / X18 y PaX-i Plus ya son internas y muestran una ficha base; se completarán al añadir sus HTML específicos.
 

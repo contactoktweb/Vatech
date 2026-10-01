@@ -23,7 +23,7 @@ const remoteAssets = {
   greenX12: { local: "/assets/product-details/green-x12/GreenX12.png", source: "https://vatechmexico.com/wp-content/uploads/2023/07/GreenX12.png" },
   a9: { local: "/assets/product-details/a9/A9_.png", source: "https://vatechmexico.com/wp-content/uploads/2023/07/A9_.png" },
   greenX21: { local: "/assets/product-details/green-x21/Green_X_21_03.webp", source: "https://vatechmexico.com/wp-content/uploads/2026/03/Green_X_21_03.webp" },
-  smartPlus: { local: "/assets/products/SMARTPLUS.png", source: "https://vatechmexico.com/wp-content/uploads/2026/07/SMARTPLUS.png" },
+  greenX12SE: { local: "/assets/products/X12.png", source: "https://vatechmexico.com/wp-content/uploads/2026/07/X12.png" },
   paxiHQ: { local: "/assets/products/PAXI-.png", source: "https://vatechmexico.com/wp-content/uploads/2026/07/PAXI-.png" },
 };
 
@@ -120,11 +120,11 @@ export default function HomePage() {
         <div className="hero-copy" style={{ transform: `translateY(${heroShift * -0.16}px)` }}>
           <p className="eyebrow hero-reveal delay-1">VATECH · DENTAL IMAGING TECHNOLOGY</p>
           <h1 className="hero-title hero-reveal delay-2">
-            El futuro de la<br />
-            <span>imagenología dental.</span>
+            Innovación en radiología<br />
+            <span>dental para tu clínica.</span>
           </h1>
           <p className="hero-lead hero-reveal delay-3">
-            Líder mundial en innovación radiológica dental en Colombia y Latinoamérica.
+            Innovación en radiología dental para tu clínica: tecnología de vanguardia, diagnóstico de alta precisión y mínimo nivel de radiación para elevar la práctica de tu consultorio.
           </p>
           <div className="hero-actions hero-reveal delay-4">
             <a className="btn btn-primary" href="#products">Explorar productos <Arrow /></a>
@@ -256,7 +256,7 @@ export default function HomePage() {
         <div className="product-grid">
           {[
             { name: "Green X16 / Green X18", desc: "Sistema de imagen 3D", img: remoteAssets.greenX16, href: "/productos/green-x16-green-x18" },
-            { name: "Green X12", desc: "CBCT · Multi FOV", img: remoteAssets.greenX12, href: "/productos/green-x12" },
+            { name: "Green X-12 SE", desc: "Sistema 4 en 1 · CBCT", img: remoteAssets.greenX12SE, href: "/productos/green-x-12-se" },
             { name: "A9", desc: "Sistema 3 en 1", img: remoteAssets.a9, href: "/productos/a9" },
             { name: "Green X21", desc: "FOV 21×19", img: remoteAssets.greenX21, href: "/productos/green-x21" },
           ].map((p, i) => (
@@ -323,6 +323,18 @@ export default function HomePage() {
           <p>Descubre cómo la tecnología VATECH puede transformar tu práctica.</p>
         </div>
         <div className="cta-actions" data-reveal>
+          <a
+            className="btn btn-whatsapp"
+            href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "573133505068"}?text=${encodeURIComponent("Hola, me gustaría comunicarme con un asesor de VATECH Colombia.")}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true" style={{ flexShrink: 0 }}>
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+            </svg>
+            <span>WhatsApp directo</span>
+            <Arrow />
+          </a>
           <a className="btn btn-white" href="mailto:contacto@vatechcolombia.com">Hablar con un especialista <Arrow /></a>
           <a className="btn btn-red-outline" href="/productos">Explorar productos <Arrow /></a>
         </div>
