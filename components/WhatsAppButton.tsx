@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 
 export default function WhatsAppButton() {
   const [mounted, setMounted] = useState(false);
-  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "573133505068";
-  const message = encodeURIComponent("Hola, me gustaría recibir más información sobre los equipos radiológicos VATECH.");
+  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "573126344188";
+  const message = encodeURIComponent("Hola VATECH Colombia, me gustaría recibir más información y asesoría sobre sus equipos radiológicos.");
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
 
   useEffect(() => {

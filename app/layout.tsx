@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "VATECH Colombia | Innovación en radiología dental para tu clínica",
   description:
-    "Innovación en radiología dental para tu clínica: equipos radiológicos 3D/2D, tecnología biomédica avanzada, soporte técnico oficial y presencia en Colombia.",
+    "Innovación en radiología dental para tu clínica: equipos radiológicos 3D/2D, tecnología biomédica avanzada, presencia oficial y red de distribución en Colombia.",
 };
 
 import WhatsAppButton from "../components/WhatsAppButton";

@@ -1,32 +1,154 @@
 [
   {
-    "slug": "green-x16-green-x18",
-    "name": "Green X16 / Green X18",
+    "slug": "a9",
+    "name": "A9",
     "category": "Sistema de imagen 3D",
-    "eyebrow": "",
+    "eyebrow": "UNA NUEVA DIMENSIÓN QUE VA MÁS ALLÁ DE TUS EXPECTATIVAS",
     "tagline": "",
-    "summary": "Green X proporciona un gran campo de visión de un solo escaneo con alta resolución y tecnología de detección comprimida de tercera generación.",
+    "summary": "Sistema 3 en 1 con tecnología LITE e imágenes de alta calidad, incluyendo función CT para diagnóstico y planificación de tratamiento.",
     "intro": [],
     "heroImage": {
-      "local": "/assets/products/X18X16.png",
-      "source": "https://vatechmexico.com/wp-content/uploads/2026/07/X18X16.png",
-      "alt": "Green X16 / Green X18"
+      "local": "/assets/product-details/a9/A9_.png",
+      "source": "https://vatechmexico.com/wp-content/uploads/2023/07/A9_.png",
+      "alt": "Equipo CBCT dental Vatech A9"
     },
-    "heroVideo": null,
+    "heroVideo": {
+      "local": "/assets/product-details/a9/Vatech-A9.mp4",
+      "source": "https://vatechmexico.com/wp-content/uploads/2023/07/Vatech-A9.mp4"
+    },
     "highlights": [],
-    "features": [],
+    "features": [
+      {
+        "title": "TECNOLOGÍA LITE EN NUESTRO SISTEMA DE RAYOS X 3 EN 1",
+        "text": [
+          "Vatech A9 es un equipo CBCT dental 3 en 1 que integra tomografía 3D, radiografía panorámica y cefalometría opcional para apoyar el diagnóstico y la planificación de tratamientos. Su FOV 8×8 ofrece un campo de visión diseñado para distintas aplicaciones clínicas odontológicas.",
+          "Conoce también nuestra gama de equipos CBCT y panorámicos dentales Vatech Colombia."
+        ],
+        "images": [
+          {
+            "local": "/assets/product-details/a9/A9-02.png",
+            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/A9-02.png",
+            "alt": "Imágenes de tomografía, panorámica y cefalometría del Vatech A9"
+          }
+        ]
+      },
+      {
+        "title": "FOV INTEGRAL PARA IMÁGENES 3D",
+        "text": [
+          "Con un FOV 8×8, las imágenes permiten realizar diagnósticos fundamentales y planificar el tratamiento, incluyendo las áreas maxilar y mandibular, en una sola exploración.",
+          "Es útil para cirugías de implantes complejas y diagnósticos de ATM izquierda/derecha."
+        ],
+        "images": [
+          {
+            "local": "/assets/product-details/a9/A9-03-qpv1emgp7u0pd4zei458nrfgssq37khjeayf8mazmi.png",
+            "source": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/A9-03-qpv1emgp7u0pd4zei458nrfgssq37khjeayf8mazmi.png",
+            "alt": "Campo de visión 8×8 del Vatech A9"
+          }
+        ]
+      },
+      {
+        "title": "FOV ANATÓMICO 9.3X8",
+        "text": [],
+        "images": [
+          {
+            "local": "/assets/product-details/a9/A9-04-qpv1emgp7u0pd4zei458nrfgssq37khjeayf8maz1y.png",
+            "source": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/A9-04-qpv1emgp7u0pd4zei458nrfgssq37khjeayf8maz1y.png",
+            "alt": "FOV anatómico 9.3×8 del Vatech A9"
+          }
+        ]
+      },
+      {
+        "title": "MINIMIZA ARTEFACTOS DE MOVIMIENTO CON LA TECNOLOGÍA \"RAPID CEPH\"",
+        "text": [],
+        "images": [
+          {
+            "local": "/assets/product-details/a9/A9-05-qpv1emgnzz8u7q5yf9yj2sf45ayntp903zv346cpa2.png",
+            "source": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/A9-05-qpv1emgnzz8u7q5yf9yj2sf45ayntp903zv346cpa2.png",
+            "alt": "Tecnología Rapid Ceph del Vatech A9"
+          }
+        ]
+      }
+    ],
     "configurationImages": [],
-    "specifications": [],
-    "dimensionImages": [],
+    "specifications": [
+      [
+        [
+          "FUNCIÓN",
+          "CT + Pano + Ceph"
+        ],
+        [
+          "PUNTO FOCAL",
+          "0.5 mm (IEC 60336)"
+        ],
+        [
+          "TAMAÑO DE FOV CT",
+          "8x8 cm (Anatómico de 9.3x8 cm)"
+        ],
+        [
+          "TAMAÑO DEL VOXEL",
+          "0.2 mm / 0.3 mm"
+        ],
+        [
+          "TIEMPO DE ESCANEO",
+          "CT",
+          "18 seg."
+        ],
+        [
+          "Pano",
+          "11.9 seg. / 14.1 seg."
+        ],
+        [
+          "Ceph",
+          "1.9 seg. / 3.9 seg."
+        ],
+        [
+          "ESCALA DE GRISES",
+          "14 Bit"
+        ],
+        [
+          "VOLTAJE",
+          "60 - 99 kV"
+        ],
+        [
+          "CORRIENTE",
+          "4 - 10 mA"
+        ],
+        [
+          "PESO",
+          "Sin unidad CEPH",
+          "92 kg (202.83 lbs - sin Base)"
+        ],
+        [
+          "130 kg (286.60 lbs - con Base)"
+        ],
+        [
+          "Con unidad CEPH",
+          "118 kg (260.15 lbs - sin Base)"
+        ],
+        [
+          "156 kg (343.92 lbs - con Base)"
+        ]
+      ]
+    ],
+    "dimensionImages": [
+      {
+        "local": "/assets/product-details/a9/DimensionesA9.png",
+        "source": "https://vatechmexico.com/wp-content/uploads/2023/07/DimensionesA9.png",
+        "alt": "Dimensiones del equipo Vatech A9"
+      }
+    ],
     "gallery": [],
-    "catalogPdf": null,
-    "trainingVideos": [],
-    "cardImage": {
-      "local": "/assets/products/X18X16.png",
-      "source": "https://vatechmexico.com/wp-content/uploads/2026/07/X18X16.png",
-      "alt": "Green X16 / Green X18"
+    "catalogPdf": {
+      "local": "/assets/product-details/a9/A9-catalogo.pdf",
+      "source": "https://vatechmexico.com/wp-content/uploads/2023/07/A9-catalogo.pdf"
     },
-    "sourceComplete": false
+    "trainingVideos": [],
+    "sourceComplete": true,
+    "cardImage": {
+      "local": "/assets/products/A9.png",
+      "source": "https://vatechmexico.com/wp-content/uploads/2026/07/A9.png",
+      "alt": "A9"
+    }
   },
   {
     "slug": "green-x12",
@@ -407,73 +529,27 @@
     }
   },
   {
-    "slug": "a9",
-    "name": "A9",
+    "slug": "green-x16",
+    "name": "Green X 16",
     "category": "Sistema de imagen 3D",
-    "eyebrow": "UNA NUEVA DIMENSIÓN QUE VA MÁS ALLÁ DE TUS EXPECTATIVAS",
-    "tagline": "",
-    "summary": "Sistema 3 en 1 con tecnología LITE e imágenes de alta calidad, incluyendo función CT para diagnóstico y planificación de tratamiento.",
+    "eyebrow": "SISTEMA DE IMAGEN 3D / CBCT",
+    "tagline": "ALTA RESOLUCIÓN Y MÍNIMA DOSIS",
+    "summary": "Green X 16 proporciona un gran campo de visión con la más alta resolución diagnóstica, modo Endo de 49.5µm y tiempos ultrarrápidos de escaneo. Dirigido especialmente a endodoncistas e implantólogos.",
     "intro": [],
     "heroImage": {
-      "local": "/assets/product-details/a9/A9_.png",
-      "source": "https://vatechmexico.com/wp-content/uploads/2023/07/A9_.png",
-      "alt": "Equipo CBCT dental Vatech A9"
+      "local": "/assets/products/X18X16.png",
+      "source": "https://vatechmexico.com/wp-content/uploads/2026/07/X18X16.png",
+      "alt": "Green X 16"
     },
-    "heroVideo": {
-      "local": "/assets/product-details/a9/Vatech-A9.mp4",
-      "source": "https://vatechmexico.com/wp-content/uploads/2023/07/Vatech-A9.mp4"
-    },
+    "heroVideo": null,
     "highlights": [],
     "features": [
       {
-        "title": "TECNOLOGÍA LITE EN NUESTRO SISTEMA DE RAYOS X 3 EN 1",
+        "title": "ALTA RESOLUCIÓN PARA ENDODONCIA E IMPLANTES",
         "text": [
-          "Vatech A9 es un equipo CBCT dental 3 en 1 que integra tomografía 3D, radiografía panorámica y cefalometría opcional para apoyar el diagnóstico y la planificación de tratamientos. Su FOV 8×8 ofrece un campo de visión diseñado para distintas aplicaciones clínicas odontológicas.",
-          "Conoce también nuestra gama de equipos CBCT y panorámicos dentales y el servicio técnico Vatech México ."
+          "Green X 16 ofrece un voxel de hasta 49.5 µm para visualizar detalles anatómicos de alta complejidad, conductos radiculares y microestructuras óseas con tecnología de reconstrucción CST."
         ],
-        "images": [
-          {
-            "local": "/assets/product-details/a9/A9-02.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/A9-02.png",
-            "alt": "Imágenes de tomografía, panorámica y cefalometría del Vatech A9"
-          }
-        ]
-      },
-      {
-        "title": "FOV INTEGRAL PARA IMÁGENES 3D",
-        "text": [
-          "Con un FOV 8×8, las imágenes permiten realizar diagnósticos fundamentales y planificar el tratamiento, incluyendo las áreas maxilar y mandibular, en una sola exploración.",
-          "Es útil para cirugías de implantes complejas y diagnósticos de ATM izquierda/derecha."
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/a9/A9-03-qpv1emgp7u0pd4zei458nrfgssq37khjeayf8mazmi.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/A9-03-qpv1emgp7u0pd4zei458nrfgssq37khjeayf8mazmi.png",
-            "alt": "Campo de visión 8×8 del Vatech A9"
-          }
-        ]
-      },
-      {
-        "title": "FOV ANATÓMICO 9.3X8",
-        "text": [],
-        "images": [
-          {
-            "local": "/assets/product-details/a9/A9-04-qpv1emgp7u0pd4zei458nrfgssq37khjeayf8maz1y.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/A9-04-qpv1emgp7u0pd4zei458nrfgssq37khjeayf8maz1y.png",
-            "alt": "FOV anatómico 9.3×8 del Vatech A9"
-          }
-        ]
-      },
-      {
-        "title": "MINIMIZA ARTEFACTOS DE MOVIMIENTO CON LA TECNOLOGÍA \"RAPID CEPH\"",
-        "text": [],
-        "images": [
-          {
-            "local": "/assets/product-details/a9/A9-05-qpv1emgnzz8u7q5yf9yj2sf45ayntp903zv346cpa2.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/A9-05-qpv1emgnzz8u7q5yf9yj2sf45ayntp903zv346cpa2.png",
-            "alt": "Tecnología Rapid Ceph del Vatech A9"
-          }
-        ]
+        "images": []
       }
     ],
     "configurationImages": [],
@@ -481,89 +557,96 @@
       [
         [
           "FUNCIÓN",
-          "CT + Pano + Ceph"
-        ],
-        [
-          "PUNTO FOCAL",
-          "0.5 mm (IEC 60336)"
+          "CT + Pano + Ceph + Model Scan"
         ],
         [
           "TAMAÑO DE FOV CT",
-          "8x8 cm (Anatómico de 9.3x8 cm)"
+          "Desde 4x4 cm hasta 16x9 cm"
         ],
         [
           "TAMAÑO DEL VOXEL",
-          "0.2 mm / 0.3 mm"
+          "Desde 49.5 µm hasta 300 µm"
         ],
         [
           "TIEMPO DE ESCANEO",
-          "CT",
-          "18 seg."
-        ],
-        [
-          "Pano",
-          "11.9 seg. / 14.1 seg."
-        ],
-        [
-          "Ceph",
-          "1.9 seg. / 3.9 seg."
-        ],
-        [
-          "ESCALA DE GRISES",
-          "14 Bit"
-        ],
-        [
-          "VOLTAJE",
-          "60 - 99 kV"
-        ],
-        [
-          "CORRIENTE",
-          "4 - 10 mA"
-        ],
-        [
-          "PESO",
-          "Sin unidad CEPH",
-          "92 kg (202.83 lbs - sin Base)"
-        ],
-        [
-          "130 kg (286.60 lbs - con Base)"
-        ],
-        [
-          "Con unidad CEPH",
-          "118 kg (260.15 lbs - sin Base)"
-        ],
-        [
-          "156 kg (343.92 lbs - con Base)"
+          "1.9s CEPH / 2.9s CBCT / 3.9s PANO"
         ]
       ]
     ],
-    "dimensionImages": [
+    "dimensionImages": [],
+    "gallery": [],
+    "catalogPdf": null,
+    "trainingVideos": [],
+    "cardImage": {
+      "local": "/assets/products/X18X16.png",
+      "source": "https://vatechmexico.com/wp-content/uploads/2026/07/X18X16.png",
+      "alt": "Green X 16"
+    },
+    "sourceComplete": false
+  },
+  {
+    "slug": "green-x18",
+    "name": "Green X 18",
+    "category": "Sistema de imagen 3D",
+    "eyebrow": "SISTEMA DE IMAGEN 3D / CBCT",
+    "tagline": "CAMPO EXTENDIDO Y PRECISIÓN MAXILOFACIAL",
+    "summary": "Green X 18 amplía las posibilidades diagnósticas con un FOV extendido de hasta 18x10 cm, ideal para especialistas de ATM, periodoncistas y cirujanos maxilofaciales que requieren una visión integral.",
+    "intro": [],
+    "heroImage": {
+      "local": "/assets/products/X18X16.png",
+      "source": "https://vatechmexico.com/wp-content/uploads/2026/07/X18X16.png",
+      "alt": "Green X 18"
+    },
+    "heroVideo": null,
+    "highlights": [],
+    "features": [
       {
-        "local": "/assets/product-details/a9/DimensionesA9.png",
-        "source": "https://vatechmexico.com/wp-content/uploads/2023/07/DimensionesA9.png",
-        "alt": "Dimensiones del equipo Vatech A9"
+        "title": "CAMPO DE VISIÓN EXTENDIDO",
+        "text": [
+          "Green X 18 proporciona un campo de visión de un solo escaneo ideal para el análisis completo de arcadas dentales, vías aéreas y articulación temporomandibular (ATM)."
+        ],
+        "images": []
       }
     ],
+    "configurationImages": [],
+    "specifications": [
+      [
+        [
+          "FUNCIÓN",
+          "CT + Pano + Ceph + Model Scan"
+        ],
+        [
+          "TAMAÑO DE FOV CT",
+          "Desde 4x4 cm hasta 18x10 cm"
+        ],
+        [
+          "TAMAÑO DEL VOXEL",
+          "Desde 49.5 µm hasta 300 µm"
+        ],
+        [
+          "TIEMPO DE ESCANEO",
+          "1.9s CEPH / 2.9s CBCT / 3.9s PANO"
+        ]
+      ]
+    ],
+    "dimensionImages": [],
     "gallery": [],
-    "catalogPdf": {
-      "local": "/assets/product-details/a9/A9-catalogo.pdf",
-      "source": "https://vatechmexico.com/wp-content/uploads/2023/07/A9-catalogo.pdf"
-    },
+    "catalogPdf": null,
     "trainingVideos": [],
-    "sourceComplete": true,
     "cardImage": {
-      "local": "/assets/products/A9.png",
-      "source": "https://vatechmexico.com/wp-content/uploads/2026/07/A9.png",
-      "alt": "A9"
-    }
+      "local": "/assets/products/X18X16.png",
+      "source": "https://vatechmexico.com/wp-content/uploads/2026/07/X18X16.png",
+      "alt": "Green X 18"
+    },
+    "sourceComplete": false
   },
   {
     "slug": "green-x21",
     "name": "Green X21",
     "category": "Sistema de imagen 3D",
-    "eyebrow": "VELOCIDAD, CALIDAD, PREVISIBILIDAD",
-    "tagline": "SIN COMPROMISO",
-    "summary": "Green X21 amplía el diagnóstico 3D con FOV de gran tamaño para tomografía, panorámica, cefalometría y escaneo facial.",
+    "eyebrow": "PRÓXIMAMENTE EN COLOMBIA",
+    "tagline": "EL FUTURO DEL DIAGNÓSTICO CBCT Y ESCANEO FACIAL",
+    "summary": "El nuevo Green X21 con la máxima amplitud en diagnóstico 3D (FOV expandido hasta 21x19 cm) y escaneo facial estará disponible próximamente en Colombia. Conoce el adelanto exclusivo en el video teaser oficial.",
     "intro": [],
     "heroImage": {
       "local": "/assets/product-details/green-x21/Green_X_21_03.webp",
@@ -572,210 +655,11 @@
     },
     "heroVideo": null,
     "highlights": [],
-    "features": [
-      {
-        "title": "MODO ENDO CON ALTA RESOLUCIÓN",
-        "text": [
-          "Green X21 es un equipo CBCT dental de campo amplio con FOV máximo de 21×19 cm para estudios de tomografía 3D, panorámica, cefalometría y escaneo facial. Su selección Multi FOV permite adaptar el campo de visión a distintas necesidades clínicas, mientras que el modo Endo ofrece alta resolución para regiones de interés específicas.",
-          "Para soporte especializado, consulta el servicio técnico Vatech México ."
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/green-x21/Green-X-03.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/Green-X-03.png",
-            "alt": "Green X21"
-          }
-        ]
-      },
-      {
-        "title": "SELECCIÓN MULTIFOV",
-        "text": [],
-        "images": [
-          {
-            "local": "/assets/product-details/green-x21/tabla-X21.jpg",
-            "source": "https://vatechmexico.com/wp-content/uploads/2026/03/tabla-X21.jpg",
-            "alt": "Selección Multi FOV del Green X21 de 4×4 a 21×19"
-          }
-        ]
-      },
-      {
-        "title": "UN ESCANEO, TRES IMÁGENES",
-        "text": [
-          "Un escaneo con Green X21 proporciona imágenes de CT, Auto Pano y Auto Ceph. Esto evita que los pacientes que requieren las tres imágenes deban someterse a tres exploraciones de rayos X."
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/green-x21/un-escaneo-tres-imagenes.jpg",
-            "source": "https://vatechmexico.com/wp-content/uploads/2026/03/un-escaneo-tres-imagenes.jpg",
-            "alt": "Imágenes CT, panorámica y cefalométrica del Green X21"
-          }
-        ]
-      },
-      {
-        "title": "MINIMIZA LOS ARTEFACTOS DE MOVIMIENTO CON LA TECNOLOGÍA ONE SHOT",
-        "text": [
-          "El siguiente paso en la tecnología cefalométrica, el nuevo One Shot de Vatech minimiza los artefactos de movimiento y permite un flujo de trabajo de diagnóstico más rápido al tiempo que proporciona imágenes digitales de la más alta calidad."
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/green-x21/tecnologia-one-shot.jpg",
-            "source": "https://vatechmexico.com/wp-content/uploads/2026/03/tecnologia-one-shot.jpg",
-            "alt": "Tecnología One Shot Ceph de 0.9 segundos del Green X21"
-          },
-          {
-            "local": "/assets/product-details/green-x21/puddle-lamp.jpg",
-            "source": "https://vatechmexico.com/wp-content/uploads/2026/03/puddle-lamp.jpg",
-            "alt": "Luz de posicionamiento Puddle Lamp del Green X21"
-          }
-        ]
-      },
-      {
-        "title": "ESCANEO FACIAL",
-        "text": [
-          "El escaneo facial crea un paciente virtual y proporciona una visualización clara, lo que hace que sea fácil de entender desde el punto de vista del paciente. Los usuarios pueden obtener una imagen de escaneo facial sola o con una imagen de 21×19, 18×15, 12×9."
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/green-x21/escaneo-facial-x21.jpg",
-            "source": "https://vatechmexico.com/wp-content/uploads/2026/03/escaneo-facial-x21.jpg",
-            "alt": "Escaneo facial y tomografía 3D del Green X21"
-          }
-        ]
-      }
-    ],
+    "features": [],
     "configurationImages": [],
-    "specifications": [
-      [
-        [
-          "FUNCIÓN",
-          "CT + Pano + Ceph + Escaneo Facial + Escaneo de modelo"
-        ],
-        [
-          "TAMAÑO DEL PUNTO FOCAL",
-          "0.5 mm (IEC 60336)"
-        ],
-        [
-          "TAMAÑO DE CT FOV",
-          "4x4, 5x5, 8x5, 8x8, 12x5, 12x9, 18x15, 21x19 cm"
-        ],
-        [
-          "TAMAÑO DE LA CARA FOV",
-          "12x9, 18x15,21x19 cm"
-        ],
-        [
-          "TAMAÑO DEL VOXEL",
-          "4x4",
-          "0.0495 mm"
-        ],
-        [
-          "5x5",
-          "0.08 mm / 0.12 mm"
-        ],
-        [
-          "8x5 / 8x8",
-          "0.12 mm / 0.2 mm"
-        ],
-        [
-          "12x9 / 16x9 / 18x15 / 21x19",
-          "0.2 mm / 0.3 mm"
-        ],
-        [
-          "TIEMPO DE ESCANEO",
-          "Pano",
-          "4.0 sec / 14.1 sec"
-        ],
-        [
-          "Ceph",
-          "0.9 sec"
-        ],
-        [
-          "CBCT",
-          "7.0 seg (5x5-12x9) / 15.2 seg (18x15, 21x19) / 18.0 seg (Endo 4x4)"
-        ],
-        [
-          "ESCALA DE GRISES",
-          "16 Bit"
-        ],
-        [
-          "VOLTAJE / CORRIENTE DEL TUBO",
-          "60 - 99 kVp / 4 - 16 mA"
-        ],
-        [
-          "PESO",
-          "Sin CEPH",
-          "364.64 libras - sin base"
-        ],
-        [
-          "486.56 libras - con base"
-        ],
-        [
-          "Con CEPH",
-          "418.88 libras - sin base"
-        ],
-        [
-          "540.79 libras - con base"
-        ],
-        [
-          "DIMENSIONES",
-          "Sin unidad CEPH",
-          "42.72\" (L) x 52.89\" (W) x 91.24\" (H) - sin Base"
-        ],
-        [
-          "42.72\" (L) x 52.89\" (W) x 92.34\" (H) - con Base"
-        ],
-        [
-          "Con unidad CEPH",
-          "75.29\" (L) x 52.89\" (W) x 91.24\" (H) - sin Base"
-        ],
-        [
-          "75.29\" (L) x 52.89\" (W) x 92.34\" (H) - sin Base"
-        ]
-      ]
-    ],
-    "dimensionImages": [
-      {
-        "local": "/assets/product-details/green-x21/topwithceph.jpg",
-        "source": "https://vatechmexico.com/wp-content/uploads/2026/03/topwithceph.jpg",
-        "alt": "Vista superior del Green X21 con unidad CEPH"
-      },
-      {
-        "local": "/assets/product-details/green-x21/topwithoutceph.jpg",
-        "source": "https://vatechmexico.com/wp-content/uploads/2026/03/topwithoutceph.jpg",
-        "alt": "Vista superior del Green X21 sin unidad CEPH"
-      },
-      {
-        "local": "/assets/product-details/green-x21/frontwithceph.jpg",
-        "source": "https://vatechmexico.com/wp-content/uploads/2026/03/frontwithceph.jpg",
-        "alt": "Vista frontal del Green X21 con unidad CEPH"
-      },
-      {
-        "local": "/assets/product-details/green-x21/frontwithoutceph.jpg",
-        "source": "https://vatechmexico.com/wp-content/uploads/2026/03/frontwithoutceph.jpg",
-        "alt": "Vista frontal del Green X21 sin unidad CEPH"
-      }
-    ],
-    "gallery": [
-      {
-        "title": "CT",
-        "text": [],
-        "images": []
-      },
-      {
-        "title": "PANO",
-        "text": [],
-        "images": []
-      },
-      {
-        "title": "PANO AUTOMÁTICO",
-        "text": [],
-        "images": []
-      },
-      {
-        "title": "ESCANEO FACIAL",
-        "text": [],
-        "images": []
-      }
-    ],
+    "specifications": [],
+    "dimensionImages": [],
+    "gallery": [],
     "catalogPdf": null,
     "trainingVideos": [
       "https://www.youtube.com/embed/XHOmBV4js_E"
@@ -785,7 +669,64 @@
       "local": "/assets/products/X21-scaled.png",
       "source": "https://vatechmexico.com/wp-content/uploads/2026/03/X21-scaled.png",
       "alt": "Green X21"
-    }
+    },
+    "isComingSoon": true
+  },
+  {
+    "slug": "green-x16-green-x18",
+    "name": "Green X16 / Green X18",
+    "category": "Sistema de imagen 3D",
+    "eyebrow": "SISTEMA DE IMAGEN 3D / CBCT",
+    "tagline": "ALTA RESOLUCIÓN Y MÍNIMA DOSIS",
+    "summary": "Green X 16 proporciona un gran campo de visión con la más alta resolución diagnóstica, modo Endo de 49.5µm y tiempos ultrarrápidos de escaneo. Dirigido especialmente a endodoncistas e implantólogos.",
+    "intro": [],
+    "heroImage": {
+      "local": "/assets/products/X18X16.png",
+      "source": "https://vatechmexico.com/wp-content/uploads/2026/07/X18X16.png",
+      "alt": "Green X 16"
+    },
+    "heroVideo": null,
+    "highlights": [],
+    "features": [
+      {
+        "title": "ALTA RESOLUCIÓN PARA ENDODONCIA E IMPLANTES",
+        "text": [
+          "Green X 16 ofrece un voxel de hasta 49.5 µm para visualizar detalles anatómicos de alta complejidad, conductos radiculares y microestructuras óseas con tecnología de reconstrucción CST."
+        ],
+        "images": []
+      }
+    ],
+    "configurationImages": [],
+    "specifications": [
+      [
+        [
+          "FUNCIÓN",
+          "CT + Pano + Ceph + Model Scan"
+        ],
+        [
+          "TAMAÑO DE FOV CT",
+          "Desde 4x4 cm hasta 16x9 cm"
+        ],
+        [
+          "TAMAÑO DEL VOXEL",
+          "Desde 49.5 µm hasta 300 µm"
+        ],
+        [
+          "TIEMPO DE ESCANEO",
+          "1.9s CEPH / 2.9s CBCT / 3.9s PANO"
+        ]
+      ]
+    ],
+    "dimensionImages": [],
+    "gallery": [],
+    "catalogPdf": null,
+    "trainingVideos": [],
+    "cardImage": {
+      "local": "/assets/products/X18X16.png",
+      "source": "https://vatechmexico.com/wp-content/uploads/2026/07/X18X16.png",
+      "alt": "Green X 16"
+    },
+    "sourceComplete": false
   },
   {
     "slug": "pax-i-plus",
@@ -1283,813 +1224,30 @@
     }
   },
   {
-    "slug": "ezray-air-wall",
-    "name": "EzRay Air Wall",
-    "category": "Intraoral",
-    "eyebrow": "INNOVACIÓN DE PESO CON CNT (CARBON NANO TECHNOLOGY)",
-    "tagline": "SMART DIAL CON TODAS LAS FUNCIONES",
-    "summary": "Rayos X intraoral de pared con diseño ligero, Smart Dial y punto focal de 0.4 mm.",
-    "intro": [],
-    "heroImage": {
-      "local": "/assets/product-details/ezray-air-wall/2_Features-2.png",
-      "source": "https://vatechmexico.com/wp-content/uploads/2023/07/2_Features-2.png",
-      "alt": "EzRay Air Wall"
-    },
-    "heroVideo": null,
-    "highlights": [],
-    "features": [
-      {
-        "title": "INNOVACIÓN DE PESO CON CNT (CARBON NANO TECHNOLOGY)",
-        "text": [
-          "El EzRay Air W (de pared) es un dispositivo ligero de rayos X, diseñado para un fácil manejo y un posicionamiento estable, brindando una calidad óptima de imagen de rayos X intraoral. El cabezal de tubo ligero del EzRay Air W proporciona a los usuarios un sistema estable para un uso seguro y fácil de la fuente de rayos X maximizando la claridad de la imagen y optimizando el flujo de trabajo."
-        ],
-        "images": []
-      },
-      {
-        "title": "SMART DIAL CON TODAS LAS FUNCIONES",
-        "text": [
-          "El panel de operación ubicado en la cabeza del tubo, crea un flujo de trabajo mucho más simple y rápido. Los usuarios que usan SMART DIAL notarán una disminución en el tiempo de operación. Con EzRay Air W no habrá necesidad de recordar complicados botones y las configuraciones de control."
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/ezray-air-wall/3_Des2-1.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des2-1.png",
-            "alt": "EzRay Air Wall"
-          }
-        ]
-      },
-      {
-        "title": "IMÁGENES MÁS CLARAS CON UN PUNTO FOCAL DE 0.4MM",
-        "text": [
-          "A comparación de otros dispositivos en el mercado, EzRay Air W proporciona una calidad de imagen óptima y un valor agregado de diagnóstico adicional con su punto focal de 0.4 mm, independientemente del sensor intraoral que utilices."
-        ],
-        "images": []
-      },
-      {
-        "title": "DISEÑO ERGONÓMICO",
-        "text": [],
-        "images": [
-          {
-            "local": "/assets/product-details/ezray-air-wall/3_Des5-2.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des5-2.png",
-            "alt": "EzRay Air Wall"
-          }
-        ]
-      }
-    ],
-    "configurationImages": [],
-    "specifications": [
-      [
-        [
-          "PUNTO FOCAL",
-          "0.4 mm (iec 60336)"
-        ],
-        [
-          "VOLTAJE DE TUBO (KV)",
-          "65kv"
-        ],
-        [
-          "CORRIENTE (MA)",
-          "3.0 ma"
-        ],
-        [
-          "TIEMPO DE EXPOSICIÓN",
-          "0.05 - 0.5 (0.01s incremento)"
-        ],
-        [
-          "DISTANCIA ENTRE LA FUENTE Y LA PIEL",
-          "Min. 7.9 inch"
-        ],
-        [
-          "CAMPO X-RAY: DEFAULT",
-          "default : 60 mm round, 30x40 mm rectangular opcional: 20x30 mm rectangular"
-        ],
-        [
-          "OPCIONAL",
-          "20x30 mm rectangular longitud del brazo [opcional] 450, 600, 900 mm"
-        ],
-        [
-          "ACCESORIOS",
-          "interruptor de exposición remoto (interruptor mano / interruptor timbre)"
-        ],
-        [
-          "PESO",
-          "15.9 kg (largo del brazo 450 mm) 16.6 kg (largo del brazo 600 mm) 17.9 kg (largo del brazo length 900 mm)"
-        ]
-      ]
-    ],
-    "dimensionImages": [],
-    "gallery": [
-      {
-        "title": "",
-        "text": [],
-        "images": [
-          {
-            "local": "/assets/product-details/ezray-air-wall/3_Des2-2.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des2-2.png",
-            "alt": "EzRay Air Wall"
-          }
-        ]
-      }
-    ],
-    "catalogPdf": {
-      "local": "/assets/product-details/ezray-air-wall/EzRay_Air_Wall_Optimizado.pdf",
-      "source": "https://vatechmexico.com/wp-content/uploads/2023/07/EzRay_Air_Wall_Optimizado.pdf"
-    },
-    "trainingVideos": [],
-    "sourceComplete": true,
-    "cardImage": {
-      "local": "/assets/products/EZRAY-AIR-WALL.png",
-      "source": "https://vatechmexico.com/wp-content/uploads/2026/07/EZRAY-AIR-WALL.png",
-      "alt": "EzRay Air Wall"
-    }
-  },
-  {
-    "slug": "ezray-air-c",
-    "name": "EzRay Air C",
-    "category": "Intraoral",
-    "eyebrow": "INNOVACIÓN DE PESO CON CNT (CARBON NANO TECHNOLOGY)",
-    "tagline": "SMART DIAL CON TODAS LAS FUNCIONES",
-    "summary": "Radiografía intraoral con tecnología CNT, Smart Dial y diseño ergonómico.",
-    "intro": [],
-    "heroImage": {
-      "local": "/assets/product-details/ezray-air-c/brazo-C.png",
-      "source": "https://vatechmexico.com/wp-content/uploads/2023/07/brazo-C.png",
-      "alt": "EzRay Air C"
-    },
-    "heroVideo": null,
-    "highlights": [],
-    "features": [
-      {
-        "title": "INNOVACIÓN DE PESO CON CNT (CARBON NANO TECHNOLOGY)",
-        "text": [
-          "El EzRay Air C (de sillon) es un dispositivo ligero de rayos X, diseñado para un fácil manejo y un posicionamiento estable, brindando una calidad óptima de imagen de rayos X intraoral. El cabezal de tubo ligero del EzRay Air C proporciona a los usuarios un sistema estable para un uso seguro y fácil de la fuente de rayos X maximizando la claridad de la imagen y optimizando el flujo de trabajo."
-        ],
-        "images": []
-      },
-      {
-        "title": "SMART DIAL CON TODAS LAS FUNCIONES",
-        "text": [
-          "El panel de operación ubicado en la cabeza del tubo, crea un flujo de trabajo mucho más simple y rápido. Los usuarios que usan SMART DIAL notarán una disminución en el tiempo de operación. Con EzRay Air C no habrá necesidad de recordar complicados botones y las configuraciones de control."
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/ezray-air-c/3_Des2-1.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des2-1.png",
-            "alt": "EzRay Air C"
-          }
-        ]
-      },
-      {
-        "title": "IMÁGENES MÁS CLARAS CON UN PUNTO FOCAL DE 0.4MM",
-        "text": [
-          "A comparación de otros dispositivos en el mercado, EzRay Air C proporciona una calidad de imagen óptima y un valor agregado de diagnóstico adicional con su punto focal de 0.4 mm, independientemente del sensor intraoral que utilices."
-        ],
-        "images": []
-      }
-    ],
-    "configurationImages": [],
-    "specifications": [],
-    "dimensionImages": [],
-    "gallery": [
-      {
-        "title": "",
-        "text": [],
-        "images": [
-          {
-            "local": "/assets/product-details/ezray-air-c/3_Des2-2.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/3_Des2-2.png",
-            "alt": "EzRay Air C"
-          }
-        ]
-      }
-    ],
-    "catalogPdf": null,
-    "trainingVideos": [],
-    "sourceComplete": true,
-    "cardImage": {
-      "local": "/assets/products/EZRAYAIR.png",
-      "source": "https://vatechmexico.com/wp-content/uploads/2026/07/EZRAYAIR.png",
-      "alt": "EzRay Air C"
-    }
-  },
-  {
-    "slug": "ezscan",
-    "name": "Ez Scan",
-    "category": "Intraoral",
-    "eyebrow": "",
-    "tagline": "",
-    "summary": "EzScan es una solución de imágenes digitales 3D diseñada para simplificar el flujo de trabajo diario.",
-    "intro": [
-      "Interfaz clara e intuitiva que facilita su uso.",
-      "Funcionalidad esencial para muchos planes de tratamento.",
-      "EzScan Cloud es un módulo de uso compartido de archivos, fácil de usar para compartir impresiones digitales con el laboratorio de tu elección.",
-      "Escaneos de arcada completa en menos de 2 minutos, de principio a fin."
-    ],
-    "heroImage": {
-      "local": "/assets/product-details/ezscan/Interfaz-qpv1emghwpdigo2q130z5xdcvu5iwd2bogeehyley0.png",
-      "source": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/Interfaz-qpv1emghwpdigo2q130z5xdcvu5iwd2bogeehyley0.png",
-      "alt": "Interfaz del escáner intraoral dental EzScan"
-    },
-    "heroVideo": {
-      "local": "/assets/product-details/ezscan/Video_EzScan.mp4",
-      "source": "https://vatechmexico.com/wp-content/uploads/2023/07/Video_EzScan.mp4"
-    },
-    "highlights": [
-      "Interfaz simple e intuitiva para una experiencia mejorada de escaneo",
-      "Uso compartido de casos",
-      "Escaneo rápido para hacer más eficaz tu flujo de trabajo",
-      "Plataforma abierta sin tarifas continuas"
-    ],
-    "features": [
-      {
-        "title": "BRINDA SIMPLICIDAD A TU TRABAJO DIARIO CON UN DISEÑO ERGONÓMICO Y LIGERO",
-        "text": [
-          "EzScan es una solución de imágenes digitales 3D diseñada para brindarte simplicidad a tu trabajo. Se presenta como una solución llave en mano que tarda menos de 10 minutos en desempacarse y configurarse. La solución incluye un escáner precalibrado y tres puntas esterilizables en autoclave, para garantizar que dediques menos tiempo a la instalación y más tiempo a escanear. Las características de EzScan-i y la interfaz intuitiva hacen que sea más fácil que nunca satisfacer todas las necesidades de restauración, ortodoncia e implantes."
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/ezscan/Dientes-qpv1emgp3g548zwghtxdav4mqg5cgzd32h1otrwqwg.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/Dientes-qpv1emgp3g548zwghtxdav4mqg5cgzd32h1otrwqwg.png",
-            "alt": "Impresión digital 3D obtenida con EzScan"
-          }
-        ]
-      }
-    ],
-    "configurationImages": [],
-    "specifications": [
-      [
-        [
-          "FOV",
-          "12 x 14 mm"
-        ],
-        [
-          "Tiempo de escaneo (Arco completo)",
-          "Menos de 2 min."
-        ],
-        [
-          "Tiempo de conversión STL (Arco completo)",
-          "Menos de 1 min."
-        ],
-        [
-          "Peso",
-          "150 gr."
-        ],
-        [
-          "Caractéristicas",
-          "True color/sin polvo"
-        ],
-        [
-          "Salida de archivo",
-          "STL, PLY, OBJ y DWOS"
-        ],
-        [
-          "Sistema",
-          "Abierto"
-        ],
-        [
-          "Conector",
-          "USB tipo A"
-        ]
-      ]
-    ],
-    "dimensionImages": [],
-    "gallery": [
-      {
-        "title": "",
-        "text": [],
-        "images": [
-          {
-            "local": "/assets/product-details/ezscan/EzScan-caracteristicas-02-qpv1emgp3g548zwghtxdav4mqg5cgzd32h1otrwqdk.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/EzScan-caracteristicas-02-qpv1emgp3g548zwghtxdav4mqg5cgzd32h1otrwqdk.png",
-            "alt": "Escáner intraoral dental EzScan y sus características"
-          }
-        ]
-      }
-    ],
-    "catalogPdf": {
-      "local": "/assets/product-details/ezscan/EzScan.pdf",
-      "source": "https://vatechmexico.com/wp-content/uploads/2023/07/EzScan.pdf"
-    },
-    "trainingVideos": [
-      "https://www.youtube.com/embed/7qdCVR-UhFY",
-      "https://www.youtube.com/embed/HHASjOOrhR8",
-      "https://www.youtube.com/embed/LCvKx5CK7Vg",
-      "https://www.youtube.com/embed/PG5DurvUTXY",
-      "https://www.youtube.com/embed/Ss2cmsX63dM",
-      "https://www.youtube.com/embed/djW5wbFwuYM",
-      "https://www.youtube.com/embed/eUf7w9TWsLY",
-      "https://www.youtube.com/embed/kAHHdezEhoI",
-      "https://www.youtube.com/embed/lF2qsnLq2PE",
-      "https://www.youtube.com/embed/sW3_m8UjYYs",
-      "https://www.youtube.com/embed/sXvvMCv3jaM",
-      "https://www.youtube.com/embed/uC1ktYtVbR0",
-      "https://www.youtube.com/embed/w3WRTXCaq70"
-    ],
-    "sourceComplete": true,
-    "cardImage": {
-      "local": "/assets/products/EZSCAN.png",
-      "source": "https://vatechmexico.com/wp-content/uploads/2026/07/EZSCAN.png",
-      "alt": "Ez Scan"
-    }
-  },
-  {
-    "slug": "ezcam",
-    "name": "EzCam",
-    "category": "Intraoral",
-    "eyebrow": "Ez Cam",
-    "tagline": "Hagamos cada imagen genial Lo que has estado esperando",
-    "summary": "EzCam combina ligereza, comodidad y calidad de imagen para captura intraoral rápida.",
-    "intro": [],
-    "heroImage": {
-      "local": "/assets/product-details/ezcam/EzCam-e1691432848381.png",
-      "source": "https://vatechmexico.com/wp-content/uploads/2023/07/EzCam-e1691432848381.png",
-      "alt": "EzCam"
-    },
-    "heroVideo": null,
-    "highlights": [],
-    "features": [
-      {
-        "title": "FOTOGRAFÍA ESTABLE",
-        "text": [
-          "Dos botones de captura que minimizan el artefacto en movimiento incluso fotografiando el maxilar."
-        ],
-        "images": []
-      },
-      {
-        "title": "ALTA CALIDAD DE IMAGEN",
-        "text": [
-          "Imágenes nítidas a través del auto enfoque. Reduce la distorsión usando lentes esféricas."
-        ],
-        "images": []
-      },
-      {
-        "title": "CONVENIENTE",
-        "text": [
-          "Usa inmediatamente sin instalación de controladores. Usa inmediatamente sin instalación de programa de captura. Apagado automático / control de encendido."
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/ezcam/Diente_EzCam.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/Diente_EzCam.png",
-            "alt": "EzCam"
-          }
-        ]
-      },
-      {
-        "title": "SIMPLE, PERO ESENCIAL",
-        "text": [
-          "Control de apagado y encendido intuitivo y automático",
-          "Cuando abra la función de adquisición en su software de imágenes dentales, EzCam se encenderá automáticamente y el indicador de estado de la cámara se volverá verde. Cuando cierre la función, la luz del EzCam se apagará automáticamente y el indicador de estado de la cámara cambiará a azul.",
-          "Dos botones de captura que minimizan el movimiento incluso en fotografías del maxilar",
-          "Como hay dos botones de captura en ambos lados de la cámara, el pulgar y el índice pueden proporcionar un apoyo mutuo, lo que se traduce en posicionamiento estable que minimiza el artefacto de movimiento. Esta disposición de botones le permite mantenerse más estable incluso en la fotografía maxilar.",
-          "Interfaz de usuario sencilla",
-          "Con EzCam, no necesita recordar cada configuración. Su sencilla interfaz de usuario reducirá el tiempo de uso y hará que el trabajo sea más simple y rápido.",
-          "Excelente durabilidad",
-          "EzCam es un producto ensamblado con módulos de cámara listos para usar. EzCam está diseñado para ser duradero con la tecnología de diseño de óptica de lente internalizada incorporada."
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/ezcam/dos-botones-EzCam-qpv1emgnzz8u7q5yf9yj2sf45ayntp903zv346cpji.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/dos-botones-EzCam-qpv1emgnzz8u7q5yf9yj2sf45ayntp903zv346cpji.png",
-            "alt": "dos-botones-EzCam"
-          },
-          {
-            "local": "/assets/product-details/ezcam/EzCam_interfaz-qpv1emgj4k5dm2w63x7oqwdpjbwya8auyrhqmejnoe.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/EzCam_interfaz-qpv1emgj4k5dm2w63x7oqwdpjbwya8auyrhqmejnoe.png",
-            "alt": "EzCam_interfaz"
-          }
-        ]
-      },
-      {
-        "title": "AVANZADO SISTEMA DE IMÁGENES DIGITALES 4 EN 1",
-        "text": [
-          "Úselo continuamente incluso después de cambiar la PC",
-          "Sin necesidad de instalar controlador USB",
-          "Listo para usar conectando solo el cable",
-          "Sin necesidad de instalar un programa de captura",
-          "El software de otras empresas requieren la instalación de un programa de captura para enviar una señal de imagen. EzCam no requiere ninguna instalación, ya que puede crear una clave de captura por sí mismo."
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/ezcam/EzCam_cable-qpv1emgkcex8rhpm6reebve26todo3je92l2quhxuq.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/EzCam_cable-qpv1emgkcex8rhpm6reebve26todo3je92l2quhxuq.png",
-            "alt": "EzCam_cable"
-          },
-          {
-            "local": "/assets/product-details/ezcam/Flecha-negativa-qpv1emgj4k5dm2w63x7oqwdpjbwya8auyrhqmejoos.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/Flecha-negativa-qpv1emgj4k5dm2w63x7oqwdpjbwya8auyrhqmejoos.png",
-            "alt": "Flecha-negativa"
-          }
-        ]
-      },
-      {
-        "title": "VERDADERO ENFOQUE AUTOMÁTICO OPTIMIZADO",
-        "text": [
-          "Enfoca automáticamente según la distancia entre la cámara y el objeto filmado. Cuando enciendes la cámara, el modo de enfoque es automático. Sin ajustes manuales son requeridas. inicia. Sin ajustes manuales son requeridas.También puedes hacer zoom y fijar el enfoque usando el botón macro."
-        ],
-        "images": []
-      },
-      {
-        "title": "IMÁGENES NÍTIDAS Y CLARAS",
-        "text": [
-          "El EzCam realmente es más de lo que esperas, ya que te proporciona:",
-          "Captura imágenes vívidas y de alta resolución tan fácilmente como sea posible. Las áreas fácilmente visibles y obstruidas adquieren una luz completamente nueva y su lente asférica evita las distorsiones de la imagen.",
-          "Desde que EzCam utiliza una lente asférica, tiene menos distorsión de la imagen y por lo tanto proporciona imágenes con una calidad excelente, aptas para el diagnóstico."
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/ezcam/EzCam-lente-asferica-qpv1emgp7u0pd4zei458nrfgssq37khjeayf8mazci.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/EzCam-lente-asferica-qpv1emgp7u0pd4zei458nrfgssq37khjeayf8mazci.png",
-            "alt": "EzCam-lente-asférica"
-          }
-        ]
-      }
-    ],
-    "configurationImages": [],
-    "specifications": [
-      [
-        [
-          "Sensor de imagen",
-          "CMOS/5MP"
-        ],
-        [
-          "Resolución",
-          "1280X720"
-        ],
-        [
-          "Fuente de luz",
-          "2 White LEDs"
-        ],
-        [
-          "Rango de enfoque",
-          "9mm-35mm"
-        ],
-        [
-          "Punto de vista",
-          "62°"
-        ],
-        [
-          "Longitud de cable",
-          "USB 2.0, 3m (option: 5)"
-        ],
-        [
-          "Dimensiones",
-          "198 x 24 x 23mm"
-        ],
-        [
-          "Peso",
-          "40g (Handpiece only)"
-        ],
-        [
-          "Voltaje",
-          "5V DC, 500mA"
-        ]
-      ]
-    ],
-    "dimensionImages": [],
-    "gallery": [
-      {
-        "title": "",
-        "text": [],
-        "images": [
-          {
-            "local": "/assets/product-details/ezcam/EzCam-configuracion.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/EzCam-configuracion.png",
-            "alt": "EzCam"
-          }
-        ]
-      }
-    ],
-    "catalogPdf": {
-      "local": "/assets/product-details/ezcam/EzCam-Catalogo.pdf",
-      "source": "https://vatechmexico.com/wp-content/uploads/2023/08/EzCam-Catalogo.pdf"
-    },
-    "trainingVideos": [],
-    "sourceComplete": true,
-    "cardImage": {
-      "local": "/assets/products/EZCAM.png",
-      "source": "https://vatechmexico.com/wp-content/uploads/2026/07/EZCAM.png",
-      "alt": "EzCam"
-    }
-  },
-  {
-    "slug": "perfit-zr",
-    "name": "Perfit ZR",
-    "category": "Zirconia",
-    "eyebrow": "",
-    "tagline": "PERFIT ZR",
-    "summary": "Disco de zirconia con translucidez y desarrollo cromático de alta calidad, diseñado para reproducir la biblioteca de colores VITA Shade.",
-    "intro": [
-      "Perfit fue desarrollado por el equipo más calificado de expertos técnicos de la industria. Basado en nuestra propia tecnología de fabricación, salió el Perfit (Zirconia) más fuerte.",
-      "Perfit ZR es un disco de zirconia parcialmente sinterizado que cuenta con la innovadora tecnología Uniform Compaction Firing (UCF) de VATECH para optimizar la maquinabilidad de los discos, la contracción isotrópica durante la sinterización final y las propiedades físicas, incluida la resistencia a la flexión, la translucidez y los matices. Estamos seguros de que Perfit ZR cumplirá con todas tus necesidades."
-    ],
-    "heroImage": {
-      "local": "/assets/product-details/perfit-zr/Perfit-ZR-ST.png",
-      "source": "https://vatechmexico.com/wp-content/uploads/2023/07/Perfit-ZR-ST.png",
-      "alt": "Perfit ZR"
-    },
-    "heroVideo": {
-      "local": "/assets/product-details/perfit-zr/Vatech-Zirconia.mp4",
-      "source": "https://vatechmexico.com/wp-content/uploads/2023/07/Vatech-Zirconia.mp4"
-    },
-    "highlights": [],
-    "features": [
-      {
-        "title": "REPRODUCCIÓN DE COLOR PERFECTA",
-        "text": [
-          "Perfit ZR reproduce la biblioteca de colores de VITA Shade. Por lo tanto, no se requiere una coloración complicada después del procesamiento. Esto hace que sea fácil y rápido de trabajar incluso para principiantes que carecen de técnicas de coloración o experiencia."
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/perfit-zr/s_sec_02_01_01_txt_img_04.jpg",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/s_sec_02_01_01_txt_img_04.jpg",
-            "alt": "Perfit ZR"
-          }
-        ]
-      },
-      {
-        "title": "SIN DISTORSIÓN DURANTE LA SINTERIZACIÓN CON LA TECNOLOGÍA DE FABRICACIÓN DE PRENSADO ISOSTÁTICO",
-        "text": [
-          "Se contrae uniformemente en las direcciones X, Y y Z durante la fabricación, no hay distorsión de la restauración y un ajuste marginal excelente."
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/perfit-zr/s_sec_02_01_01_txt_img_03.jpg",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/s_sec_02_01_01_txt_img_03.jpg",
-            "alt": "Perfit ZR"
-          }
-        ]
-      },
-      {
-        "title": "LÍNEA DE PRODUCTOS DE LA SERIE 5 PARA TODAS LAS INDICACIONES",
-        "text": [
-          "Perfit ZR está disponible para todas las indicaciones con una estética perfecta y alta resistencia."
-        ],
-        "images": []
-      },
-      {
-        "title": "EXCELENTE TRANSLUCIDEZ",
-        "text": [
-          "Perfit ZR muestra una translucidez excelente y un desarrollo cromático de alta calidad al analizar el espectro de la luz transmitida, teniendo en cuenta la cantidad de luz transmitida cuando la restauración está colocada dentro de la boca en comparación a cuando está fuera de la boca."
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/perfit-zr/Translucidez.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/Translucidez.png",
-            "alt": "Perfit ZR"
-          }
-        ]
-      }
-    ],
-    "configurationImages": [],
-    "specifications": [],
-    "dimensionImages": [],
-    "gallery": [
-      {
-        "title": "",
-        "text": [],
-        "images": [
-          {
-            "local": "/assets/product-details/perfit-zr/Muestra_zirconia.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/Muestra_zirconia.png",
-            "alt": "Perfit ZR"
-          }
-        ]
-      }
-    ],
-    "catalogPdf": {
-      "local": "/assets/product-details/perfit-zr/Perfit_Optimizado.pdf",
-      "source": "https://vatechmexico.com/wp-content/uploads/2023/07/Perfit_Optimizado.pdf"
-    },
-    "trainingVideos": [],
-    "sourceComplete": true,
-    "cardImage": {
-      "local": "/assets/products/PERFITSOMBREADOPAGINA.webp",
-      "source": "https://vatechmexico.com/wp-content/uploads/2026/06/PERFITSOMBREADOPAGINA.webp",
-      "alt": "Perfit ZR"
-    }
-  },
-  {
-    "slug": "perfit-fs",
-    "name": "Perfit FS",
-    "category": "Zirconia",
-    "eyebrow": "El primer bloque de Zirconio totalmente sintetizado del mundo",
-    "tagline": "",
-    "summary": "Bloque de zirconia totalmente sinterizado, diseñado para un flujo de trabajo rápido y una apariencia natural.",
-    "intro": [],
-    "heroImage": {
-      "local": "/assets/product-details/perfit-fs/bloques.png",
-      "source": "https://vatechmexico.com/wp-content/uploads/2023/07/bloques.png",
-      "alt": "Perfit FS"
-    },
-    "heroVideo": null,
-    "highlights": [],
-    "features": [
-      {
-        "title": "FLUJO DE TRABAJO RÁPIDO",
-        "text": [
-          "Ahorra tiempo, ya que no requiere cocción",
-          "En general, después de que se muelen los tipos de disilicato de litio, se debe requerir un proceso de cocción en el horno de porcelana durante aproximadamente 20 a 30 minutos. Se llama como proceso de cristalización. Sin embargo, Perfit FS, un bloque de zirconio completamente sinterizado, no necesita un proceso de cocción adicional después del fresado."
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/perfit-fs/Linea_Trabajo_FS.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/Linea_Trabajo_FS.png",
-            "alt": "Perfit FS"
-          }
-        ]
-      },
-      {
-        "title": "LAS ESTRUCTURAS DE 3 CAPAS CREAN LA MÁXIMA NATURALIDAD",
-        "text": [
-          "El bloque de varias capas en el sillón solo proviene de VATECH. Muestra una translucidez estética perfecta y un color natural de los dientes en la superficie."
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/perfit-fs/3-LINEAS-qpv1emgp7u0pd4zei458nrfgssq37khjeayf8maxrk.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/3-LINEAS-qpv1emgp7u0pd4zei458nrfgssq37khjeayf8maxrk.png",
-            "alt": "3-LÍNEAS"
-          }
-        ]
-      },
-      {
-        "title": "AVANZADO SISTEMA DE IMÁGENES DIGITALES 4 EN 1",
-        "text": [
-          "El tamaño de grano de Perfit FS es de aproximadamente 4,0 ㎛, que es casi 4 veces mayor que el de Disco General de Zirconio. La microestructura gruesa combinada con una excepcional resistencia a las fracturas y una baja dureza al rayado, confieren una utilidad superior."
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/perfit-fs/Zirconia_1.jpg",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/Zirconia_1.jpg",
-            "alt": "Perfit FS"
-          },
-          {
-            "local": "/assets/product-details/perfit-fs/Zirconia_2.jpg",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/Zirconia_2.jpg",
-            "alt": "Perfit FS"
-          },
-          {
-            "local": "/assets/product-details/perfit-fs/Zirconia_3.jpg",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/Zirconia_3.jpg",
-            "alt": "Perfit FS"
-          }
-        ]
-      },
-      {
-        "title": "Alto nivel de resistencia al agrietamiento",
-        "text": [
-          "En comparación con el disco de zirconia general convencional (3Y-TZP) y la vitrocerámica de vidrio, Perfit FS no muestra grietas aparentes que emanen de las esquinas de la hendidura de diamante, lo que indica su excepcional resistencia a la fractura de la indentación de diamante. En conclusión, las restauraciones de Perfit FS presentan una mayor resistencia a la flexión que otros tipos de restauraciones que se muestran a continuación."
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/perfit-fs/Zirconia_grietas-qpv1emgp7u0pd4zei458nrfgssq37khjeayf8maxv6.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/Zirconia_grietas-qpv1emgp7u0pd4zei458nrfgssq37khjeayf8maxv6.png",
-            "alt": "Zirconia_grietas"
-          }
-        ]
-      },
-      {
-        "title": "Resistencia al agrietamiento",
-        "text": [
-          "Las flechas indican el ancho de la ranura de cada material rayado con una carga de 5 kg. Perfit FS formó un ancho de surco alto, lo que representa una baja dureza al rayado.",
-          "La baja dureza al rayado permite a Perfit FS una manipulación excepcional, similar a la del bloque de vitrocerámica (parcialmente cristalizado).",
-          "Perfit FS",
-          "General Zirconia Disc",
-          "Glass Ceramic (partially crystallized)",
-          "Glass Ceramic (fully crystallized)",
-          "La degradación a baja temperatura, LTD o envejecimiento, se define como una transformación espontánea tetragonal a monoclínica que ocurre con el tiempo a bajas temperaturas. La degradación representa estabilidad termodinámica, y una menor transformación significa menos aparición de microfisuras y disminución de la resistencia."
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/perfit-fs/Zirconia_surcos_1.jpg",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/Zirconia_surcos_1.jpg",
-            "alt": "Perfit FS"
-          },
-          {
-            "local": "/assets/product-details/perfit-fs/Zirconia_surcos_2.jpg",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/Zirconia_surcos_2.jpg",
-            "alt": "Perfit FS"
-          },
-          {
-            "local": "/assets/product-details/perfit-fs/Zirconia_surcos_3.jpg",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/Zirconia_surcos_3.jpg",
-            "alt": "Perfit FS"
-          },
-          {
-            "local": "/assets/product-details/perfit-fs/Zirconia_surcos_4.jpg",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/Zirconia_surcos_4.jpg",
-            "alt": "Perfit FS"
-          },
-          {
-            "local": "/assets/product-details/perfit-fs/Zirconia_temperatura_1.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/Zirconia_temperatura_1.png",
-            "alt": "Perfit FS"
-          },
-          {
-            "local": "/assets/product-details/perfit-fs/Zirconia_temperatura_2.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/Zirconia_temperatura_2.png",
-            "alt": "Perfit FS"
-          }
-        ]
-      }
-    ],
-    "configurationImages": [],
-    "specifications": [
-      [
-        [
-          "Translucidez",
-          "46%"
-        ],
-        [
-          "Resistencia a la Flexión",
-          ">500MPa"
-        ],
-        [
-          "Tono (Preshade)",
-          "A1, A2, A3, A3.5, B2, C2"
-        ],
-        [
-          "Tono (Multicapa)",
-          "A1, A2, A3, A3.5"
-        ],
-        [
-          "Tamaños (Preshade)",
-          "I12(15x12x10.4)"
-        ],
-        [
-          "C14(18x14 x12.7)"
-        ],
-        [
-          "C16(18x15.9x17.8)"
-        ],
-        [
-          "B32(32x15.1x15.1)"
-        ],
-        [
-          "Tamaños (Multicapa)",
-          "C14(18x14 x12.7)"
-        ],
-        [
-          "C16(18x15.9x17.8)"
-        ],
-        [
-          "B32(32x15.1x15.1)"
-        ]
-      ]
-    ],
-    "dimensionImages": [],
-    "gallery": [
-      {
-        "title": "",
-        "text": [],
-        "images": [
-          {
-            "local": "/assets/product-details/perfit-fs/Zirconia_indicaciones.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/Zirconia_indicaciones.png",
-            "alt": "Perfit FS"
-          }
-        ]
-      },
-      {
-        "title": "",
-        "text": [],
-        "images": [
-          {
-            "local": "/assets/product-details/perfit-fs/Zirconia_indicaciones_2.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/Zirconia_indicaciones_2.png",
-            "alt": "Perfit FS"
-          }
-        ]
-      }
-    ],
-    "catalogPdf": {
-      "local": "/assets/product-details/perfit-fs/Perfit-FS-Catalogo.pdf",
-      "source": "https://vatechmexico.com/wp-content/uploads/2023/08/Perfit-FS-Catalogo.pdf"
-    },
-    "trainingVideos": [],
-    "sourceComplete": true,
-    "cardImage": {
-      "local": "/assets/products/perfit-FS.webp",
-      "source": "https://vatechmexico.com/wp-content/uploads/2026/06/perfit-FS.webp",
-      "alt": "Perfit FS"
-    }
-  },
-  {
     "slug": "ezortho",
     "name": "EzOrtho",
     "category": "Software",
-    "eyebrow": "",
-    "tagline": "",
-    "summary": "Software cefalométrico para digitalización, trazado, análisis, registros, simulación y gestión ortodóntica.",
-    "intro": [],
+    "eyebrow": "SOFTWARE DE ESPECIALIDADES",
+    "tagline": "DIAGNÓSTICO AVANZADO PARA ORTODONCIA",
+    "summary": "Trazados cefalométricos automáticos, análisis ortodóncico avanzado con Inteligencia Artificial DAVIS, simulación 3D y comparativas de evolución del paciente.",
+    "intro": [
+      "EzOrtho es la herramienta digital de Vatech diseñada específicamente para ortodoncistas clínicos, permitiendo digitalización, trazado, simulación y gestión integral de casos con máxima precisión.",
+      "Su motor asistido por Inteligencia Artificial DAVIS automatiza tareas complejas para que el especialista optimice tiempos y se enfoque en la planificación del tratamiento."
+    ],
     "heroImage": {
       "local": "/assets/products/EZORTHOSOMBRA.webp",
       "source": "https://vatechmexico.com/wp-content/uploads/2026/06/EZORTHOSOMBRA.webp",
       "alt": "EzOrtho"
     },
     "heroVideo": null,
-    "highlights": [],
+    "highlights": [
+      "Trazados cefalométricos automáticos con IA DAVIS",
+      "Más de 15 métodos de análisis reconocidos (Steiner, Ricketts, Tweed)",
+      "Simulación 3D y predicción de perfil facial",
+      "Cálculo automático de estructuras dentales y radiculares",
+      "Comparativas visuales de evolución antes y después",
+      "Integración nativa con EzDent-i y Ez3D-i"
+    ],
     "features": [
       {
         "title": "DIGITALIZA Y ANALIZA",
@@ -2235,12 +1393,12 @@
     "slug": "ez3d-i",
     "name": "Ez3D-i",
     "category": "Software",
-    "eyebrow": "SOFTWARE DE IMÁGENES 3D",
-    "tagline": "LA PRIMERA SOLUCIÓN DE IMÁGENES CLÍNICAS Y DE CONSULTA DE PACIENTES DEL MUNDO.",
-    "summary": "Ez3D-i es un software de imágenes dentales 3D diseñado para visualizar datos CBCT y apoyar un diagnóstico preciso, con herramientas para planificación de implantes, análisis de vías aéreas, vistas panorámicas 3D y consulta con pacientes.",
+    "eyebrow": "SOFTWARE 3D",
+    "tagline": "VISUALIZACIÓN 3D PRECISA EN TIEMPO REAL",
+    "summary": "Visualización 3D precisa en tiempo real para datos CBCT. Herramientas avanzadas para simulación de implantes, guías quirúrgicas, análisis de vías aéreas en dos clics y navegación anatómica sin curvas de aprendizaje.",
     "intro": [
-      "Ez3D-i reúne visualización CBCT, herramientas de diagnóstico y funciones de consulta en una misma experiencia.",
-      "Su flujo incluye simulación de implantes, navegación panorámica 3D, análisis de vías aéreas y gestión de múltiples curvas seccionales."
+      "Ez3D-i es el software de referencia para el diagnóstico tridimensional en odontología, diseñado para interpretar volúmenes CBCT con fluidez y máxima resolución diagnóstica.",
+      "Permite importar estudios DICOM en segundos, planificar implantes con guías quirúrgicas y compartir informes visuales claros con pacientes y laboratorios."
     ],
     "heroImage": {
       "local": "/assets/product-details/ez3d-i/1_Top-e1690710662295.png",
@@ -2249,12 +1407,12 @@
     },
     "heroVideo": null,
     "highlights": [
-      "Varios modos de coloración VR y filtros 2D",
-      "Simulación intuitiva de implantes",
-      "Navegación panorámica 3D",
+      "Interfaz intuitiva y navegación ágil",
+      "Simulación de implantes y guías quirúrgicas",
+      "Reconstrucción 3D real de alta resolución",
       "Análisis de vías aéreas en dos clics",
-      "Más de 200 videos de consulta",
-      "Gestión de múltiples curvas seccionales"
+      "Módulo Endo y navegación multiplanar",
+      "Integración total con escáneres y laboratorios"
     ],
     "features": [
       {
@@ -2464,12 +1622,12 @@
     "slug": "ezdent-i",
     "name": "EzDent-i",
     "category": "Software",
-    "eyebrow": "SOFTWARE DE IMÁGENES CLÍNICAS",
-    "tagline": "LA PRIMERA SOLUCIÓN DE IMÁGENES CLÍNICAS Y DE CONSULTA DE PACIENTES DEL MUNDO.",
-    "summary": "EzDent-i integra herramientas para el análisis de imágenes, la simulación de implantes, la organización de reportes y el diagnóstico basado en 3D dentro de un flujo de trabajo orientado a la consulta clínica.",
+    "eyebrow": "SOFTWARE 2D",
+    "tagline": "GESTIÓN EFICIENTE DE IMÁGENES 2D",
+    "summary": "Gestión eficiente de imágenes 2D. Solución integral de imágenes clínicas, medición precisa, generación de informes en un clic y administración centralizada de pacientes.",
     "intro": [
-      "EzDent-i trabaja sobre un entorno de diagnóstico 2D con interpretación de volumen 3D para reducir pasos durante el análisis de las imágenes del paciente.",
-      "La ficha original destaca herramientas de planificación de implantes, creación de layouts mediante arrastrar y soltar y funciones de visualización 3D."
+      "EzDent-i es la plataforma de gestión radiológica y diagnóstico 2D más completa y fácil de usar, diseñada para optimizar el flujo de trabajo entre odontólogos y auxiliares.",
+      "Permite capturar, organizar, medir y consultar estudios panorámicos, periapicales y fotografías en una base de datos centralizada."
     ],
     "heroImage": {
       "local": "/assets/product-details/ezdent-i/top-e1690712468111.png",
@@ -2478,11 +1636,12 @@
     },
     "heroVideo": null,
     "highlights": [
-      "Interpretación de volumen 3D",
-      "Simulación de implantes",
-      "Layouts mediante arrastrar y soltar",
-      "Compartir por mail, PDF, CD y DICOM",
-      "Diagnóstico basado en 3D"
+      "Interfaz intuitiva y navegación ágil",
+      "Medición precisa y herramientas calibradas",
+      "Informes clínicos en un clic en PDF",
+      "Gestión completa de pacientes e historial",
+      "Diseño con método de arrastrar y soltar",
+      "Visualización rápida con interpretación 3D"
     ],
     "features": [
       {
@@ -2595,149 +1754,30 @@
     "slug": "clever-rc",
     "name": "Clever RC",
     "category": "Software",
-    "eyebrow": "PLATAFORMA INTEGRAL",
-    "tagline": "LA PLATAFORMA INTEGRAL DE DIAGNÓSTICO E IMAGENOLOGÍA",
-    "summary": "Simplifica el flujo de trabajo clínico combinando las imágenes del paciente en un solo visor inteligente impulsado por Inteligencia Artificial.",
-    "intro": [
-      "Clever RC es la solución \"All in One\" de Vatech diseñada para consolidar el diagnóstico, la planificación de tratamientos y la consulta con el paciente en una sola plataforma fluida y centralizada.",
-      "Elimina la necesidad de cambiar entre múltiples programas o resolver incompatibilidades de archivos."
-    ],
+    "eyebrow": "PRÓXIMAMENTE EN COLOMBIA",
+    "tagline": "GESTIÓN CLÍNICA Y RADIOLÓGICA INTELIGENTE",
+    "summary": "Próximamente disponible en Colombia. La plataforma inteligente de gestión operativa e imagenológica desarrollada por Vatech.",
+    "intro": [],
     "heroImage": {
       "local": "/assets/products/CLEVER-RC-scaled.png",
       "source": "https://vatechmexico.com/wp-content/uploads/2026/08/CLEVER-RC-scaled.png",
       "alt": "Clever RC"
     },
-    "heroVideo": {
-      "local": "/assets/product-details/clever-rc/main-banner.mp4",
-      "source": "https://vatechmexico.com/wp-content/uploads/2026/08/main-banner.mp4"
-    },
-    "highlights": [
-      "Sin CD, sin papel, sin complicaciones",
-      "Diagnóstico por adelantado, sin necesidad de esperar a los pacientes",
-      "Comodidad sin visor ni instalación",
-      "Acceso a las imágenes en cualquier momento y en cualquier lugar"
-    ],
-    "features": [
-      {
-        "title": "¿QUÉ ES CLEVER RC?",
-        "text": [
-          "Clever RC es la solución \"All in One\" de Vatech diseñada para consolidar el diagnóstico, la planificación de tratamientos y la consulta con el paciente en una sola plataforma fluida y centralizada. Elimina la necesidad de cambiar entre múltiples programas o resolver incompatibilidades de archivos."
-        ],
-        "images": []
-      },
-      {
-        "title": "ADMINISTRE INTELIGENTEMENTE CON RC",
-        "text": [
-          "Optimice sus diagnósticos, automatice la detección con IA y centralice todos los estudios de sus pacientes en una sola plataforma fluida."
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/clever-rc/Vatech-America.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2026/08/Vatech-America.png",
-            "alt": "Clever RC"
-          }
-        ]
-      },
-      {
-        "title": "IMÁGENES CONECTADAS · CLEVER RC / CLEVER DENT",
-        "text": [
-          "Comparta imágenes sin problemas en la nube en el momento en que las captura.",
-          "Con solo un clic, puede compartir todo tipo de imágenes, incluidas las 3D, con sus clínicas y socios."
-        ],
-        "images": []
-      },
-      {
-        "title": "ACCESO TOTAL DESDE CUALQUIER LUGAR",
-        "text": [
-          "Revise los estudios de sus pacientes al instante. Solo necesita una conexión a Internet para convertir cualquier navegador web en su centro de imágenes personal, sin esperas, visitas presenciales ni desplazamientos."
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/clever-rc/red-mundial.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2026/08/red-mundial.png",
-            "alt": "Acceso remoto Clever RC"
-          }
-        ]
-      },
-      {
-        "title": "FLUJO DE TRABAJO SIN ESFUERZO",
-        "text": [
-          "Monitoree en tiempo real el estado de las solicitudes del día, la recepción de imágenes y los tiempos de espera de sus pacientes para evitar demoras en la atención. A través de una lista de trabajo centralizada, identifique al instante las tomas pendientes, el técnico asignado y los resultados obtenidos, administrando todos sus estudios de manera ágil y en un solo lugar."
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/clever-rc/unir.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2026/08/unir.png",
-            "alt": "Flujo de trabajo Clever RC"
-          }
-        ]
-      },
-      {
-        "title": "GESTIÓN PRECISA DE RECIBOS Y CONTABILIDAD",
-        "text": [
-          "Ingrese solicitudes y administre la facturación, los recibos y los ingresos de su clínica en tiempo real. La plataforma registra automáticamente las ventas y saldos pendientes a partir de las órdenes y pagos realizados, permitiéndole identificar y cobrar fácilmente los saldos vencidos para proteger las finanzas de su negocio y evitar pérdidas."
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/clever-rc/gestion.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2026/08/gestion.png",
-            "alt": "Gestión y contabilidad Clever RC"
-          }
-        ]
-      },
-      {
-        "title": "INFORMACIÓN BASADA EN DATOS PARA OPERACIONES DE RC",
-        "text": [
-          "Experiencia operativa para RC a partir de datos. Aproveche las estadísticas en tiempo real para optimizar las operaciones de RC y maximizar los beneficios de forma inteligente."
-        ],
-        "images": [
-          {
-            "local": "/assets/product-details/clever-rc/informacion.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/2026/08/informacion.png",
-            "alt": "Información y estadísticas Clever RC"
-          }
-        ]
-      }
-    ],
+    "heroVideo": null,
+    "highlights": [],
+    "features": [],
     "configurationImages": [],
-    "specifications": [
-      [
-        [
-          "SISTEMA OPERATIVO",
-          "Windows 10 / Windows 11 (64-bit)"
-        ],
-        [
-          "PROCESADOR",
-          "Quad-Core 3.4 GHz o superior"
-        ],
-        [
-          "MEMORIA RAM",
-          "16 GB o superior"
-        ],
-        [
-          "RESOLUCIÓN DE PANTALLA",
-          "1920 × 1080 o superior (soporte para pantalla doble)"
-        ]
-      ]
-    ],
+    "specifications": [],
     "dimensionImages": [],
     "gallery": [],
     "catalogPdf": null,
-    "trainingVideos": [
-      {
-        "local": "/assets/product-details/clever-rc/features-v2-1.mp4",
-        "source": "https://vatechmexico.com/wp-content/uploads/2026/08/features-v2-1.mp4"
-      },
-      {
-        "local": "/assets/product-details/clever-rc/mybox-v2-1.mp4",
-        "source": "https://vatechmexico.com/wp-content/uploads/2026/08/mybox-v2-1.mp4"
-      }
-    ],
+    "trainingVideos": [],
     "cardImage": {
       "local": "/assets/products/CLEVER-RC-scaled.png",
       "source": "https://vatechmexico.com/wp-content/uploads/2026/08/CLEVER-RC-scaled.png",
       "alt": "Clever RC"
     },
-    "sourceComplete": true
+    "sourceComplete": true,
+    "isComingSoon": true
   }
 ]

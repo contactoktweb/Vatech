@@ -59,107 +59,125 @@ export default function FilosofiaPage() {
       <section className="corporate-philosophy-section" id="filosofia-corporativa">
         <div className="corp-section-head" data-reveal>
           <p className="eyebrow red">FILOSOFÍA INSTITUCIONAL</p>
-          <h2>Misión, Visión y Política de Calidad</h2>
+          <h2>Misión, Visión y<br />Política de Calidad.</h2>
           <p>
-            Bases estratégicas y valores que guían nuestra operación y compromiso con la comunidad odontológica en Colombia.
+            Bases estratégicas y valores corporativos que guían nuestra operación, innovación y compromiso permanente con la comunidad odontológica en Colombia.
           </p>
         </div>
 
         <div className="corp-pillars-grid">
-          {/* MISIÓN */}
+          {/* 01 · MISIÓN */}
           <article className="corp-pillar-card" data-reveal>
-            <div className="corp-card-badge">
-              <span>MISIÓN CORPORATIVA</span>
+            <div className="corp-card-header">
+              <div className="corp-card-index">
+                <span className="number">01</span>
+                <span className="tag">Propósito Corporativo</span>
+              </div>
+              <div className="corp-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="m4.93 4.93 4.24 4.24M14.83 9.17l4.24-4.24M14.83 14.83l4.24 4.24M9.17 14.83l-4.24 4.24" />
+                  <circle cx="12" cy="12" r="4" />
+                </svg>
+              </div>
             </div>
             <h3>Misión</h3>
-            <div className="corp-quote-block">
-              <span className="corp-subtag">Misión resumida:</span>
-              <blockquote>
-                “Contribuimos a la salud y calidad de vida ofreciendo equipos radiológicos innovadores que elevan la práctica odontológica.”
-              </blockquote>
-            </div>
+            <blockquote>
+              “Contribuir a la salud y calidad de vida de las personas, proporcionando productos sanitarios innovadores, que posibiliten mejoras en la práctica de los profesionales de la salud en el ámbito odontológico.”
+            </blockquote>
             <p className="corp-card-desc">
-              Facilitamos diagnósticos precisos mediante tecnología de imagenología digital confiable, segura y con los más altos estándares de protección radiológica.
+              Guiados por el valor humano, facilitamos herramientas diagnósticas avanzadas que elevan el estándar clínico diario con máxima precisión y la menor dosis de radiación.
             </p>
           </article>
 
-          {/* VISIÓN */}
+          {/* 02 · VISIÓN */}
           <article className="corp-pillar-card" data-reveal>
-            <div className="corp-card-badge">
-              <span>VISIÓN ESTRATÉGICA</span>
+            <div className="corp-card-header">
+              <div className="corp-card-index">
+                <span className="number">02</span>
+                <span className="tag">Visión Estratégica</span>
+              </div>
+              <div className="corp-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="2" y1="12" x2="22" y2="12" />
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                </svg>
+              </div>
             </div>
             <h3>Visión</h3>
-            <div className="corp-quote-block">
-              <span className="corp-subtag">Visión resumida:</span>
-              <blockquote>
-                “Ser la empresa referente en soluciones sanitarias, reconocida por innovación, compromiso y altos estándares de calidad.”
-              </blockquote>
-            </div>
+            <blockquote>
+              “Convertirse en empresa referente en el ámbito sanitario con vocación global y reconocida por la innovación, el compromiso y los altos estándares de calidad de sus productos para el cuidado de la salud y el bienestar de las personas, dando respuesta a sus necesidades actuales y futuras.”
+            </blockquote>
             <p className="corp-card-desc">
-              Consolidarnos como el aliado predilecto de odontólogos, clínicas y centros radiológicos en Colombia a través de un servicio técnico oficial y educación continua.
+              Consolidar el liderazgo tecnológico en Colombia mediante acompañamiento directo, garantía de fábrica y capacitación continua para los especialistas del país.
             </p>
           </article>
 
-          {/* POLÍTICA DE CALIDAD */}
-          <article className="corp-pillar-card quality-card full-span" data-reveal>
-            <div className="corp-card-badge">
-              <span>CALIDAD Y EXCELENCIA</span>
-            </div>
-            <h3>Política de calidad</h3>
-            <div className="quality-dual-grid">
-              <div className="quality-exec-column">
-                <span className="corp-subtag red-tag">Política de calidad (versión ejecutiva):</span>
-                <blockquote>
-                  “Importamos y comercializamos dispositivos médicos con excelencia, garantizando bienestar para pacientes y profesionales.”
-                </blockquote>
+          {/* 03 · POLÍTICA DE CALIDAD */}
+          <article className="corp-pillar-card" data-reveal>
+            <div className="corp-card-header">
+              <div className="corp-card-index">
+                <span className="number">03</span>
+                <span className="tag">Calidad y Excelencia</span>
               </div>
-              <div className="quality-full-column">
-                <span className="corp-subtag">Política de calidad:</span>
-                <p>
-                  Nos especializamos en la importación y comercialización de dispositivos médicos y equipos biomédicos, cumpliendo con las expectativas de nuestros clientes y garantizando procesos de mejora continua.
-                </p>
+              <div className="corp-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+              </div>
+            </div>
+            <h3>Política de Calidad</h3>
+            <p className="corp-statement">
+              Nos especializamos en la importación y comercialización de dispositivos médicos y sistemas radiológicos de vanguardia, cumpliendo rigurosamente los estándares sanitarios y satisfaciendo plenamente las expectativas de nuestros clientes mediante procesos sistemáticos de mejora continua.
+            </p>
+            <div className="corp-checklist">
+              <div className="corp-check-item">
+                <span className="corp-check-dot" />
+                <span>Certificación biomédica y calibración de fábrica</span>
+              </div>
+              <div className="corp-check-item">
+                <span className="corp-check-dot" />
+                <span>Cumplimiento riguroso de protección radiológica</span>
+              </div>
+              <div className="corp-check-item">
+                <span className="corp-check-dot" />
+                <span>Respaldo oficial directo y garantía de fábrica</span>
               </div>
             </div>
           </article>
 
-          {/* VALORES CORPORATIVOS */}
-          <article className="corp-pillar-card values-card full-span" data-reveal>
-            <div className="corp-card-badge">
-              <span>VALORES CORPORATIVOS</span>
-            </div>
-            <h3>Valores corporativos</h3>
-            <div className="values-content-wrap">
-              <div className="values-primary-block">
-                <p className="corp-subtag red-tag">Pilar central:</p>
-                <div className="values-primary-statement">
-                  <strong>Innovación tecnológica constante.</strong>
-                  <p>
-                    Desarrollo e incorporación continua de soluciones de vanguardia para garantizar la mayor resolución de imagen con la menor radiación posible.
-                  </p>
-                </div>
+          {/* 04 · VALORES CORPORATIVOS */}
+          <article className="corp-pillar-card" data-reveal>
+            <div className="corp-card-header">
+              <div className="corp-card-index">
+                <span className="number">04</span>
+                <span className="tag">Principios y Cultura</span>
               </div>
-              <div className="values-items-list">
-                <div className="value-chip">
-                  <span className="value-chip-dot" />
-                  <div>
-                    <strong>Compromiso sanitario</strong>
-                    <small>Prioridad en la salud y confort de pacientes y doctores.</small>
-                  </div>
-                </div>
-                <div className="value-chip">
-                  <span className="value-chip-dot" />
-                  <div>
-                    <strong>Altos estándares de calidad</strong>
-                    <small>Dispositivos biomédicos certificados con soporte técnico oficial.</small>
-                  </div>
-                </div>
-                <div className="value-chip">
-                  <span className="value-chip-dot" />
-                  <div>
-                    <strong>Mejora continua</strong>
-                    <small>Procesos ágiles orientados a la satisfacción total del cliente.</small>
-                  </div>
-                </div>
+              <div className="corp-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                </svg>
+              </div>
+            </div>
+            <h3>Valores</h3>
+            <div className="corp-values-grid">
+              <div className="corp-value-item">
+                <strong>Innovación con Sentido Humano</strong>
+                <p>Tecnología pionera orientada al cuidado de la salud y mínima radiación (Green Low Dose).</p>
+              </div>
+              <div className="corp-value-item">
+                <strong>Compromiso Sanitario</strong>
+                <p>Prioridad incondicional en la seguridad, precisión diagnóstica y confort del paciente.</p>
+              </div>
+              <div className="corp-value-item">
+                <strong>Altos Estándares de Calidad</strong>
+                <p>Dispositivos biomédicos certificados con respaldo oficial directo en Colombia.</p>
+              </div>
+              <div className="corp-value-item">
+                <strong>Integridad y Mejora Continua</strong>
+                <p>Relaciones transparentes, servicio confiable y evolución tecnológica constante.</p>
               </div>
             </div>
           </article>

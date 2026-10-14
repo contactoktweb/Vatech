@@ -38,6 +38,7 @@ export type ProductDetail = {
   trainingVideos: Array<ProductAsset | string>;
   cardImage: ProductAsset;
   sourceComplete: boolean;
+  isComingSoon?: boolean;
 };
 
 export const productCatalog = rawProducts as ProductDetail[];

@@ -1,18 +1,18 @@
 import Link from "next/link";
 
-const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "573133505068";
-const WHATSAPP_DISPLAY = process.env.NEXT_PUBLIC_WHATSAPP_DISPLAY || "+57 (313) 350 5068";
+const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "573126344188";
+const WHATSAPP_DISPLAY = process.env.NEXT_PUBLIC_WHATSAPP_DISPLAY || "+57 312 6344188";
 const SITE_DOMAIN = process.env.NEXT_PUBLIC_SITE_DOMAIN || "www.vatechcolombia.com";
 
 export default function SiteFooter() {
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-    "Hola, me gustaría recibir asesoría sobre los equipos radiológicos VATECH Colombia."
+    "Hola VATECH Colombia, me gustaría recibir asesoría sobre sus equipos radiológicos."
   )}`;
 
   return (
     <footer id="footer" className="footer">
       <div className="footer-brand">
-        <img src="/brand/vatech-logo.png" alt="VATECH Colombia" />
+        <img src="/brand/vatech-colombia-white.png" alt="VATECH Colombia" style={{ maxWidth: "180px", height: "auto" }} />
         <p>Tecnología de vanguardia en imagenología dental.</p>
         <div className="footer-status-pill">
           <span className="footer-status-pulse" aria-hidden="true" />
@@ -31,23 +31,21 @@ export default function SiteFooter() {
         <Link href="/quienes-somos">Quiénes somos</Link>
         <Link href="/filosofia">Filosofía</Link>
         <Link href="/red-mundial-vatech">Red mundial</Link>
-        <Link href="/instituto-vatech">Instituto VATECH</Link>
       </div>
 
       <div>
         <h4>Productos</h4>
         <Link href="/productos#equipos">Equipos Vatech</Link>
-        <Link href="/productos#zirconia">Zirconia</Link>
+        <Link href="/productos#comparativa-3d">Comparativa 3D</Link>
         <Link href="/productos#software">Software</Link>
-        <Link href="/media">Media</Link>
       </div>
 
       <div>
-        <h4>Soporte</h4>
-        <Link href="/servicio-tecnico">Servicio técnico</Link>
+        <h4>Red & Distribución</h4>
         <Link href="/distribuidores">Distribuidores</Link>
+        <Link href="/distribuidores#ser-distribuidor">¿Quieres ser distribuidor?</Link>
         <a href="https://vatech.com" target="_blank" rel="noopener noreferrer">Vatech Global</a>
-        <Link href="/productos">Catálogo</Link>
+        <Link href="/productos">Catálogo de Equipos</Link>
       </div>
 
       <div>
@@ -70,9 +68,17 @@ export default function SiteFooter() {
           <span>WhatsApp directo: {WHATSAPP_DISPLAY}</span>
         </a>
         <p>
-          Cra. 15 # 118-03, Mezzanine 4<br />
-          Calle 134D # 50-59<br />
-          Bogotá, Colombia
+          <a
+            href="https://maps.app.goo.gl/2oGW1g6WhiqN3TLZ7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-address-link"
+            title="Abrir ubicación de VATECH Colombia en Google Maps"
+          >
+            Cra. 7 # 113-43, Oficina 805<br />
+            Torre Teleport Business Park<br />
+            Bogotá, Colombia ↗
+          </a>
         </p>
       </div>
 

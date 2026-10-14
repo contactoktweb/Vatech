@@ -13,7 +13,6 @@ type MenuItem = {
 type MenuGroup = {
   label: string;
   href: string;
-  intro?: string;
   items?: MenuItem[];
 };
 
@@ -21,52 +20,36 @@ const menu: MenuGroup[] = [
   {
     label: "Compañía",
     href: "/quienes-somos",
-    intro: "Innovación global con una visión profundamente humana.",
     items: [
-      { label: "Filosofía", href: "/filosofia" },
       { label: "Quiénes Somos", href: "/quienes-somos" },
+      { label: "Filosofía VATECH", href: "/filosofia" },
       { label: "Red Mundial Vatech", href: "/red-mundial-vatech" },
-      {
-        label: "Instituto VATECH",
-        href: "/instituto-vatech",
-        children: [
-          { label: "Plan de trabajo", href: "/instituto-vatech#plandetrabajo" },
-          { label: "Equipo de profesionales", href: "/instituto-vatech#equipo" },
-        ],
-      },
+      { label: "Distribuidores Oficiales", href: "/distribuidores" },
+      { label: "¿Quieres ser distribuidor?", href: "/distribuidores#ser-distribuidor" },
     ],
   },
   {
     label: "Productos",
     href: "/productos",
-    intro: "Imagenología digital, restauración y software de diagnóstico.",
     items: [
-      { label: "Equipos Vatech", href: "/productos#equipos" },
-      { label: "Zirconia", href: "/productos#zirconia" },
-      { label: "Software", href: "/productos#software" },
-    ],
-  },
-  { label: "Servicio técnico", href: "/servicio-tecnico" },
-  { label: "Distribuidores", href: "/distribuidores" },
-  {
-    label: "Programas de renovación",
-    href: "https://vatechmexico.com/programas-de-renovacion/",
-    intro: "Alternativas para renovar y actualizar tu tecnología VATECH.",
-    items: [
-      { label: "Buyback Vatech", href: "https://vatechmexico.com/buyback-2/" },
-      { label: "Tradein|up Vatech", href: "https://vatechmexico.com/tradeinup-vatech/" },
+      { label: "Todos los Equipos", href: "/productos#equipos" },
+      { label: "Tomografía 3D (A9, Green X12, X16, X18)", href: "/productos#comparativa-3d" },
+      { label: "Panorámicos 2D (PaX-i)", href: "/productos#equipos" },
+      { label: "Rayos X Portátiles (EzRay Air)", href: "/productos#equipos" },
+      { label: "Sensores Intraorales (EzSensor)", href: "/productos#equipos" },
     ],
   },
   {
-    label: "Media",
-    href: "/media",
-    intro: "Promociones, noticias y contenido audiovisual de VATECH Colombia.",
+    label: "Software",
+    href: "/productos#software",
     items: [
-      { label: "Promociones", href: "/media#promociones" },
-      { label: "Noticias", href: "/media#noticias" },
-      { label: "Fotos y videos", href: "/media#fotos" },
+      { label: "Software 3D (Ez3D-i)", href: "/productos/ez3d-i" },
+      { label: "Software 2D (EzDent-i)", href: "/productos/ezdent-i" },
+      { label: "Software Especialidades (EzOrtho)", href: "/productos/ezortho" },
+      { label: "Clever RC (Próximamente)", href: "/productos/clever-rc" },
     ],
   },
+  { label: "Contacto", href: "/#contact" },
 ];
 
 function SmartLink({ href, children, className, onClick }: { href: string; children: ReactNode; className?: string; onClick?: () => void }) {
@@ -95,22 +78,22 @@ export default function SiteHeader() {
     <>
       <header className={`site-header ${scrolled ? "scrolled" : ""}`}>
         <Link href="/" className="brand" aria-label="VATECH Colombia">
-          <img src="/brand/vatech-logo.png" alt="VATECH" />
+          <img src="/brand/vatech-colombia-white.png" alt="VATECH Colombia" className="brand-logo" />
         </Link>
 
         <nav className="desktop-nav" aria-label="Navegación principal">
           {menu.map((group) => group.items ? (
-            <div className={`nav-dropdown ${group.items.length <= 3 ? "nav-dropdown-small" : ""}`} key={group.label}>
+            <div className="nav-dropdown" key={group.label}>
               <SmartLink href={group.href} className="nav-dropdown-trigger">{group.label} <span>⌄</span></SmartLink>
               <div className="nav-dropdown-panel">
-                <div className="nav-dropdown-intro">
-                  <small>VATECH COLOMBIA</small>
-                  <strong>{group.intro}</strong>
-                </div>
                 <div className="nav-dropdown-links">
                   {group.items.map((item, i) => (
                     <div className="nav-menu-item-wrap" key={item.label}>
-                      <SmartLink href={item.href}><span>0{i + 1}</span>{item.label}<b>↗</b></SmartLink>
+                      <SmartLink href={item.href}>
+                        <span className="nav-item-num">0{i + 1}</span>
+                        <span className="nav-item-label">{item.label}</span>
+                        <b className="nav-item-arrow" aria-hidden="true">↗</b>
+                      </SmartLink>
                       {item.children && <div className="nav-nested">
                         {item.children.map(child => <SmartLink key={child.label} href={child.href}>{child.label}<b>→</b></SmartLink>)}
                       </div>}
@@ -122,7 +105,7 @@ export default function SiteHeader() {
           ) : <SmartLink href={group.href} key={group.label}>{group.label}</SmartLink>)}
         </nav>
 
-        <a href="mailto:contacto@vatechcolombia.com" className="header-cta">Contacto <span className="arrow">→</span></a>
+        <a href="/#contact" className="header-cta">Cotizar <span className="arrow">→</span></a>
         <button className={`menu-button ${menuOpen ? "active" : ""}`} onClick={() => setMenuOpen(v => !v)} aria-label={menuOpen ? "Cerrar menú" : "Abrir menú"} aria-expanded={menuOpen}>
           <span /><span />
         </button>

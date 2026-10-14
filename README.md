@@ -25,36 +25,22 @@ npm run assets:force
 - `/quienes-somos` — Quiénes Somos
 - `/filosofia` — Filosofía VATECH
 - `/red-mundial-vatech` — Red Mundial Vatech
-- `/instituto-vatech` — Instituto VATECH
-- `/productos` — Equipos Vatech, Zirconia y Software
-- `/servicio-tecnico` — Servicio técnico
-- `/distribuidores` — Distribuidores Colombia / Latinoamérica
-- `/media` — Promociones, noticias, fotos y videos
+- `/productos` — Equipos Vatech y Software Especializado
+- `/distribuidores` — Distribuidores Oficiales en Colombia
 
 ## Menú
 
-La navegación replica la jerarquía suministrada:
+La navegación replica la jerarquía corporativa:
 
 - Compañía
-  - Filosofía
   - Quiénes Somos
+  - Filosofía
   - Red Mundial Vatech
-  - Instituto VATECH
-    - Plan de trabajo
-    - Equipo de profesionales
+  - Distribuidores
 - Productos
-  - Equipos Vatech
-  - Zirconia
-  - Software
-- Servicio técnico
-- Distribuidores
-- Programas de renovación
-  - Buyback Vatech
-  - Tradein|up Vatech
-- Media
-  - Promociones
-  - Noticias
-  - Fotos y videos
+  - Equipos Vatech (3D, 2D, Rayos X, Sensores)
+  - Software Especializado
+- Contacto
 
 ## Assets originales
 
@@ -77,9 +63,7 @@ Se creó una plantilla reutilizable en `components/ProductDetailPage.tsx` y la f
 
 Los HTML entregados se procesaron para extraer contenido, especificaciones, imágenes, videos y catálogos de 19 productos. Los recursos originales se registran en `data/product-assets.json` y `npm run assets` los guarda en `public/assets/product-details/<slug>/`.
 
-Productos con ficha HTML completa integrada actualmente: Green X12, Green X-12 SE, A9, Green X21, PaX-i, Ez Sensor HD, Ez Sensor CLASSIC, EzRay Air Portátil, EzRay Air Wall, EzRay Air C, Ez Scan, EzCam, Perfit ZR, Perfit FS, EzOrtho, Ez3D-i, EzDent-i y Clever RC.
-
-Las rutas de Green X16 / X18 y PaX-i Plus ya son internas y muestran una ficha base; se completarán al añadir sus HTML específicos.
+Productos activos integrados en el catálogo de VATECH Colombia: A9, Green X 12, Green X-12 SE, Green X 16, Green X 18, Green X21 (Próximamente con video teaser oficial), PaX-i Plus, PaX-i, Ez Sensor HD, Ez Sensor CLASSIC, EzRay Air Portátil, EzOrtho, Ez3D-i, EzDent-i y Clever RC. Se incluye la Tabla Comparativa 3D inspirada en Vatech España.
 
 ## Actualización de contenido audiovisual y Home
 
