@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import type { ReactNode } from "react";
 
@@ -58,9 +59,13 @@ function SmartLink({ href, children, className, onClick }: { href: string; child
   return <Link href={href} className={className} onClick={onClick}>{children}</Link>;
 }
 
-export default function SiteHeader() {
+export default function SiteHeader({ solid }: { solid?: boolean }) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isDetailPage = Boolean(pathname && pathname.startsWith("/productos/") && pathname !== "/productos");
+  const isSolid = Boolean(solid || isDetailPage);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 28);
@@ -76,7 +81,7 @@ export default function SiteHeader() {
 
   return (
     <>
-      <header className={`site-header ${scrolled ? "scrolled" : ""}`}>
+      <header className={`site-header ${scrolled ? "scrolled" : ""} ${isSolid ? "header-solid" : ""}`}>
         <Link href="/" className="brand" aria-label="VATECH Colombia">
           <img src="/brand/vatech-colombia-white.png" alt="VATECH Colombia" className="brand-logo" />
         </Link>

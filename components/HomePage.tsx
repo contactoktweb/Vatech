@@ -373,6 +373,75 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="service" id="service">
+        <div className="service-heading" data-reveal>
+          <p className="eyebrow red">SIEMPRE CONTIGO</p>
+          <h2>Tecnología avanzada.<br />Soporte a la misma altura.</h2>
+        </div>
+        <div className="service-list">
+          {[
+            {
+              title: "Instalación",
+              desc: "Puesta en marcha profesional y acompañamiento especializado.",
+              icon: (
+                <svg viewBox="0 0 48 48" width="48" height="48" fill="none" aria-hidden="true">
+                  <circle cx="24" cy="24" r="21" fill="rgba(219,7,47,0.06)" stroke="rgba(219,7,47,0.2)" strokeWidth="1.2" />
+                  <path d="M16 32l6-6M14 34l2 2" stroke="#1a1a1d" strokeWidth="2.2" strokeLinecap="round" />
+                  <path d="M20 20l3-3a4.24 4.24 0 016 0l2 2a4.24 4.24 0 010 6l-3 3" stroke="#1a1a1d" strokeWidth="2" strokeLinecap="round" />
+                  <path d="M25 15l8 8" stroke="var(--red)" strokeWidth="2" strokeLinecap="round" />
+                  <circle cx="34" cy="34" r="5" stroke="var(--red)" strokeWidth="1.8" />
+                  <path d="M34 32v4M32 34h4" stroke="var(--red)" strokeWidth="1.6" strokeLinecap="round" />
+                </svg>
+              ),
+            },
+            {
+              title: "Mantenimiento",
+              desc: "Atención preventiva para proteger el rendimiento del equipo.",
+              icon: (
+                <svg viewBox="0 0 48 48" width="48" height="48" fill="none" aria-hidden="true">
+                  <circle cx="24" cy="24" r="21" fill="rgba(219,7,47,0.06)" stroke="rgba(219,7,47,0.2)" strokeWidth="1.2" />
+                  <path d="M24 13a11 11 0 1010.5 7.5" stroke="#1a1a1d" strokeWidth="2" strokeLinecap="round" />
+                  <path d="M35 15v6h-6" stroke="#1a1a1d" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M17 25h4l2-4 3 8 2.5-5 2.5 1h3" stroke="var(--red)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              ),
+            },
+            {
+              title: "Garantía",
+              desc: "Respaldo oficial para tu inversión tecnológica.",
+              icon: (
+                <svg viewBox="0 0 48 48" width="48" height="48" fill="none" aria-hidden="true">
+                  <circle cx="24" cy="24" r="21" fill="rgba(219,7,47,0.06)" stroke="rgba(219,7,47,0.2)" strokeWidth="1.2" />
+                  <path d="M24 11l10 4v7c0 7-5 12-10 14-5-2-10-7-10-14v-7l10-4z" stroke="#1a1a1d" strokeWidth="2" strokeLinejoin="round" />
+                  <path d="M19 24l3.5 3.5L30 20" stroke="var(--red)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              ),
+            },
+            {
+              title: "Soporte especializado",
+              desc: "Asistencia técnica cuando más la necesitas.",
+              icon: (
+                <svg viewBox="0 0 48 48" width="48" height="48" fill="none" aria-hidden="true">
+                  <circle cx="24" cy="24" r="21" fill="rgba(219,7,47,0.06)" stroke="rgba(219,7,47,0.2)" strokeWidth="1.2" />
+                  <path d="M15 25v-3a9 9 0 0118 0v3" stroke="#1a1a1d" strokeWidth="2" strokeLinecap="round" />
+                  <rect x="12" y="24" width="5" height="8" rx="2" stroke="#1a1a1d" strokeWidth="2" fill="white" />
+                  <rect x="31" y="24" width="5" height="8" rx="2" stroke="#1a1a1d" strokeWidth="2" fill="white" />
+                  <path d="M33 30v2a5 5 0 01-5 5h-4" stroke="var(--red)" strokeWidth="2" strokeLinecap="round" />
+                  <circle cx="22" cy="37" r="1.8" fill="var(--red)" />
+                </svg>
+              ),
+            },
+          ].map((item) => (
+            <article key={item.title} data-reveal>
+              <div className="service-icon" aria-hidden="true">
+                {item.icon}
+              </div>
+              <h3>{item.title}</h3>
+              <p>{item.desc}</p>
+            </article>
+          ))}
+        </div>
+      </section>
 
       <section className="global" id="global">
         <div className="global-copy" data-reveal>

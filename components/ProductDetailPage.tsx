@@ -59,7 +59,7 @@ export default function ProductDetailPage({ product }: { product: ProductDetail 
   const uniqueVideos = productVideos.filter((video, index, all) => all.findIndex((candidate) => mediaIdentity(candidate) === mediaIdentity(video)) === index);
 
   return <>
-    <SiteHeader />
+    <SiteHeader solid />
     <main className="pd-page">
       <div className="pd-breadcrumb">
         <Link href="/">Inicio</Link><span>›</span><Link href="/productos">Productos</Link><span>›</span><b>{product.name}</b>
