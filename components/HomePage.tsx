@@ -493,11 +493,11 @@ export default function HomePage() {
                 </div>
               </a>
 
-              <a href="mailto:contacto@vatechcolombia.com" className="contact-card email">
+              <a href="mailto:marketing.colombia@vatechglobal.com" className="contact-card email">
                 <div className="contact-card-icon">✉</div>
                 <div>
                   <strong>Correo Oficial</strong>
-                  <span>contacto@vatechcolombia.com</span>
+                  <span>marketing.colombia@vatechglobal.com</span>
                 </div>
               </a>
 
@@ -600,7 +600,7 @@ export default function HomePage() {
 
           <a
             className="btn btn-white"
-            href="mailto:contacto@vatechcolombia.com?subject=Consulta%20con%20Especialista%20-%20VATECH%20Colombia&body=Hola%20equipo%20VATECH%20Colombia%2C%0A%0AMe%20gustar%C3%ADa%20recibir%20asesor%C3%ADa%20con%20un%20especialista%20sobre%20sus%20equipos%20radiologicos.%0A%0ACl%C3%ADnica%20o%20Ciudad%3A%0ATel%C3%A9fono%3A%0AEquipo%20de%20inter%C3%A9s%3A"
+            href="mailto:marketing.colombia@vatechglobal.com?subject=Consulta%20con%20Especialista%20-%20VATECH%20Colombia&body=Hola%20equipo%20VATECH%20Colombia%2C%0A%0AMe%20gustar%C3%ADa%20recibir%20asesor%C3%ADa%20con%20un%20especialista%20sobre%20sus%20equipos%20radiologicos.%0A%0ACl%C3%ADnica%20o%20Ciudad%3A%0ATel%C3%A9fono%3A%0AEquipo%20de%20inter%C3%A9s%3A"
             onClick={(e) => {
               e.preventDefault();
               setIsSpecialistModalOpen(true);
@@ -676,7 +676,7 @@ export default function HomePage() {
 
               {/* Opción 2: Correo electrónico */}
               <a
-                href="mailto:contacto@vatechcolombia.com?subject=Consulta%20con%20Especialista%20-%20VATECH%20Colombia&body=Hola%20equipo%20VATECH%20Colombia%2C%0A%0AMe%20gustar%C3%ADa%20recibir%20asesor%C3%ADa%20personalizada%20con%20un%20especialista%20sobre%20sus%20equipos%20radiologicos.%0A%0ACl%C3%ADnica%20o%20Ciudad%3A%0ATel%C3%A9fono%3A%0AEquipo%20de%20inter%C3%A9s%3A"
+                href="mailto:marketing.colombia@vatechglobal.com?subject=Consulta%20con%20Especialista%20-%20VATECH%20Colombia&body=Hola%20equipo%20VATECH%20Colombia%2C%0A%0AMe%20gustar%C3%ADa%20recibir%20asesor%C3%ADa%20personalizada%20con%20un%20especialista%20sobre%20sus%20equipos%20radiologicos.%0A%0ACl%C3%ADnica%20o%20Ciudad%3A%0ATel%C3%A9fono%3A%0AEquipo%20de%20inter%C3%A9s%3A"
                 className="specialist-option-card email"
                 id="modal-option-email"
               >
@@ -689,7 +689,7 @@ export default function HomePage() {
                 <div className="specialist-option-info">
                   <h4>Vía Correo electrónico</h4>
                   <p>Envío de consulta formal o ficha técnica</p>
-                  <strong>contacto@vatechcolombia.com</strong>
+                  <strong>marketing.colombia@vatechglobal.com</strong>
                 </div>
                 <div className="specialist-option-action">
                   <span>Escribir</span>
@@ -712,7 +712,7 @@ export default function HomePage() {
                 type="button"
                 className="specialist-copy-email"
                 onClick={() => {
-                  navigator.clipboard?.writeText("contacto@vatechcolombia.com");
+                  navigator.clipboard?.writeText("marketing.colombia@vatechglobal.com");
                   setEmailCopied(true);
                   setTimeout(() => setEmailCopied(false), 2500);
                 }}

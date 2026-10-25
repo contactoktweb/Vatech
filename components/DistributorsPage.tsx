@@ -101,11 +101,11 @@ export default function DistributorsPage() {
                 <strong>+57 312 6344188</strong>
               </a>
               <a
-                href="mailto:contacto@vatechcolombia.com?subject=Solicitud:%20Quiero%20ser%20distribuidor%20de%20Vatech"
+                href="mailto:marketing.colombia@vatechglobal.com?subject=Solicitud:%20Quiero%20ser%20distribuidor%20de%20Vatech"
                 className="direct-contact-pill email"
               >
                 <span>Correo Oficial:</span>
-                <strong>contacto@vatechcolombia.com</strong>
+                <strong>marketing.colombia@vatechglobal.com</strong>
               </a>
             </div>
           </div>

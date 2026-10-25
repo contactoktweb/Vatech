@@ -12,8 +12,8 @@ export async function POST(request: Request) {
       );
     }
 
-    // Correo de recepción (por confirmar por el cliente; actualmente canalizado a contacto@vatechcolombia.com)
-    const targetEmail = process.env.DISTRIBUTOR_CONTACT_EMAIL || "contacto@vatechcolombia.com";
+    // Correo de recepción (por confirmar por el cliente; actualmente canalizado a marketing.colombia@vatechglobal.com)
+    const targetEmail = process.env.DISTRIBUTOR_CONTACT_EMAIL || "marketing.colombia@vatechglobal.com";
 
     // Log para trazabilidad de leads de distribución
     console.log("[NUEVO LEAD DISTRIBUIDOR VATECH]:", {

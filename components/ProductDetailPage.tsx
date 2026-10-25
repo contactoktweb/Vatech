@@ -41,6 +41,38 @@ function ProductVideo({ video, productName, index }: { video: ProductAsset | str
   </video>;
 }
 
+type SpecItem = { label?: string; values: string[] };
+type SpecGroup = { key: string; items: SpecItem[] };
+
+// Etiquetas que, en las tablas originales, son subfilas de una celda con rowspan (Pano, Ceph, Con/Sin CEPH, tamaños de FOV…)
+const SUB_LABEL = /^(pano|ceph|cbct|ct|con\b|sin\b|\d)/i;
+
+// Las tablas importadas llegan "aplanadas" (sin rowspan): se reagrupan en característica → [subetiqueta, valores]
+function groupSpecs(rows: string[][]): SpecGroup[] {
+  const groups: SpecGroup[] = [];
+  let current: SpecGroup | null = null;
+  let grouped = false;
+  for (const row of rows) {
+    const cells = row.map((cell) => cell.trim()).filter(Boolean);
+    if (!cells.length) continue;
+    const lastItem = current?.items[current.items.length - 1];
+    if (cells.length === 1 && lastItem) {
+      lastItem.values.push(cells[0]);
+    } else if (cells.length >= 3) {
+      current = { key: cells[0], items: [{ label: cells[1], values: cells.slice(2) }] };
+      groups.push(current);
+      grouped = true;
+    } else if (cells.length === 2 && grouped && current && SUB_LABEL.test(cells[0])) {
+      current.items.push({ label: cells[0], values: [cells[1]] });
+    } else {
+      current = { key: cells[0], items: [{ values: cells.slice(1) }] };
+      groups.push(current);
+      grouped = false;
+    }
+  }
+  return groups;
+}
+
 export default function ProductDetailPage({ product }: { product: ProductDetail }) {
   useEffect(() => {
     const nodes = document.querySelectorAll("[data-pd-reveal]");
@@ -53,7 +85,7 @@ export default function ProductDetailPage({ product }: { product: ProductDetail 
 
   const related = productCatalog.filter((item) => item.slug !== product.slug && item.category === product.category).slice(0, 3);
   const hasSpecs = product.specifications.some((table) => table.length > 0);
-  const hasGallery = product.dimensionImages.length > 0 || product.gallery.some((group) => group.images.length > 0) || product.configurationImages.length > 0;
+  const hasGallery = product.dimensionImages.length > 0 || product.gallery.some((group) => group.images.length > 0);
   const intro = product.intro.length ? product.intro : product.features[0]?.text?.slice(0, 1) || [product.summary];
   const productVideos = [product.heroVideo, ...product.trainingVideos].filter(Boolean) as Array<ProductAsset | string>;
   const uniqueVideos = productVideos.filter((video, index, all) => all.findIndex((candidate) => mediaIdentity(candidate) === mediaIdentity(video)) === index);
@@ -88,7 +120,7 @@ export default function ProductDetailPage({ product }: { product: ProductDetail 
             ) : (
               <>
                 <a href="#caracteristicas" className="pd-primary">Ver características <span>↓</span></a>
-                <a href="mailto:contacto@vatechcolombia.com?subject=Información%20sobre%20VATECH" className="pd-secondary">Solicitar información <span>→</span></a>
+                <a href="mailto:marketing.colombia@vatechglobal.com?subject=Información%20sobre%20VATECH" className="pd-secondary">Solicitar información <span>→</span></a>
               </>
             )}
           </div>
@@ -192,30 +224,31 @@ export default function ProductDetailPage({ product }: { product: ProductDetail 
             </section>
           ) : (
             <section className="pd-source-pending" data-pd-reveal>
-              <div><p className="pd-section-label">PRODUCTO VATECH</p><h2>Ficha integrada al nuevo sitio.</h2></div>
-              <p>Esta ruta ya es completamente interna. El contenido detallado se completará con el HTML específico del producto cuando esté disponible, sin redirecciones al sitio anterior.</p>
+              <div><p className="pd-section-label">PRODUCTO VATECH</p><h2>Más información muy pronto.</h2></div>
+              <p>Estamos preparando el contenido detallado de este equipo. Si necesitas información ahora, nuestro equipo comercial te asesora con gusto.</p>
             </section>
           )}
         </>
       )}
 
-      {!product.isComingSoon && product.configurationImages.length > 0 && <section className="pd-configuration" data-pd-reveal>
-        <div className="pd-section-head"><p className="pd-section-label">CONFIGURACIÓN</p><h2>Opciones y configuración.</h2></div>
-        <div className="pd-config-grid">{product.configurationImages.map((asset, index) => <div key={`${asset.local}-${index}`}><SourceImage asset={asset} /></div>)}</div>
-      </section>}
-
       {!product.isComingSoon && hasSpecs && <section className="pd-specs" id="especificaciones">
-        <div className="pd-specs-head" data-pd-reveal><p className="pd-section-label">DATOS TÉCNICOS</p><h2>Especificaciones.</h2><p>Información técnica conservada del contenido original del producto.</p></div>
+        <div className="pd-specs-head" data-pd-reveal><p className="pd-section-label">DATOS TÉCNICOS</p><h2>Especificaciones.</h2></div>
         <div className="pd-spec-tables" data-pd-reveal>
           {product.specifications.map((table, tableIndex) => <div className="pd-spec-table-wrap" key={tableIndex}><table className="pd-spec-table"><tbody>
-            {table.map((row, rowIndex) => <tr key={rowIndex}>{row.map((cell, cellIndex) => <td key={cellIndex} className={cellIndex === 0 ? "key" : ""}>{cell}</td>)}</tr>)}
+            {groupSpecs(table).map((group, groupIndex) => <tr key={groupIndex}>
+              <th scope="row">{group.key}</th>
+              <td>{group.items.map((item, itemIndex) => <div className={`pd-spec-item${item.label ? " has-label" : ""}`} key={itemIndex}>
+                {item.label && <span className="pd-spec-sublabel">{item.label}</span>}
+                <span className="pd-spec-values">{item.values.map((value, valueIndex) => <span key={valueIndex}>{value}</span>)}</span>
+              </div>)}</td>
+            </tr>)}
           </tbody></table></div>)}
         </div>
       </section>}
 
       {!product.isComingSoon && hasGallery && <section className="pd-gallery" id="galeria">
-        <div className="pd-gallery-head" data-pd-reveal><div><p className="pd-section-label">DETALLE VISUAL</p><h2>Explora cada detalle.</h2></div><p>Recursos gráficos originales del producto, integrados localmente dentro del proyecto.</p></div>
-        {product.dimensionImages.length > 0 && <div className="pd-dimensions" data-pd-reveal>{product.dimensionImages.map((asset, index) => <figure key={`${asset.local}-${index}`}><SourceImage asset={asset} /><figcaption>Dimensiones · {String(index + 1).padStart(2, "0")}</figcaption></figure>)}</div>}
+        <div className="pd-gallery-head" data-pd-reveal><div><p className="pd-section-label">DETALLE VISUAL</p><h2>Explora cada detalle.</h2></div></div>
+        {product.dimensionImages.length > 0 && <div className="pd-dimensions" data-pd-reveal>{product.dimensionImages.map((asset, index) => <figure key={`${asset.local}-${index}`}><SourceImage asset={asset} /></figure>)}</div>}
         {product.gallery.length > 0 && <div className="pd-gallery-groups">{product.gallery.map((group, groupIndex) => group.images.length > 0 && <article key={groupIndex} data-pd-reveal>
           {group.title && <h3>{group.title}</h3>}
           {group.text.map((text, index) => <p key={index}>{text}</p>)}
@@ -227,7 +260,6 @@ export default function ProductDetailPage({ product }: { product: ProductDetail 
         <div className="pd-training-copy">
           <p className="pd-section-label">VIDEO DEL PRODUCTO</p>
           <h2>{uniqueVideos.length > 1 ? "Videos, demostraciones y capacitación." : "Conoce el producto en acción."}</h2>
-          <p>Contenido audiovisual original asociado a {product.name}, integrado directamente en esta ficha.</p>
         </div>
         <div className="pd-training-grid">
           {uniqueVideos.map((video, index) => <ProductVideo key={`${mediaIdentity(video)}-${index}`} video={video} productName={product.name} index={index} />)}
@@ -242,7 +274,7 @@ export default function ProductDetailPage({ product }: { product: ProductDetail 
       <section className="pd-contact" data-pd-reveal>
         <div className="pd-contact-ring" />
         <p>VATECH COLOMBIA</p><h2>¿Quieres conocer<br/>este equipo?</h2>
-        <a href="mailto:contacto@vatechcolombia.com">Hablar con un especialista <span>→</span></a>
+        <a href="mailto:marketing.colombia@vatechglobal.com">Hablar con un especialista <span>→</span></a>
       </section>
 
       {related.length > 0 && <section className="pd-related">

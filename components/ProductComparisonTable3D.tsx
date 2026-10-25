@@ -4,6 +4,9 @@ import { useState } from "react";
 import Link from "next/link";
 import OriginalAssetImage from "./OriginalAssetImage";
 
+// Teaser oficial del Green X21 (archivo en public/Recursos)
+const X21_TEASER_VIDEO = "/Recursos/" + encodeURIComponent("Confidential_Green X 21 Teaser video.mp4");
+
 type ComparisonModel = {
   name: string;
   badge?: string;
@@ -206,12 +209,14 @@ export default function ProductComparisonTable3D() {
           </p>
 
           <div className="x21-teaser-video-frame">
-            <iframe
-              src="https://www.youtube.com/embed/XHOmBV4js_E"
+            <video
+              src={X21_TEASER_VIDEO}
               title="Green X21 Video Teaser Oficial VATECH"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
               className="x21-iframe"
+              controls
+              playsInline
+              preload="metadata"
+              poster="/assets/products/X21-scaled.png"
             />
           </div>
 
@@ -251,12 +256,7 @@ export default function ProductComparisonTable3D() {
               <h4>Green X21 · Video Teaser Oficial</h4>
             </div>
             <div className="teaser-modal-player">
-              <iframe
-                src={`https://www.youtube.com/embed/${activeTeaser}?autoplay=1`}
-                title="Green X21 Video Teaser"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              />
+              <video src={X21_TEASER_VIDEO} title="Green X21 Video Teaser" controls autoPlay playsInline />
             </div>
           </div>
         </div>

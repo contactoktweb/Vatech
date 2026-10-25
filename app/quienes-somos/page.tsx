@@ -15,7 +15,7 @@ export default function QuienesSomosPage() {
       eyebrow="QUIÉNES SOMOS"
       title={<>Liderazgo global.<br/><span>Presencia local.</span></>}
       lead="Más de 20 años impulsando la imagenología digital dental con una visión centrada en diagnósticos precisos, flujos ágiles y comodidad para el paciente."
-      heroAside={<div className="hero-metrics"><div><strong>20+</strong><span>años de trayectoria</span></div><div><strong>7</strong><span>empresas afiliadas</span></div><div><strong>29</strong><span>filiales internacionales</span></div></div>}
+      centered
     >
       <section className="content-split intro-story">
         <div data-reveal>

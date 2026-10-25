@@ -5,7 +5,7 @@ import type { FormEvent } from "react";
 
 const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "573126344188";
 const WHATSAPP_DISPLAY = process.env.NEXT_PUBLIC_WHATSAPP_DISPLAY || "+57 312 6344188";
-const TARGET_EMAIL = process.env.NEXT_PUBLIC_DISTRIBUTOR_EMAIL || "contacto@vatechcolombia.com";
+const TARGET_EMAIL = process.env.NEXT_PUBLIC_DISTRIBUTOR_EMAIL || "marketing.colombia@vatechglobal.com";
 
 export default function DistributorForm() {
   const [formData, setFormData] = useState({

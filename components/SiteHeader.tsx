@@ -25,19 +25,15 @@ const menu: MenuGroup[] = [
       { label: "Quiénes Somos", href: "/quienes-somos" },
       { label: "Filosofía VATECH", href: "/filosofia" },
       { label: "Red Mundial Vatech", href: "/red-mundial-vatech" },
-      { label: "Distribuidores Oficiales", href: "/distribuidores" },
-      { label: "¿Quieres ser distribuidor?", href: "/distribuidores#ser-distribuidor" },
     ],
   },
   {
     label: "Productos",
     href: "/productos",
     items: [
-      { label: "Todos los Equipos", href: "/productos#equipos" },
-      { label: "Tomografía 3D (A9, Green X12, X16, X18)", href: "/productos#comparativa-3d" },
-      { label: "Panorámicos 2D (PaX-i)", href: "/productos#equipos" },
-      { label: "Rayos X Portátiles (EzRay Air)", href: "/productos#equipos" },
-      { label: "Sensores Intraorales (EzSensor)", href: "/productos#equipos" },
+      { label: "Sistema de Imagen 3D", href: "/productos#sistema-3d" },
+      { label: "Sistema de Imagen 2D", href: "/productos#sistema-2d" },
+      { label: "Sistema Intraoral", href: "/productos#sistema-intraoral" },
     ],
   },
   {
@@ -51,6 +47,14 @@ const menu: MenuGroup[] = [
     ],
   },
   { label: "Contacto", href: "/#contact" },
+  {
+    label: "Distribuidores",
+    href: "/distribuidores",
+    items: [
+      { label: "Distribuidores Oficiales", href: "/distribuidores" },
+      { label: "¿Quieres ser distribuidor?", href: "/distribuidores#ser-distribuidor" },
+    ],
+  },
 ];
 
 function SmartLink({ href, children, className, onClick }: { href: string; children: ReactNode; className?: string; onClick?: () => void }) {

@@ -74,7 +74,7 @@ export default function MediaPage(){
         </a>)}</div>
       </section>
 
-      <section className="media-final"><div className="media-final-line"/><p className="eyebrow light">SIGUE CONECTADO</p><h2>Innovación que también<br/>se comparte.</h2><div><a href="https://www.instagram.com/vatechcolombia/">Instagram ↗</a><a href="https://www.youtube.com/channel/UCUoUvlHzian9vm7rkKLRFQw?view_as=subscriber">YouTube ↗</a><a href="https://www.facebook.com/vatechcolombia">Facebook ↗</a></div></section>
+      <section className="media-final"><div className="media-final-line"/><p className="eyebrow light">SIGUE CONECTADO</p><h2>Innovación que también<br/>se comparte.</h2><div><a href="https://www.instagram.com/vatech.colombia/?hl=en">Instagram ↗</a><a href="https://www.youtube.com/channel/UCUoUvlHzian9vm7rkKLRFQw?view_as=subscriber">YouTube ↗</a><a href="https://www.facebook.com/vatechcolombia/?locale=es_LA">Facebook ↗</a></div></section>
     </main>
     <SiteFooter/>
   </>;

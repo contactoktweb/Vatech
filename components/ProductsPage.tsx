@@ -57,10 +57,10 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
       <div className="catalog-image">
         <OriginalAssetImage localSrc={product.local} sourceSrc={product.source} alt={product.name} loading="lazy" />
         <div className="catalog-scan" />
+        <p className="catalog-hover-desc">{product.desc}</p>
       </div>
       <div className="catalog-copy">
         <h3>{product.name}</h3>
-        <p>{product.desc}</p>
         <em>{product.isComingSoon ? "Ver adelanto oficial" : "Explorar equipo"} <span>→</span></em>
       </div>
     </a>
@@ -78,6 +78,20 @@ export default function ProductsPage(){
     const observer = new IntersectionObserver(entries => entries.forEach(e=>e.isIntersecting && e.target.classList.add("in-view")),{threshold:.12});
     nodes.forEach(n=>observer.observe(n));
     return ()=>observer.disconnect();
+  },[]);
+
+  // Permite abrir una categoría desde el menú: /productos#sistema-3d, #sistema-2d, #sistema-intraoral
+  useEffect(()=>{
+    const tabsByHash: Record<string,string> = { "#sistema-3d":"3d", "#sistema-2d":"2d", "#sistema-intraoral":"intra" };
+    const syncTab = () => {
+      const next = tabsByHash[window.location.hash];
+      if (!next) return;
+      setTab(next);
+      document.getElementById("equipos")?.scrollIntoView({ behavior:"smooth", block:"start" });
+    };
+    syncTab();
+    window.addEventListener("hashchange", syncTab);
+    return ()=>window.removeEventListener("hashchange", syncTab);
   },[]);
 
   const active = tab === "3d" ? products3d : tab === "2d" ? products2d : intraoral;
@@ -146,7 +160,7 @@ export default function ProductsPage(){
         </div>
       </section>
 
-      <section className="products-final-cta"><div className="products-final-ring"/><div><p className="eyebrow light">VATECH COLOMBIA</p><h2>Encuentra la tecnología<br/>ideal para tu práctica.</h2></div><a href="mailto:contacto@vatechcolombia.com" className="btn btn-white">Hablar con un especialista <span>→</span></a></section>
+      <section className="products-final-cta"><div className="products-final-ring"/><div><p className="eyebrow light">VATECH COLOMBIA</p><h2>Encuentra la tecnología<br/>ideal para tu práctica.</h2></div><a href="mailto:marketing.colombia@vatechglobal.com" className="btn btn-white">Hablar con un especialista <span>→</span></a></section>
     </main>
     <SiteFooter/>
   </>;

@@ -4,7 +4,7 @@ import { ReactNode, useEffect } from "react";
 import SiteHeader from "./SiteHeader";
 import SiteFooter from "./SiteFooter";
 
-export default function SubpageShell({ eyebrow, title, lead, children, heroAside }: { eyebrow: string; title: ReactNode; lead: string; children: ReactNode; heroAside?: ReactNode }) {
+export default function SubpageShell({ eyebrow, title, lead, children, heroAside, centered }: { eyebrow: string; title: ReactNode; lead: string; children: ReactNode; heroAside?: ReactNode; centered?: boolean }) {
   useEffect(() => {
     const nodes = document.querySelectorAll<HTMLElement>("[data-reveal]");
     const observer = new IntersectionObserver((entries) => {
@@ -17,7 +17,7 @@ export default function SubpageShell({ eyebrow, title, lead, children, heroAside
   return (
     <main className="subpage">
       <SiteHeader />
-      <section className="subhero">
+      <section className={`subhero${centered ? " subhero-centered" : ""}`}>
         <div className="subhero-grid" />
         <div className="subhero-ring ring-one" />
         <div className="subhero-ring ring-two" />
