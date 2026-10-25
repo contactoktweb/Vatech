@@ -12,7 +12,7 @@ export async function POST(request: Request) {
       );
     }
 
-    // Correo de recepción (por confirmar por el cliente; actualmente canalizado a marketing.colombia@vatechglobal.com)
+    // Correo de recepción de las postulaciones
     const targetEmail = process.env.DISTRIBUTOR_CONTACT_EMAIL || "marketing.colombia@vatechglobal.com";
 
     // Log para trazabilidad de leads de distribución

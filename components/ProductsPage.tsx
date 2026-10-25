@@ -22,7 +22,7 @@ const products3d: Product[] = [
   { name:"Green X-12 SE", desc:"Avanzado sistema de imagenología digital dental 4 en 1 (Pano, Ceph opcional, CBCT y escaneo de modelos) con tecnología de baja radiación y máxima resolución diagnóstica para tu clínica.", local:"/assets/products/X12.png", source:"https://vatechmexico.com/wp-content/uploads/2026/07/X12.png", href:"/productos/green-x-12-se" },
   { name:"Green X 16", desc:"Green X 16 proporciona un gran campo de visión con la más alta resolución a través de tecnología CST de reconstrucción ultrarrápida, ideal para endodoncistas e implantólogos.", local:"/assets/products/X18X16.png", source:"https://vatechmexico.com/wp-content/uploads/2026/07/X18X16.png", href:"/productos/green-x16" },
   { name:"Green X 18", desc:"Green X 18 amplía las posibilidades diagnósticas con campo de visión extendido de un solo escaneo, diseñado para especialistas de ATM, periodoncistas y cirujanos maxilofaciales.", local:"/assets/products/X18X16.png", source:"https://vatechmexico.com/wp-content/uploads/2026/07/X18X16.png", href:"/productos/green-x18" },
-  { name:"Green X21", desc:"El nuevo Green X21 con la máxima amplitud en diagnóstico 3D (FOV expandido hasta 21x19 cm) y escaneo facial. Próximamente disponible en Colombia.", local:"/assets/products/X21-scaled.png", source:"https://vatechmexico.com/wp-content/uploads/2026/03/X21-scaled.png", href:"/productos/green-x21", isComingSoon: true },
+  { name:"Green X21", desc:"El nuevo Green X21 con la máxima amplitud en diagnóstico 3D (FOV expandido hasta 21x19 cm) y escaneo facial. Próximamente disponible en Colombia.", local:"/assets/products/X21-scaled.webp", source:"https://vatechmexico.com/wp-content/uploads/2026/03/X21-scaled.png", href:"/productos/green-x21", isComingSoon: true },
 ];
 
 const products2d: Product[] = [
@@ -40,7 +40,7 @@ const software: Product[] = [
   { name:"Software 3D (Ez3D-i)", desc:"Visualización 3D precisa en tiempo real. Herramientas avanzadas de diagnóstico CBCT, simulación de implantes y vías aéreas.", local:"/assets/products/EZ3D-I.webp", source:"https://vatechmexico.com/wp-content/uploads/2026/06/EZ3D-I.webp", href:"/productos/ez3d-i" },
   { name:"Software 2D (EzDent-i)", desc:"Gestión eficiente de imágenes 2D. Diagnóstico ágil, medición precisa, informes clínicos en un clic y administración de pacientes.", local:"/assets/products/EZDENTIpng.webp", source:"https://vatechmexico.com/wp-content/uploads/2026/06/EZDENTIpng.webp", href:"/productos/ezdent-i" },
   { name:"Software Especialidades (EzOrtho)", desc:"Diagnóstico avanzado para ortodoncia. Trazados cefalométricos automáticos con IA DAVIS, análisis ortodóncico y simulación 3D.", local:"/assets/products/EZORTHOSOMBRA.webp", source:"https://vatechmexico.com/wp-content/uploads/2026/06/EZORTHOSOMBRA.webp", href:"/productos/ezortho" },
-  { name:"Clever RC", desc:"Plataforma inteligente de gestión operativa e imagenológica de Vatech. Próximamente disponible en Colombia.", local:"/assets/products/CLEVER-RC-scaled.png", source:"https://vatechmexico.com/wp-content/uploads/2026/08/CLEVER-RC-scaled.png", href:"/productos/clever-rc", isComingSoon: true },
+  { name:"Clever RC", desc:"Plataforma inteligente de gestión operativa e imagenológica de Vatech. Próximamente disponible en Colombia.", local:"/assets/products/CLEVER-RC-scaled.webp", source:"https://vatechmexico.com/wp-content/uploads/2026/08/CLEVER-RC-scaled.png", href:"/productos/clever-rc", isComingSoon: true },
 ];
 
 function ProductCard({ product, index }: { product: Product; index: number }) {
@@ -55,7 +55,7 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
         )}
       </div>
       <div className="catalog-image">
-        <OriginalAssetImage localSrc={product.local} sourceSrc={product.source} alt={product.name} loading="lazy" />
+        <OriginalAssetImage localSrc={product.local} sourceSrc={product.source} alt={product.name} />
         <div className="catalog-scan" />
         <p className="catalog-hover-desc">{product.desc}</p>
       </div>
@@ -78,6 +78,13 @@ export default function ProductsPage(){
     const observer = new IntersectionObserver(entries => entries.forEach(e=>e.isIntersecting && e.target.classList.add("in-view")),{threshold:.12});
     nodes.forEach(n=>observer.observe(n));
     return ()=>observer.disconnect();
+  },[]);
+
+  // Precarga las imágenes de todas las categorías para que el cambio de pestaña sea instantáneo
+  useEffect(()=>{
+    const preload = () => [...products3d, ...products2d, ...intraoral].forEach(p => { const img = new Image(); img.decoding = "async"; img.src = p.local; });
+    const w = window as Window & { requestIdleCallback?: (cb: () => void) => number };
+    if (w.requestIdleCallback) w.requestIdleCallback(preload); else setTimeout(preload, 600);
   },[]);
 
   // Permite abrir una categoría desde el menú: /productos#sistema-3d, #sistema-2d, #sistema-intraoral

@@ -211,7 +211,7 @@ export default function ProductDetailPage({ product }: { product: ProductDetail 
             </div>
           </section>
 
-          {product.features.length > 0 ? (
+          {product.features.length > 0 && (
             <section className="pd-features">
               {product.features.map((feature, index) => <article className={`pd-feature ${index % 2 ? "reverse" : ""}`} data-pd-reveal key={`${feature.title}-${index}`}>
                 <div className="pd-feature-copy">
@@ -221,11 +221,6 @@ export default function ProductDetailPage({ product }: { product: ProductDetail 
                 </div>
                 <FeatureMedia images={feature.images} title={feature.title} />
               </article>)}
-            </section>
-          ) : (
-            <section className="pd-source-pending" data-pd-reveal>
-              <div><p className="pd-section-label">PRODUCTO VATECH</p><h2>Más información muy pronto.</h2></div>
-              <p>Estamos preparando el contenido detallado de este equipo. Si necesitas información ahora, nuestro equipo comercial te asesora con gusto.</p>
             </section>
           )}
         </>

@@ -2890,3 +2890,13 @@ body:has(.construction-minimal-page) .whatsapp-floating-widget {
 .pd-dimensions { display:flex; flex-wrap:wrap; justify-content:center; }
 .pd-dimensions figure { flex:1 1 420px; max-width:760px; grid-template-rows:1fr; }
 .pd-dimensions img { object-position:center; }
+
+/* ===== Formulario de distribuidores: contraste sobre fondo oscuro =====
+   Las reglas genéricas de .form-group (pensadas para fondo claro) se imponían aquí */
+.distributor-form .form-group label { color:#fff; font-size:13px; letter-spacing:.08em; }
+.distributor-form .form-group input,
+.distributor-form .form-group textarea { background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.22); color:#fff; }
+.distributor-form .form-group input::placeholder,
+.distributor-form .form-group textarea::placeholder { color:rgba(255,255,255,.5); }
+.distributor-form .form-group input:focus,
+.distributor-form .form-group textarea:focus { background:rgba(255,255,255,.1); border-color:var(--red); box-shadow:0 0 0 3px rgba(219,7,47,.25); }

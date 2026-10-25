@@ -194,7 +194,7 @@ export default function ProductComparisonTable3D() {
             <span>PRÓXIMAMENTE EN COLOMBIA</span>
           </div>
           <OriginalAssetImage
-            localSrc="/assets/products/X21-scaled.png"
+            localSrc="/assets/products/X21-scaled.webp"
             sourceSrc="https://vatechmexico.com/wp-content/uploads/2026/03/X21-scaled.png"
             alt="VATECH Green X21 Próximamente"
             className="x21-spotlight-img"
@@ -216,7 +216,7 @@ export default function ProductComparisonTable3D() {
               controls
               playsInline
               preload="metadata"
-              poster="/assets/products/X21-scaled.png"
+              poster="/assets/products/X21-scaled.webp"
             />
           </div>
 

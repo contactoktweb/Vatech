@@ -666,7 +666,7 @@
     ],
     "sourceComplete": true,
     "cardImage": {
-      "local": "/assets/products/X21-scaled.png",
+      "local": "/assets/products/X21-scaled.webp",
       "source": "https://vatechmexico.com/wp-content/uploads/2026/03/X21-scaled.png",
       "alt": "Green X21"
     },
@@ -1759,7 +1759,7 @@
     "summary": "Próximamente disponible en Colombia. La plataforma inteligente de gestión operativa e imagenológica desarrollada por Vatech.",
     "intro": [],
     "heroImage": {
-      "local": "/assets/products/CLEVER-RC-scaled.png",
+      "local": "/assets/products/CLEVER-RC-scaled.webp",
       "source": "https://vatechmexico.com/wp-content/uploads/2026/08/CLEVER-RC-scaled.png",
       "alt": "Clever RC"
     },
@@ -1773,7 +1773,7 @@
     "catalogPdf": null,
     "trainingVideos": [],
     "cardImage": {
-      "local": "/assets/products/CLEVER-RC-scaled.png",
+      "local": "/assets/products/CLEVER-RC-scaled.webp",
       "source": "https://vatechmexico.com/wp-content/uploads/2026/08/CLEVER-RC-scaled.png",
       "alt": "Clever RC"
     },
