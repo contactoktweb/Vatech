@@ -1,2 +1,12 @@
 allowBuilds:
   sharp: true
+  esbuild: true
+
+# Solo instala versiones publicadas hace al menos 24 horas (misma política que la máquina local)
+minimumReleaseAge: 1440
+
+# Versiones fijadas porque las últimas tenían menos de 24 horas al momento de instalar
+overrides:
+  eventsource-parser: 4.1.2
+  i18next: 26.5.10
+  parse-duration: 2.1.9
