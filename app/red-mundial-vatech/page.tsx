@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import SubpageShell from "../../components/SubpageShell";
 import OriginalAssetImage from "../../components/OriginalAssetImage";
+
+export const metadata: Metadata = {
+  title: "Red mundial VATECH",
+  description: "Oficinas y filiales de VATECH en América, Europa, Asia y Latinoamérica, incluida la sede de VATECH Colombia en Bogotá.",
+  alternates: { canonical: "/red-mundial-vatech" },
+  openGraph: { title: "Red mundial VATECH | VATECH Colombia", description: "Oficinas y filiales de VATECH en América, Europa, Asia y Latinoamérica, incluida la sede de VATECH Colombia en Bogotá.", url: "/red-mundial-vatech" },
+};
 
 const offices = [
   ["Indonesia","VATECH Indonesia","SME Tower Lantai 6, Jalan Gatot Subroto Kav. 94, Jakarta Selatan, Indonesia 12780","edward.jang@vatechglobal.com","/assets/world-hd/indonesia.png","https://vatechmexico.com/wp-content/uploads/2026/03/indonesia.png"],

@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import SubpageShell from "../../components/SubpageShell";
 import OriginalAssetImage from "../../components/OriginalAssetImage";
+
+export const metadata: Metadata = {
+  title: "Filosofía VATECH",
+  description: "La filosofía de VATECH: tecnología segura y precisa centrada en las personas, para odontólogos y pacientes.",
+  alternates: { canonical: "/filosofia" },
+  openGraph: { title: "Filosofía VATECH | VATECH Colombia", description: "La filosofía de VATECH: tecnología segura y precisa centrada en las personas, para odontólogos y pacientes.", url: "/filosofia" },
+};
 
 const stages = [
   {

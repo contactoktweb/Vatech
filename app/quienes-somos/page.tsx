@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import SubpageShell from "../../components/SubpageShell";
 import OriginalAssetImage from "../../components/OriginalAssetImage";
+
+export const metadata: Metadata = {
+  title: "Quiénes somos",
+  description: "VATECH es líder mundial en imagenología digital dental, con más de 20 años de trayectoria. Conoce a VATECH Colombia y por qué elegirnos.",
+  alternates: { canonical: "/quienes-somos" },
+  openGraph: { title: "Quiénes somos | VATECH Colombia", description: "VATECH es líder mundial en imagenología digital dental, con más de 20 años de trayectoria. Conoce a VATECH Colombia y por qué elegirnos.", url: "/quienes-somos" },
+};
 
 const reasons = [
   "No. 1 en Innovación Digital Dental tanto en Colombia como a nivel mundial.",
