@@ -3,116 +3,45 @@
 import { useState } from "react";
 import Link from "next/link";
 import OriginalAssetImage from "./OriginalAssetImage";
+import { useWhatsAppLink } from "./SiteSettingsProvider";
+import { Lines, withProduct } from "@/lib/cms/text";
+import type { ProductsPageContent } from "@/lib/cms/types";
 
-// Teaser oficial del Green X21 (archivo en public/Recursos)
-const X21_TEASER_VIDEO = "/Recursos/" + encodeURIComponent("Confidential_Green X 21 Teaser video.mp4");
+export default function ProductComparisonTable3D({ comparison, teaser }: { comparison: ProductsPageContent["comparison"]; teaser: ProductsPageContent["teaser"] }) {
+  const [teaserOpen, setTeaserOpen] = useState(false);
+  const whatsapp = useWhatsAppLink();
 
-type ComparisonModel = {
-  name: string;
-  badge?: string;
-  fov: string;
-  voxel: string;
-  exposure: string[];
-  recommendedUse: string;
-  href: string;
-  isComingSoon?: boolean;
-  teaserVideoId?: string;
-};
-
-const comparisonData: ComparisonModel[] = [
-  {
-    name: "A9",
-    fov: "8x8 cm (Anatómico 9.3x8 cm)",
-    voxel: "Desde 200 µm hasta 300 µm",
-    exposure: ["1,9s CEPH", "18s CBCT", "11,9s PANO"],
-    recommendedUse: "Diagnóstico general 3 en 1, planificación de implantes y endodoncia esencial.",
-    href: "/productos/a9",
-  },
-  {
-    name: "Green X 12",
-    fov: "Desde 4x4cm hasta 12x8.5cm",
-    voxel: "Desde 49.5 µm hasta 300 µm",
-    exposure: ["1,9s CEPH", "10s CBCT", "4,0s PANO"],
-    recommendedUse: "Implantología guiada, endodoncia de alta resolución (Endo 4x4) y diagnóstico 3D integral.",
-    href: "/productos/green-x12",
-  },
-  {
-    name: "Green X-12 SE",
-    fov: "Desde 4x4cm hasta 12x8.5cm",
-    voxel: "Desde 49.5 µm hasta 300 µm",
-    exposure: ["1,9s CEPH", "10s CBCT", "4,0s PANO"],
-    recommendedUse: "Clínicas en crecimiento que requieren diagnóstico 4 en 1 con escaneo de modelos 3D y tecnología CST.",
-    href: "/productos/green-x-12-se",
-  },
-  {
-    name: "Green X 16",
-    fov: "Desde 4x4cm hasta 16x9cm",
-    voxel: "Desde 49.5 µm hasta 300 µm",
-    exposure: ["1,9s CEPH", "2,9s CBCT", "3,9s PANO"],
-    recommendedUse: "Equipo dirigido para endodoncistas e implantólogos.",
-    href: "/productos/green-x16",
-  },
-  {
-    name: "Green X 18",
-    fov: "Desde 12x9cm hasta 18x10cm",
-    voxel: "Desde 49.5 µm hasta 300 µm",
-    exposure: ["1,9s CEPH", "2,9s CBCT", "3,9s PANO"],
-    recommendedUse: "Equipo dirigido para especialistas de ATM, periodoncistas y cirugía maxilofacial.",
-    href: "/productos/green-x18",
-  },
-  {
-    name: "Green X 21",
-    badge: "PRÓXIMAMENTE",
-    fov: "Desde 4x4cm hasta 21x19cm",
-    voxel: "Desde 49.5 µm hasta 300 µm",
-    exposure: ["0,9s CEPH", "2,9s CBCT", "7,3s PANO"],
-    recommendedUse: "Diagnóstico avanzado, cirugía guiada, ortodoncia y Face Scan.",
-    href: "/productos/green-x21",
-    isComingSoon: true,
-    teaserVideoId: "XHOmBV4js_E",
-  },
-];
-
-export default function ProductComparisonTable3D() {
-  const [activeTeaser, setActiveTeaser] = useState<string | null>(null);
-
-  const getWhatsAppLink = (modelName: string, isComingSoon?: boolean) => {
-    const text = isComingSoon
-      ? `Hola VATECH Colombia, me gustaría recibir información sobre el próximo lanzamiento del tomógrafo ${modelName} en Colombia.`
-      : `Hola VATECH Colombia, me gustaría recibir asesoría técnica y cotización del equipo tomográfico ${modelName}.`;
-    return `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "573126344188"}?text=${encodeURIComponent(text)}`;
-  };
+  const getWhatsAppLink = (modelName: string, isComingSoon?: boolean) =>
+    whatsapp(withProduct(isComingSoon ? comparison.whatsappComingSoonMessage : comparison.whatsappMessage, modelName));
 
   return (
     <section className="comparison-table-section" id="comparativa-3d">
       <div className="comparison-header" data-product-reveal>
-        <p className="eyebrow red">SISTEMAS DE IMAGEN 3D · COMPARATIVA</p>
-        <h2 className="comparison-main-title">¿Qué modelo se adapta mejor a tu clínica?</h2>
-        <p className="comparison-lead">
-          Compara los equipos tomográficos CBCT disponibles en el portafolio de VATECH Colombia y encuentra la solución óptima para tu especialidad.
-        </p>
+        <p className="eyebrow red">{comparison.eyebrow}</p>
+        <h2 className="comparison-main-title"><Lines text={comparison.title} /></h2>
+        <p className="comparison-lead">{comparison.text}</p>
       </div>
 
       <div className="comparison-table-container" data-product-reveal>
         <div className="comparison-scroll-helper">
-          <span>⇄ Desliza horizontalmente para comparar especificaciones</span>
+          <span>⇄ {comparison.scrollHint}</span>
         </div>
 
         <div className="comparison-table-wrapper">
           <table className="comparison-table" role="table">
             <thead>
               <tr>
-                <th scope="col" className="col-model">MODELO</th>
-                <th scope="col" className="col-fov">TAMAÑO DEL FOV</th>
-                <th scope="col" className="col-voxel">TAMAÑO DEL VOXEL</th>
-                <th scope="col" className="col-exposure">TIEMPO MÍN. DE EXPOSICIÓN</th>
-                <th scope="col" className="col-use">USO RECOMENDADO</th>
-                <th scope="col" className="col-action">ACCIÓN</th>
+                <th scope="col" className="col-model">{comparison.columns.model}</th>
+                <th scope="col" className="col-fov">{comparison.columns.fov}</th>
+                <th scope="col" className="col-voxel">{comparison.columns.voxel}</th>
+                <th scope="col" className="col-exposure">{comparison.columns.exposure}</th>
+                <th scope="col" className="col-use">{comparison.columns.use}</th>
+                <th scope="col" className="col-action">{comparison.columns.action}</th>
               </tr>
             </thead>
             <tbody>
-              {comparisonData.map((item) => (
-                <tr key={item.name} className={item.isComingSoon ? "row-coming-soon" : ""}>
+              {comparison.rows.map((item, rowIndex) => (
+                <tr key={`${item.name}-${rowIndex}`} className={item.isComingSoon ? "row-coming-soon" : ""}>
                   <td className="col-model">
                     <div className="model-cell">
                       <Link href={item.href} className="model-link">
@@ -162,20 +91,20 @@ export default function ProductComparisonTable3D() {
                         className="btn-table-action"
                         title={`Pedir información sobre ${item.name}`}
                       >
-                        Pedir información
+                        {comparison.actionLabel}
                       </a>
 
-                      {item.isComingSoon && item.teaserVideoId && (
+                      {item.showTeaser && teaser.video?.local && (
                         <button
                           type="button"
                           className="btn-table-teaser"
-                          onClick={() => setActiveTeaser(item.teaserVideoId || null)}
+                          onClick={() => setTeaserOpen(true)}
                           title="Ver video teaser de lanzamiento"
                         >
                           <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
                             <polygon points="5 3 19 12 5 21 5 3" />
                           </svg>
-                          <span>Ver Teaser</span>
+                          <span>{comparison.teaserLabel}</span>
                         </button>
                       )}
                     </div>
@@ -191,72 +120,74 @@ export default function ProductComparisonTable3D() {
       <div className="x21-teaser-spotlight" data-product-reveal>
         <div className="x21-spotlight-visual">
           <div className="x21-badge-overlay">
-            <span>PRÓXIMAMENTE EN COLOMBIA</span>
+            <span>{teaser.badge}</span>
           </div>
-          <OriginalAssetImage
-            localSrc="/assets/products/X21-scaled.webp"
-            sourceSrc="https://vatechmexico.com/wp-content/uploads/2026/03/X21-scaled.png"
-            alt="VATECH Green X21 Próximamente"
-            className="x21-spotlight-img"
-          />
+          {teaser.image?.local && (
+            <OriginalAssetImage
+              localSrc={teaser.image.local}
+              sourceSrc={teaser.image.source}
+              alt={teaser.image.alt || teaser.productName}
+              className="x21-spotlight-img"
+            />
+          )}
         </div>
 
         <div className="x21-spotlight-content">
-          <p className="eyebrow red">AVANCE EXCLUSIVO</p>
-          <h3>Green X 21 · El futuro del diagnóstico CBCT</h3>
-          <p className="x21-teaser-desc">
-            El nuevo Green X21 con la máxima amplitud en diagnóstico 3D (FOV expandido hasta 21x19 cm) y tecnología de escaneo facial llegará próximamente a Colombia. No te pierdas el adelanto exclusivo:
-          </p>
+          <p className="eyebrow red">{teaser.eyebrow}</p>
+          <h3><Lines text={teaser.title} /></h3>
+          <p className="x21-teaser-desc">{teaser.text}</p>
 
-          <div className="x21-teaser-video-frame">
-            <video
-              src={X21_TEASER_VIDEO}
-              title="Green X21 Video Teaser Oficial VATECH"
-              className="x21-iframe"
-              controls
-              playsInline
-              preload="metadata"
-              poster="/assets/products/X21-scaled.webp"
-            />
-          </div>
+          {teaser.video?.local && (
+            <div className="x21-teaser-video-frame">
+              <video
+                src={teaser.video.local}
+                title={teaser.modalTitle}
+                className="x21-iframe"
+                controls
+                playsInline
+                preload="metadata"
+                poster={teaser.image?.local}
+              />
+            </div>
+          )}
 
           <div className="x21-spotlight-footer">
-            <span>Sé el primero en recibir notificación de lanzamiento y condiciones de preventa.</span>
+            <span>{teaser.footerText}</span>
             <a
-              href={getWhatsAppLink("Green X21", true)}
+              href={getWhatsAppLink(teaser.productName, true)}
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-red"
             >
-              Avísame cuando esté disponible ↗
+              {teaser.buttonLabel} ↗
             </a>
           </div>
         </div>
       </div>
 
       {/* Modal flotante de Teaser si se hace clic desde la tabla */}
-      {activeTeaser && (
+      {teaserOpen && teaser.video?.local && (
         <div
           className="teaser-modal-overlay"
           role="dialog"
           aria-modal="true"
-          onClick={() => setActiveTeaser(null)}
+          onClick={() => setTeaserOpen(false)}
         >
           <div className="teaser-modal-box" onClick={(e) => e.stopPropagation()}>
             <button
               type="button"
               className="teaser-modal-close"
-              onClick={() => setActiveTeaser(null)}
+              onClick={() => setTeaserOpen(false)}
               aria-label="Cerrar video teaser"
             >
               ✕
             </button>
             <div className="teaser-modal-header">
-              <span className="model-coming-soon-pill">PRÓXIMAMENTE EN COLOMBIA</span>
-              <h4>Green X21 · Video Teaser Oficial</h4>
+              <span className="model-coming-soon-pill">{teaser.badge}</span>
+              <h4>{teaser.modalTitle}</h4>
             </div>
             <div className="teaser-modal-player">
-              <video src={X21_TEASER_VIDEO} title="Green X21 Video Teaser" controls autoPlay playsInline />
+              <video src={teaser.video.local} title={teaser.modalTitle} controls autoPlay playsInline />
             </div>
           </div>
         </div>

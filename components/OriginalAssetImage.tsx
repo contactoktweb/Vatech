@@ -21,6 +21,8 @@ export default function OriginalAssetImage({ localSrc, sourceSrc, alt = "", deco
     if (img && img.complete && img.naturalWidth === 0 && src !== sourceSrc) setSrc(sourceSrc);
   }, [src, sourceSrc]);
 
+  if (!src) return null;
+
   return (
     <img
       {...props}

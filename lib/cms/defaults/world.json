@@ -1,0 +1,292 @@
+{
+  "offices": [
+    {
+      "country": "Indonesia",
+      "name": "VATECH Indonesia",
+      "address": "SME Tower Lantai 6, Jalan Gatot Subroto Kav. 94, Jakarta Selatan, Indonesia 12780",
+      "contact": "edward.jang@vatechglobal.com",
+      "image": {
+        "local": "/assets/world-hd/indonesia.png",
+        "source": "https://vatechmexico.com/wp-content/uploads/2026/03/indonesia.png",
+        "alt": "Oficina VATECH Indonesia"
+      }
+    },
+    {
+      "country": "China",
+      "name": "VATECH China Co., Ltd.",
+      "address": "E-3, No. 1618 Yishan Rd, Caohejing Development Zone, Minhang Dist. Shanghai P.R China 201103",
+      "contact": "serok@vatech-china.com · +86 21 6145 0380",
+      "image": {
+        "local": "/assets/world-hd/VATECH-EN-EL-MUNDO-18.png",
+        "source": "https://vatechmexico.com/wp-content/uploads/2026/03/VATECH-EN-EL-MUNDO-18.png",
+        "alt": "Oficina VATECH China"
+      }
+    },
+    {
+      "country": "USA · New Jersey",
+      "name": "VATECH America Inc.",
+      "address": "2200 Fletcher Ave., Suite 705A, Fort Lee, NJ 07024",
+      "contact": "sales@vatechamerica.com · +1 201 210 5028",
+      "image": {
+        "local": "/assets/world-hd/VATECH-EN-EL-MUNDO-17.png",
+        "source": "https://vatechmexico.com/wp-content/uploads/2026/03/VATECH-EN-EL-MUNDO-17.png",
+        "alt": "Oficina VATECH USA · New Jersey"
+      }
+    },
+    {
+      "country": "Brasil",
+      "name": "VATECH Brasil LTDA",
+      "address": "Rua Aureliano Guimarães, 172, CJ 1010 Vila Andrade, São Paulo – SP, 05727-160",
+      "contact": "venda@vatechbrasil.com.br · +55 11 2365-7154",
+      "image": {
+        "local": "/assets/world-hd/VATECH-EN-EL-MUNDO-16.png",
+        "source": "https://vatechmexico.com/wp-content/uploads/2026/03/VATECH-EN-EL-MUNDO-16.png",
+        "alt": "Oficina VATECH Brasil"
+      }
+    },
+    {
+      "country": "Francia",
+      "name": "VATECH France Co. Ltd.",
+      "address": "Parc de Haute Maison 4/6 Allee Kepler, 77420 Champs sur Marne, France",
+      "contact": "info@vatech-france.fr · +33 1 64 11 43 30",
+      "image": {
+        "local": "/assets/world-hd/VATECH-EN-EL-MUNDO-15.png",
+        "source": "https://vatechmexico.com/wp-content/uploads/2026/03/VATECH-EN-EL-MUNDO-15.png",
+        "alt": "Oficina VATECH Francia"
+      }
+    },
+    {
+      "country": "India",
+      "name": "VATECH India Pvt Ltd.",
+      "address": "Plot No. NS-5, F-9 Street, Munirka Marg, Vasant Vihar, New Delhi 110057",
+      "contact": "contactus@vatechindia.in",
+      "image": {
+        "local": "/assets/world-hd/VATECH-EN-EL-MUNDO-14.png",
+        "source": "https://vatechmexico.com/wp-content/uploads/2026/03/VATECH-EN-EL-MUNDO-14.png",
+        "alt": "Oficina VATECH India"
+      }
+    },
+    {
+      "country": "Malasia",
+      "name": "VATECH Global Asia HQ Sdn.",
+      "address": "41-G & 41-2, Block D, Zenith Corporate Park, Kelana Jaya, Selangor, Malaysia",
+      "contact": "info@vatechasia.com · +603 7831 6901",
+      "image": {
+        "local": "/assets/world-hd/VATECH-EN-EL-MUNDO-13.png",
+        "source": "https://vatechmexico.com/wp-content/uploads/2026/03/VATECH-EN-EL-MUNDO-13.png",
+        "alt": "Oficina VATECH Malasia"
+      }
+    },
+    {
+      "country": "Colombia",
+      "name": "VATECH Colombia",
+      "address": "Cra. 7 # 113-43, Oficina 805, Teleport Business Park, Bogotá, Colombia",
+      "contact": "marketing.colombia@vatechglobal.com · +57 (312) 634-4188",
+      "image": {
+        "local": "/assets/world-hd/colombia.png",
+        "source": "/assets/world-hd/colombia.png",
+        "alt": "Oficina VATECH Colombia"
+      },
+      "mapUrl": "https://maps.app.goo.gl/2oGW1g6WhiqN3TLZ7"
+    },
+    {
+      "country": "Rusia",
+      "name": "LLC VATECH CORP.",
+      "address": "117246, Moscow, Str. Nauchnyi Proezd 17, Office 211",
+      "contact": "info@vatechrussia.com · +7 495 967 9055",
+      "image": {
+        "local": "/assets/world-hd/VATECH-EN-EL-MUNDO-11.png",
+        "source": "https://vatechmexico.com/wp-content/uploads/2026/03/VATECH-EN-EL-MUNDO-11.png",
+        "alt": "Oficina VATECH Rusia"
+      }
+    },
+    {
+      "country": "España",
+      "name": "VATECH Spain S.L.",
+      "address": "Volta dels Garrofers, 63 – Pol. Industrial Els Garrofers, 08340 Vilassar de Mar, Barcelona",
+      "contact": "vatech@vatech.es · +34 93 754 26 20",
+      "image": {
+        "local": "/assets/world-hd/VATECH-EN-EL-MUNDO-10.png",
+        "source": "https://vatechmexico.com/wp-content/uploads/2026/03/VATECH-EN-EL-MUNDO-10.png",
+        "alt": "Oficina VATECH España"
+      }
+    },
+    {
+      "country": "Taiwán",
+      "name": "Vatech Taiwan",
+      "address": "5F, No.62, Zhouzi St, Neihu District, Taipei City 114, Taiwan",
+      "contact": "service@vatech.com.tw · +886 2 8751 1578",
+      "image": {
+        "local": "/assets/world-hd/VATECH-EN-EL-MUNDO-09.png",
+        "source": "https://vatechmexico.com/wp-content/uploads/2026/03/VATECH-EN-EL-MUNDO-09.png",
+        "alt": "Oficina VATECH Taiwán"
+      }
+    },
+    {
+      "country": "Hong Kong",
+      "name": "VATECH Hongkong",
+      "address": "23/F, 8 Commercial Tower, 8 Sun Yip Street, Chai Wan, Hong Kong",
+      "contact": "tommy.parck@vatechglobal.com · +852 5409 8552",
+      "image": {
+        "local": "/assets/world-hd/VATECH-EN-EL-MUNDO-08.png",
+        "source": "https://vatechmexico.com/wp-content/uploads/2026/03/VATECH-EN-EL-MUNDO-08.png",
+        "alt": "Oficina VATECH Hong Kong"
+      }
+    },
+    {
+      "country": "UAE",
+      "name": "VATECH UAE",
+      "address": "Office #306, Building No 47, Dubai Healthcare City, Dubai, U.A.E",
+      "contact": "james.go@vatechglobal.com · +971 (0)4 572 7509",
+      "image": {
+        "local": "/assets/world-hd/VATECH-EN-EL-MUNDO-07.png",
+        "source": "https://vatechmexico.com/wp-content/uploads/2026/03/VATECH-EN-EL-MUNDO-07.png",
+        "alt": "Oficina VATECH UAE"
+      }
+    },
+    {
+      "country": "Reino Unido",
+      "name": "VATECH Dental Manufacturing Ltd.",
+      "address": "Chancery House, St. Nicholas Way, Sutton, SM1 1JB UK",
+      "contact": "info@vatech.uk.com · +44 208 652 1990",
+      "image": {
+        "local": "/assets/world-hd/VATECH-EN-EL-MUNDO-06.png",
+        "source": "https://vatechmexico.com/wp-content/uploads/2026/03/VATECH-EN-EL-MUNDO-06.png",
+        "alt": "Oficina VATECH Reino Unido"
+      }
+    },
+    {
+      "country": "Vietnam",
+      "name": "VATECH Vietnam",
+      "address": "Floor 4, TTC Building, 19 Duy Tan Street, Cau Giay District, Ha Noi, Vietnam",
+      "contact": "service@vatech.com.tw",
+      "image": {
+        "local": "/assets/world-hd/VATECH-EN-EL-MUNDO-05.png",
+        "source": "https://vatechmexico.com/wp-content/uploads/2026/03/VATECH-EN-EL-MUNDO-05.png",
+        "alt": "Oficina VATECH Vietnam"
+      }
+    },
+    {
+      "country": "Australia",
+      "name": "Vatech Medical Pty Ltd.",
+      "address": "Suite 5.04 Gateway Business Park 63-79 Parramatta Road, Silverwater, NSW 2128",
+      "contact": "info@vatechanz.com.au · 1300 789 454",
+      "image": {
+        "local": "/assets/world-hd/VATECH-EN-EL-MUNDO-04.png",
+        "source": "https://vatechmexico.com/wp-content/uploads/2026/03/VATECH-EN-EL-MUNDO-04.png",
+        "alt": "Oficina VATECH Australia"
+      }
+    },
+    {
+      "country": "República Checa",
+      "name": "VATECH Europe S.R.O",
+      "address": "Evropska 2588/33A 160 00 Prague, Czech Republic",
+      "contact": "info@vatecheurope.com",
+      "image": {
+        "local": "/assets/world-hd/VATECH-EN-EL-MUNDO-03.png",
+        "source": "https://vatechmexico.com/wp-content/uploads/2026/03/VATECH-EN-EL-MUNDO-03.png",
+        "alt": "Oficina VATECH República Checa"
+      }
+    }
+  ],
+  "regions": [
+    {
+      "place": "Bogotá D.C.",
+      "distributors": [
+        {
+          "name": "DEPÓSITO DENTAL ALFOR",
+          "status": "Certificado"
+        },
+        {
+          "name": "SISTEMAS ODONTOMEDICOS LTDA",
+          "status": "Certificado"
+        },
+        {
+          "name": "ELEGIR SOLUCIONES",
+          "status": "Distribuidor Autorizado"
+        }
+      ]
+    },
+    {
+      "place": "Medellín / Antioquia",
+      "distributors": [
+        {
+          "name": "DEPÓSITO DENTAL ALFOR",
+          "status": "Certificado"
+        },
+        {
+          "name": "SISTEMAS ODONTOMEDICOS LTDA",
+          "status": "Certificado"
+        },
+        {
+          "name": "DENTAL SOLUTIONS ANTIOQUIA"
+        }
+      ]
+    },
+    {
+      "place": "Cali / Valle del Cauca",
+      "distributors": [
+        {
+          "name": "SISTEMAS ODONTOMEDICOS LTDA",
+          "status": "Certificado"
+        },
+        {
+          "name": "VOXEL DENTAL",
+          "status": "Distribuidor Autorizado"
+        },
+        {
+          "name": "DEPÓSITO DENTAL ALFOR"
+        }
+      ]
+    },
+    {
+      "place": "Barranquilla / Atlántico",
+      "distributors": [
+        {
+          "name": "EQUIPOS DENTALES DEL CARIBE",
+          "status": "Certificado"
+        },
+        {
+          "name": "DEPÓSITO DENTAL ALFOR",
+          "status": "Certificado"
+        }
+      ]
+    },
+    {
+      "place": "Bucaramanga / Santander",
+      "distributors": [
+        {
+          "name": "BIOMÉDICA DENTAL SANTANDER",
+          "status": "Certificado"
+        },
+        {
+          "name": "SISTEMAS ODONTOMEDICOS LTDA"
+        }
+      ]
+    },
+    {
+      "place": "Eje Cafetero",
+      "distributors": [
+        {
+          "name": "DENTAL ALFOR",
+          "status": "Certificado"
+        },
+        {
+          "name": "SISTEMAS ODONTOMEDICOS LTDA"
+        }
+      ]
+    },
+    {
+      "place": "Cartagena / Bolívar",
+      "distributors": [
+        {
+          "name": "CARIBE DENTAL",
+          "status": "Distribuidor Autorizado"
+        },
+        {
+          "name": "EQUIPOS DENTALES DEL CARIBE"
+        }
+      ]
+    }
+  ]
+}

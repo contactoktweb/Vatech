@@ -5,9 +5,12 @@ import { useEffect } from "react";
 import OriginalAssetImage from "./OriginalAssetImage";
 import SiteHeader from "./SiteHeader";
 import SiteFooter from "./SiteFooter";
-import { productCatalog, type ProductAsset, type ProductDetail } from "../lib/productCatalog";
+import { useSiteSettings, useWhatsAppLink } from "./SiteSettingsProvider";
+import { Lines, withProduct } from "@/lib/cms/text";
+import type { CmsFile, ProductAsset, ProductDetail, ProductPageLabels } from "@/lib/cms/types";
 
-function SourceImage({ asset, className = "", loading = "lazy" }: { asset: ProductAsset; className?: string; loading?: "lazy" | "eager" }) {
+function SourceImage({ asset, className = "", loading = "lazy" }: { asset?: ProductAsset; className?: string; loading?: "lazy" | "eager" }) {
+  if (!asset?.local) return null;
   return <OriginalAssetImage localSrc={asset.local} sourceSrc={asset.source} alt={asset.alt || ""} className={className} loading={loading} />;
 }
 
@@ -18,11 +21,11 @@ function FeatureMedia({ images, title }: { images: ProductAsset[]; title: string
   </div>;
 }
 
-function mediaIdentity(video: ProductAsset | string) {
+function mediaIdentity(video: CmsFile | string) {
   return typeof video === "string" ? video.split("?")[0] : video.source || video.local;
 }
 
-function ProductVideo({ video, productName, index }: { video: ProductAsset | string; productName: string; index: number }) {
+function ProductVideo({ video, productName, index }: { video: CmsFile | string; productName: string; index: number }) {
   if (typeof video === "string") {
     return <iframe
       className={index === 0 ? "pd-video-primary" : ""}
@@ -41,39 +44,10 @@ function ProductVideo({ video, productName, index }: { video: ProductAsset | str
   </video>;
 }
 
-type SpecItem = { label?: string; values: string[] };
-type SpecGroup = { key: string; items: SpecItem[] };
-
-// Etiquetas que, en las tablas originales, son subfilas de una celda con rowspan (Pano, Ceph, Con/Sin CEPH, tamaños de FOV…)
-const SUB_LABEL = /^(pano|ceph|cbct|ct|con\b|sin\b|\d)/i;
-
-// Las tablas importadas llegan "aplanadas" (sin rowspan): se reagrupan en característica → [subetiqueta, valores]
-function groupSpecs(rows: string[][]): SpecGroup[] {
-  const groups: SpecGroup[] = [];
-  let current: SpecGroup | null = null;
-  let grouped = false;
-  for (const row of rows) {
-    const cells = row.map((cell) => cell.trim()).filter(Boolean);
-    if (!cells.length) continue;
-    const lastItem = current?.items[current.items.length - 1];
-    if (cells.length === 1 && lastItem) {
-      lastItem.values.push(cells[0]);
-    } else if (cells.length >= 3) {
-      current = { key: cells[0], items: [{ label: cells[1], values: cells.slice(2) }] };
-      groups.push(current);
-      grouped = true;
-    } else if (cells.length === 2 && grouped && current && SUB_LABEL.test(cells[0])) {
-      current.items.push({ label: cells[0], values: [cells[1]] });
-    } else {
-      current = { key: cells[0], items: [{ values: cells.slice(1) }] };
-      groups.push(current);
-      grouped = false;
-    }
-  }
-  return groups;
-}
-
-export default function ProductDetailPage({ product }: { product: ProductDetail }) {
+export default function ProductDetailPage({ product, related, labels: L }: { product: ProductDetail; related: ProductDetail[]; labels: ProductPageLabels }) {
+  const { contact } = useSiteSettings();
+  const whatsapp = useWhatsAppLink();
+  const preorderUrl = whatsapp(withProduct(L.preorderMessage, product.name));
   useEffect(() => {
     const nodes = document.querySelectorAll("[data-pd-reveal]");
     const observer = new IntersectionObserver((entries) => {
@@ -83,11 +57,10 @@ export default function ProductDetailPage({ product }: { product: ProductDetail 
     return () => observer.disconnect();
   }, []);
 
-  const related = productCatalog.filter((item) => item.slug !== product.slug && item.category === product.category).slice(0, 3);
-  const hasSpecs = product.specifications.some((table) => table.length > 0);
+  const hasSpecs = product.specs.length > 0;
   const hasGallery = product.dimensionImages.length > 0 || product.gallery.some((group) => group.images.length > 0);
   const intro = product.intro.length ? product.intro : product.features[0]?.text?.slice(0, 1) || [product.summary];
-  const productVideos = [product.heroVideo, ...product.trainingVideos].filter(Boolean) as Array<ProductAsset | string>;
+  const productVideos = [product.heroVideo, ...product.trainingVideos].filter(Boolean) as Array<CmsFile | string>;
   const uniqueVideos = productVideos.filter((video, index, all) => all.findIndex((candidate) => mediaIdentity(candidate) === mediaIdentity(video)) === index);
 
   return <>
@@ -107,20 +80,20 @@ export default function ProductDetailPage({ product }: { product: ProductDetail 
           <div className="pd-actions">
             {product.isComingSoon ? (
               <>
-                {uniqueVideos.length > 0 && <a href="#teaser-video" className="pd-primary">Ver video teaser <span>▶</span></a>}
+                {uniqueVideos.length > 0 && <a href="#teaser-video" className="pd-primary">{L.teaserButton} <span>▶</span></a>}
                 <a
-                  href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "573126344188"}?text=${encodeURIComponent("Hola VATECH Colombia, me gustaría recibir información sobre el próximo lanzamiento de " + product.name + " en Colombia.")}`}
+                  href={preorderUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={uniqueVideos.length > 0 ? "pd-secondary" : "pd-primary"}
                 >
-                  {uniqueVideos.length > 0 ? "Avísame cuando esté disponible" : "Pedir información de preventa"} <span>→</span>
+                  {uniqueVideos.length > 0 ? L.notifyButton : L.preorderShort} <span>→</span>
                 </a>
               </>
             ) : (
               <>
-                <a href="#caracteristicas" className="pd-primary">Ver características <span>↓</span></a>
-                <a href="mailto:marketing.colombia@vatechglobal.com?subject=Información%20sobre%20VATECH" className="pd-secondary">Solicitar información <span>→</span></a>
+                <a href="#caracteristicas" className="pd-primary">{L.primaryButton} <span>↓</span></a>
+                <a href={`mailto:${contact.email}?subject=${encodeURIComponent(`Información sobre ${product.name}`)}`} className="pd-secondary">{L.secondaryButton} <span>→</span></a>
               </>
             )}
           </div>
@@ -133,7 +106,7 @@ export default function ProductDetailPage({ product }: { product: ProductDetail 
           </video>}
           <SourceImage asset={product.heroImage} className="pd-hero-product" loading="eager" />
           {product.isComingSoon ? (
-            <span className="pd-stage-label label-soon">PRÓXIMAMENTE</span>
+            <span className="pd-stage-label label-soon">{L.comingSoonShort}</span>
           ) : (
             <>
               <span className="pd-stage-label label-a">PRECISION IMAGING</span>
@@ -146,7 +119,7 @@ export default function ProductDetailPage({ product }: { product: ProductDetail 
       <nav className="pd-subnav" aria-label="Navegación del producto">
         <strong>
           {product.name}
-          {product.isComingSoon && <span className="subnav-soon-pill">Próximamente</span>}
+          {product.isComingSoon && <span className="subnav-soon-pill">{L.comingSoonPill}</span>}
         </strong>
         <div>
           {product.isComingSoon ? (
@@ -169,10 +142,10 @@ export default function ProductDetailPage({ product }: { product: ProductDetail 
       {product.isComingSoon ? (
         <section className="pd-teaser-full" id="teaser-video" data-pd-reveal>
           <div className="pd-teaser-head">
-            <span className="model-coming-soon-pill">PRÓXIMAMENTE EN COLOMBIA</span>
+            <span className="model-coming-soon-pill">{L.comingSoonBadge}</span>
             <h2>{product.name}</h2>
             <p>
-              {product.summary || `Próximamente disponible en Colombia. Muy pronto compartiremos todos los detalles y fechas oficiales de disponibilidad en el país.`}
+              {product.summary || L.comingSoonFallback}
             </p>
           </div>
           {uniqueVideos.length > 0 && (
@@ -187,14 +160,14 @@ export default function ProductDetailPage({ product }: { product: ProductDetail 
             </div>
           )}
           <div className="pd-teaser-actions" id="contacto-preventa">
-            <p>¿Deseas ser de los primeros en conocer el lanzamiento y condiciones en Colombia?</p>
+            <p>{L.preorderText}</p>
             <a
-              href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "573126344188"}?text=${encodeURIComponent("Hola VATECH Colombia, me gustaría recibir información sobre el próximo lanzamiento de " + product.name + " en Colombia.")}`}
+              href={preorderUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-red"
             >
-              Pedir información de preventa por WhatsApp ↗
+              {L.preorderButton} ↗
             </a>
           </div>
         </section>
@@ -203,7 +176,7 @@ export default function ProductDetailPage({ product }: { product: ProductDetail 
           <section className="pd-intro" id="caracteristicas" data-pd-reveal>
             <div>
               <p className="pd-section-label">{product.category}</p>
-              <h2>Diseñado para ver<br/>más y decidir mejor.</h2>
+              <h2><Lines text={L.introTitle} /></h2>
             </div>
             <div className="pd-intro-copy">
               {intro.map((text, index) => <p key={index}>{text}</p>)}
@@ -227,22 +200,22 @@ export default function ProductDetailPage({ product }: { product: ProductDetail 
       )}
 
       {!product.isComingSoon && hasSpecs && <section className="pd-specs" id="especificaciones">
-        <div className="pd-specs-head" data-pd-reveal><p className="pd-section-label">DATOS TÉCNICOS</p><h2>Especificaciones.</h2></div>
+        <div className="pd-specs-head" data-pd-reveal><p className="pd-section-label">{L.specsLabel}</p><h2>{L.specsTitle}</h2></div>
         <div className="pd-spec-tables" data-pd-reveal>
-          {product.specifications.map((table, tableIndex) => <div className="pd-spec-table-wrap" key={tableIndex}><table className="pd-spec-table"><tbody>
-            {groupSpecs(table).map((group, groupIndex) => <tr key={groupIndex}>
+          <div className="pd-spec-table-wrap"><table className="pd-spec-table"><tbody>
+            {product.specs.map((group, groupIndex) => <tr key={groupIndex}>
               <th scope="row">{group.key}</th>
               <td>{group.items.map((item, itemIndex) => <div className={`pd-spec-item${item.label ? " has-label" : ""}`} key={itemIndex}>
                 {item.label && <span className="pd-spec-sublabel">{item.label}</span>}
                 <span className="pd-spec-values">{item.values.map((value, valueIndex) => <span key={valueIndex}>{value}</span>)}</span>
               </div>)}</td>
             </tr>)}
-          </tbody></table></div>)}
+          </tbody></table></div>
         </div>
       </section>}
 
       {!product.isComingSoon && hasGallery && <section className="pd-gallery" id="galeria">
-        <div className="pd-gallery-head" data-pd-reveal><div><p className="pd-section-label">DETALLE VISUAL</p><h2>Explora cada detalle.</h2></div></div>
+        <div className="pd-gallery-head" data-pd-reveal><div><p className="pd-section-label">{L.galleryLabel}</p><h2>{L.galleryTitle}</h2></div></div>
         {product.dimensionImages.length > 0 && <div className="pd-dimensions" data-pd-reveal>{product.dimensionImages.map((asset, index) => <figure key={`${asset.local}-${index}`}><SourceImage asset={asset} /></figure>)}</div>}
         {product.gallery.length > 0 && <div className="pd-gallery-groups">{product.gallery.map((group, groupIndex) => group.images.length > 0 && <article key={groupIndex} data-pd-reveal>
           {group.title && <h3>{group.title}</h3>}
@@ -253,8 +226,8 @@ export default function ProductDetailPage({ product }: { product: ProductDetail 
 
       {!product.isComingSoon && uniqueVideos.length > 0 && <section className="pd-training" id="video" data-pd-reveal>
         <div className="pd-training-copy">
-          <p className="pd-section-label">VIDEO DEL PRODUCTO</p>
-          <h2>{uniqueVideos.length > 1 ? "Videos, demostraciones y capacitación." : "Conoce el producto en acción."}</h2>
+          <p className="pd-section-label">{L.videoLabel}</p>
+          <h2>{uniqueVideos.length > 1 ? L.videoTitleMultiple : L.videoTitleSingle}</h2>
         </div>
         <div className="pd-training-grid">
           {uniqueVideos.map((video, index) => <ProductVideo key={`${mediaIdentity(video)}-${index}`} video={video} productName={product.name} index={index} />)}
@@ -262,18 +235,18 @@ export default function ProductDetailPage({ product }: { product: ProductDetail 
       </section>}
 
       {!product.isComingSoon && product.catalogPdf && <section className="pd-catalog" id="catalogo" data-pd-reveal>
-        <div><p className="pd-section-label">DOCUMENTACIÓN</p><h2>Consulta el catálogo<br/>completo.</h2></div>
-        <a href={product.catalogPdf.local} target="_blank" rel="noreferrer">Descargar catálogo PDF <span>↗</span></a>
+        <div><p className="pd-section-label">{L.catalogLabel}</p><h2><Lines text={L.catalogTitle} /></h2></div>
+        <a href={product.catalogPdf.local} target="_blank" rel="noreferrer">{L.catalogButton} <span>↗</span></a>
       </section>}
 
       <section className="pd-contact" data-pd-reveal>
         <div className="pd-contact-ring" />
-        <p>VATECH COLOMBIA</p><h2>¿Quieres conocer<br/>este equipo?</h2>
-        <a href="mailto:marketing.colombia@vatechglobal.com">Hablar con un especialista <span>→</span></a>
+        <p>{L.contactEyebrow}</p><h2><Lines text={L.contactTitle} /></h2>
+        <a href={`mailto:${contact.email}`}>{L.contactButton} <span>→</span></a>
       </section>
 
       {related.length > 0 && <section className="pd-related">
-        <div className="pd-related-head"><p className="pd-section-label">TAMBIÉN PUEDE INTERESARTE</p><h2>Más soluciones VATECH.</h2></div>
+        <div className="pd-related-head"><p className="pd-section-label">{L.relatedLabel}</p><h2>{L.relatedTitle}</h2></div>
         <div className="pd-related-grid">{related.map((item) => <Link href={`/productos/${item.slug}`} key={item.slug} className="pd-related-card">
           <div><SourceImage asset={item.cardImage} /><span>Explorar →</span></div><h3>{item.name}</h3><p>{item.summary}</p>
         </Link>)}</div>

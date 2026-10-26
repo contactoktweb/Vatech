@@ -2,12 +2,16 @@
 
 import { useState } from "react";
 import type { FormEvent } from "react";
+import { useSiteSettings } from "./SiteSettingsProvider";
+import { CheckIcon, MailIcon } from "./icons";
+import type { DistributorsPageContent } from "@/lib/cms/types";
 
-const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "573126344188";
-const WHATSAPP_DISPLAY = process.env.NEXT_PUBLIC_WHATSAPP_DISPLAY || "+57 312 6344188";
-const TARGET_EMAIL = process.env.NEXT_PUBLIC_DISTRIBUTOR_EMAIL || "marketing.colombia@vatechglobal.com";
+export default function DistributorForm({ content: c }: { content: DistributorsPageContent["form"] }) {
+  const { contact } = useSiteSettings();
+  const WHATSAPP_NUMBER = contact.whatsappNumber;
+  const WHATSAPP_DISPLAY = contact.phoneDisplay;
+  const TARGET_EMAIL = process.env.NEXT_PUBLIC_DISTRIBUTOR_EMAIL || contact.email;
 
-export default function DistributorForm() {
   const [formData, setFormData] = useState({
     nombre: "",
     correo: "",
@@ -21,7 +25,7 @@ export default function DistributorForm() {
 
   const buildWhatsAppUrl = (data: typeof formData) => {
     const text = [
-      "Hola, Quiero ser distribuidor de Vatech",
+      c.whatsappIntro,
       "",
       `*Nombre / Empresa:* ${data.nombre}`,
       `*Correo:* ${data.correo}`,
@@ -61,7 +65,7 @@ export default function DistributorForm() {
     e.preventDefault();
 
     if (!formData.nombre || !formData.correo || !formData.celular || !formData.ciudad) {
-      setErrorMessage("Por favor completa los campos requeridos.");
+      setErrorMessage(c.requiredError);
       setStatus("error");
       return;
     }
@@ -99,20 +103,16 @@ export default function DistributorForm() {
   return (
     <div className="distributor-form-card">
       <div className="distributor-form-header">
-        <span className="distributor-form-pill">POSTULACIÓN DE DISTRIBUIDOR</span>
-        <h3>Formulario de Distribución</h3>
-        <p>
-          Déjanos tus datos comerciales y nuestro equipo evaluará tu perfil para integrarte a la red autorizada VATECH Colombia.
-        </p>
+        <span className="distributor-form-pill">{c.badge}</span>
+        <h3>{c.title}</h3>
+        <p>{c.text}</p>
       </div>
 
       {status === "success" ? (
         <div className="distributor-form-success">
-          <div className="success-icon" aria-hidden="true">✓</div>
-          <h4>¡Solicitud Preparada con Éxito!</h4>
-          <p>
-            Hemos registrado tus datos. Para mayor agilidad, puedes continuar la conversación directamente por WhatsApp o confirmar por correo electrónico:
-          </p>
+          <div className="success-icon" aria-hidden="true"><CheckIcon size={22} /></div>
+          <h4>{c.successTitle}</h4>
+          <p>{c.successText}</p>
           <div className="success-actions">
             <a
               href={buildWhatsAppUrl(formData)}
@@ -120,13 +120,13 @@ export default function DistributorForm() {
               rel="noopener noreferrer"
               className="btn btn-primary"
             >
-              Abrir WhatsApp Comercial ({WHATSAPP_DISPLAY}) →
+              {c.successWhatsapp} ({WHATSAPP_DISPLAY}) →
             </a>
             <a
               href={buildMailtoUrl(formData)}
               className="btn btn-outline"
             >
-              Enviar por Correo a {TARGET_EMAIL} ✉
+              {c.successEmail} {TARGET_EMAIL} <MailIcon size={16} />
             </a>
           </div>
           <button
@@ -137,7 +137,7 @@ export default function DistributorForm() {
               setFormData({ nombre: "", correo: "", celular: "", ciudad: "", mensaje: "" });
             }}
           >
-            Enviar otra postulación
+            {c.resetLabel}
           </button>
         </div>
       ) : (
@@ -150,14 +150,14 @@ export default function DistributorForm() {
 
           <div className="form-group">
             <label htmlFor="dist-nombre">
-              Nombre o Razón Social <span className="req">*</span>
+              {c.fields.name.label} <span className="req">*</span>
             </label>
             <input
               id="dist-nombre"
               name="nombre"
               type="text"
               required
-              placeholder="Ej: Distribuciones Médicas / Dr. Carlos Méndez"
+              placeholder={c.fields.name.placeholder}
               value={formData.nombre}
               onChange={(e) => setFormData({ ...formData, nombre: e.target.value })}
             />
@@ -166,14 +166,14 @@ export default function DistributorForm() {
           <div className="form-row-2">
             <div className="form-group">
               <label htmlFor="dist-correo">
-                Correo Electrónico <span className="req">*</span>
+                {c.fields.email.label} <span className="req">*</span>
               </label>
               <input
                 id="dist-correo"
                 name="correo"
                 type="email"
                 required
-                placeholder="contacto@tuempresa.com"
+                placeholder={c.fields.email.placeholder}
                 value={formData.correo}
                 onChange={(e) => setFormData({ ...formData, correo: e.target.value })}
               />
@@ -181,14 +181,14 @@ export default function DistributorForm() {
 
             <div className="form-group">
               <label htmlFor="dist-celular">
-                Celular / WhatsApp <span className="req">*</span>
+                {c.fields.phone.label} <span className="req">*</span>
               </label>
               <input
                 id="dist-celular"
                 name="celular"
                 type="tel"
                 required
-                placeholder="+57 300 123 4567"
+                placeholder={c.fields.phone.placeholder}
                 value={formData.celular}
                 onChange={(e) => setFormData({ ...formData, celular: e.target.value })}
               />
@@ -197,14 +197,14 @@ export default function DistributorForm() {
 
           <div className="form-group">
             <label htmlFor="dist-ciudad">
-              Ciudad y Departamento <span className="req">*</span>
+              {c.fields.city.label} <span className="req">*</span>
             </label>
             <input
               id="dist-ciudad"
               name="ciudad"
               type="text"
               required
-              placeholder="Ej: Barranquilla, Atlántico / Cali, Valle"
+              placeholder={c.fields.city.placeholder}
               value={formData.ciudad}
               onChange={(e) => setFormData({ ...formData, ciudad: e.target.value })}
             />
@@ -212,14 +212,14 @@ export default function DistributorForm() {
 
           <div className="form-group">
             <label htmlFor="dist-mensaje">
-              Mensaje o Información de tu Empresa <span className="req">*</span>
+              {c.fields.message.label} <span className="req">*</span>
             </label>
             <textarea
               id="dist-mensaje"
               name="mensaje"
               rows={4}
               required
-              placeholder="Cuéntanos brevemente sobre tu empresa, experiencia en el sector dental o zonas en las que te interesa distribuir..."
+              placeholder={c.fields.message.placeholder}
               value={formData.mensaje}
               onChange={(e) => setFormData({ ...formData, mensaje: e.target.value })}
             />
@@ -231,7 +231,7 @@ export default function DistributorForm() {
               className="btn btn-primary btn-full"
               disabled={status === "submitting"}
             >
-              {status === "submitting" ? "Procesando solicitud..." : "Enviar por WhatsApp Comercial →"}
+              {status === "submitting" ? c.submittingLabel : `${c.whatsappButton} →`}
             </button>
             <button
               type="button"
@@ -242,13 +242,11 @@ export default function DistributorForm() {
                 handleSubmit(fakeEvent, "email");
               }}
             >
-              Enviar por Correo Electrónico ✉
+              {c.emailButton} <MailIcon size={16} />
             </button>
           </div>
 
-          <p className="form-disclaimer">
-            Al enviar este formulario aceptas el tratamiento confidencial de tus datos para fines de evaluación comercial por parte de VATECH Colombia.
-          </p>
+          <p className="form-disclaimer">{c.disclaimer}</p>
         </form>
       )}
     </div>

@@ -2,45 +2,42 @@
 
 import SubpageShell from "./SubpageShell";
 import DistributorForm from "./DistributorForm";
+import { useSiteSettings, useWhatsAppLink } from "./SiteSettingsProvider";
+import { Lines } from "@/lib/cms/text";
+import type { DistributorsPageContent } from "@/lib/cms/types";
 
-const colombia = [
-  ["Bogotá D.C.", ["DEPÓSITO DENTAL ALFOR · Certificado", "SISTEMAS ODONTOMEDICOS LTDA · Certificado", "ELEGIR SOLUCIONES · Distribuidor Autorizado"]],
-  ["Medellín / Antioquia", ["DEPÓSITO DENTAL ALFOR · Certificado", "SISTEMAS ODONTOMEDICOS LTDA · Certificado", "DENTAL SOLUTIONS ANTIOQUIA"]],
-  ["Cali / Valle del Cauca", ["SISTEMAS ODONTOMEDICOS LTDA · Certificado", "VOXEL DENTAL · Distribuidor Autorizado", "DEPÓSITO DENTAL ALFOR"]],
-  ["Barranquilla / Atlántico", ["EQUIPOS DENTALES DEL CARIBE · Certificado", "DEPÓSITO DENTAL ALFOR · Certificado"]],
-  ["Bucaramanga / Santander", ["BIOMÉDICA DENTAL SANTANDER · Certificado", "SISTEMAS ODONTOMEDICOS LTDA"]],
-  ["Eje Cafetero", ["DENTAL ALFOR · Certificado", "SISTEMAS ODONTOMEDICOS LTDA"]],
-  ["Cartagena / Bolívar", ["CARIBE DENTAL · Distribuidor Autorizado", "EQUIPOS DENTALES DEL CARIBE"]],
-] as const;
+export default function DistributorsPage({ content }: { content: DistributorsPageContent }) {
+  const { hero, directory, join, form, cta } = content;
+  const { contact } = useSiteSettings();
+  const whatsapp = useWhatsAppLink();
 
-export default function DistributorsPage() {
   return (
     <SubpageShell
-      eyebrow="RED DE DISTRIBUIDORES"
-      title={<>Distribuidores oficiales<br /><span>en Colombia.</span></>}
-      lead="Nuestra red de distribuidores autorizados en Colombia te brinda acceso directo a todo el portafolio de sistemas radiológicos 2D/3D VATECH, con cobertura y acompañamiento en las principales regiones del país."
-      heroAside={<div className="network-orbit"><span>CO</span><i className="node n1" /><i className="node n2" /><i className="node n3" /><i className="node n4" /></div>}
+      eyebrow={hero.eyebrow}
+      title={<>{hero.title}<br /><span>{hero.highlight}</span></>}
+      lead={hero.lead}
+      heroAside={<div className="network-orbit"><span>{hero.badge}</span><i className="node n1" /><i className="node n2" /><i className="node n3" /><i className="node n4" /></div>}
     >
       <section className="distributor-directory">
         <div className="directory-head">
           <div>
-            <p className="eyebrow red">RED NACIONAL</p>
-            <h2>Distribuidores Autorizados en Colombia</h2>
+            <p className="eyebrow red">{directory.eyebrow}</p>
+            <h2><Lines text={directory.title} /></h2>
           </div>
-          <span>{colombia.length} regiones con cobertura</span>
+          <span>{directory.regions.length} {directory.coverageLabel}</span>
         </div>
         <div className="directory-grid">
-          {colombia.map(([place, names], i) => (
-            <article className="directory-card" key={place} data-reveal>
+          {directory.regions.map((region, i) => (
+            <article className="directory-card" key={`${region.place}-${i}`} data-reveal>
               <div className="directory-place">
                 <span>{String(i + 1).padStart(2, "0")}</span>
-                <h3>{place}</h3>
+                <h3>{region.place}</h3>
               </div>
               <div className="directory-names">
-                {names.map((name) => (
-                  <div key={name}>
-                    <i className={name.toLowerCase().includes("certificado") ? "certified" : ""} />
-                    <p>{name}</p>
+                {(region.distributors ?? []).map((distributor, j) => (
+                  <div key={`${distributor.name}-${j}`}>
+                    <i className={distributor.status === "Certificado" ? "certified" : ""} />
+                    <p>{distributor.status ? `${distributor.name} · ${distributor.status}` : distributor.name}</p>
                     <b>↗</b>
                   </div>
                 ))}
@@ -53,82 +50,48 @@ export default function DistributorsPage() {
       <section id="ser-distribuidor" className="distributor-join-section">
         <div className="distributor-join-container">
           <div className="distributor-join-info" data-reveal>
-            <p className="eyebrow red">ALIANZA ESTRATÉGICA · COLOMBIA</p>
-            <h2>¿Quieres ser distribuidor de VATECH?</h2>
-            <p className="distributor-join-lead">
-              Forma parte de la red oficial de la marca líder global en imagenología dental. Ofrecemos respaldo directo de fábrica, inventario local en Colombia, capacitación técnica certificada y soporte comercial de primer nivel.
-            </p>
+            <p className="eyebrow red">{join.eyebrow}</p>
+            <h2><Lines text={join.title} /></h2>
+            <p className="distributor-join-lead">{join.text}</p>
 
             <div className="distributor-benefits-grid">
-              <div className="benefit-item">
-                <span className="benefit-num">01</span>
-                <div>
-                  <strong>Portafolio Global Reconocido</strong>
-                  <p>Equipos tomográficos 3D CBCT (A9, Green X), panorámicos 2D PaX-i, rayos X portátiles EzRay Air y sensores EzSensor.</p>
+              {join.benefits.map((benefit, i) => (
+                <div className="benefit-item" key={`${benefit.title}-${i}`}>
+                  <span className="benefit-num">{String(i + 1).padStart(2, "0")}</span>
+                  <div>
+                    <strong>{benefit.title}</strong>
+                    <p>{benefit.text}</p>
+                  </div>
                 </div>
-              </div>
-              <div className="benefit-item">
-                <span className="benefit-num">02</span>
-                <div>
-                  <strong>Soporte Técnico de Fábrica</strong>
-                  <p>Sede propia en Bogotá (Teleport Business Park) con stock permanente de repuestos originales e ingenieros certificados.</p>
-                </div>
-              </div>
-              <div className="benefit-item">
-                <span className="benefit-num">03</span>
-                <div>
-                  <strong>Condiciones Comerciales Preferenciales</strong>
-                  <p>Márgenes competitivos, acompañamiento preventa para proyectos clínicos y material promocional institucional.</p>
-                </div>
-              </div>
-              <div className="benefit-item">
-                <span className="benefit-num">04</span>
-                <div>
-                  <strong>Capacitación y Certificación</strong>
-                  <p>Entrenamiento continuo tanto para tus asesores comerciales como para tu personal de ingeniería y servicio técnico.</p>
-                </div>
-              </div>
+              ))}
             </div>
 
             <div className="distributor-direct-contact">
-              <a
-                href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "573126344188"}?text=${encodeURIComponent("Hola, Quiero ser distribuidor de Vatech")}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="direct-contact-pill whatsapp"
-              >
-                <span>WhatsApp Directo:</span>
-                <strong>+57 312 6344188</strong>
+              <a href={whatsapp(join.whatsappMessage)} target="_blank" rel="noopener noreferrer" className="direct-contact-pill whatsapp">
+                <span>{join.whatsappLabel}</span>
+                <strong>{contact.phoneDisplay}</strong>
               </a>
-              <a
-                href="mailto:marketing.colombia@vatechglobal.com?subject=Solicitud:%20Quiero%20ser%20distribuidor%20de%20Vatech"
-                className="direct-contact-pill email"
-              >
-                <span>Correo Oficial:</span>
-                <strong>marketing.colombia@vatechglobal.com</strong>
+              <a href={`mailto:${contact.email}?subject=${encodeURIComponent(join.emailSubject)}`} className="direct-contact-pill email">
+                <span>{join.emailLabel}</span>
+                <strong>{contact.email}</strong>
               </a>
             </div>
           </div>
 
           <div className="distributor-join-form-wrapper" data-reveal>
-            <DistributorForm />
+            <DistributorForm content={form} />
           </div>
         </div>
       </section>
 
       <section className="distributor-cta">
         <div data-reveal>
-          <p className="eyebrow light">¿NECESITAS ASESORÍA?</p>
-          <h2>Encuentra el distribuidor VATECH más cercano a tu clínica.</h2>
-          <p>Contáctanos directamente y te comunicaremos de inmediato con el representante autorizado de tu ciudad en Colombia.</p>
+          <p className="eyebrow light">{cta.eyebrow}</p>
+          <h2><Lines text={cta.title} /></h2>
+          <p>{cta.text}</p>
         </div>
-        <a
-          className="btn btn-white"
-          href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "573126344188"}?text=${encodeURIComponent("Hola VATECH Colombia, me gustaría contactar a un distribuidor autorizado en mi ciudad.")}`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Contactar por WhatsApp →
+        <a className="btn btn-white" href={whatsapp(cta.whatsappMessage)} target="_blank" rel="noopener noreferrer">
+          {cta.buttonLabel} →
         </a>
       </section>
     </SubpageShell>

@@ -1,12 +1,14 @@
-import { productCatalog } from "../../lib/productCatalog";
-import { CONTACT, SITE_DESCRIPTION, SITE_NAME, SOCIAL, absoluteUrl } from "../../lib/site";
+import { getProducts, getSiteSettings } from "../../lib/cms";
+import { absoluteUrl } from "../../lib/site";
 
-export const dynamic = "force-static";
+export const revalidate = 3600;
 
 // llms.txt: resumen en texto plano para asistentes de IA (GEO), generado desde el catálogo
-export function GET() {
-  const byCategory = new Map<string, typeof productCatalog>();
-  for (const product of productCatalog) {
+export async function GET() {
+  const [products, settings] = await Promise.all([getProducts(), getSiteSettings()]);
+  const { siteName: SITE_NAME, seo, contact } = settings;
+  const byCategory = new Map<string, typeof products>();
+  for (const product of products) {
     byCategory.set(product.category, [...(byCategory.get(product.category) || []), product]);
   }
 
@@ -18,16 +20,16 @@ export function GET() {
 
   const body = `# ${SITE_NAME}
 
-> ${SITE_DESCRIPTION}
+> ${seo.description}
 
 VATECH es una empresa coreana fundada en 1992, líder mundial en imagenología digital dental. ${SITE_NAME} es su presencia oficial en el país, con sede en Bogotá y red de distribuidores autorizados en Bogotá, Medellín, Cali, Barranquilla, Bucaramanga, Eje Cafetero y Cartagena.
 
 ## Contacto
 
-- Correo: ${CONTACT.email}
-- Teléfono y WhatsApp: ${CONTACT.phone} (${CONTACT.whatsapp})
-- Dirección: ${CONTACT.address.street}, ${CONTACT.address.city}, Colombia
-- Redes: ${SOCIAL.join(" · ")}
+- Correo: ${contact.email}
+- Teléfono y WhatsApp: ${contact.phoneDisplay} (https://wa.me/${contact.whatsappNumber})
+- Dirección: ${contact.addressLines.join(", ")}
+- Redes: ${settings.social.map((s) => s.url).join(" · ")}
 
 ## Páginas principales
 

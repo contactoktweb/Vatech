@@ -19,6 +19,17 @@ Para volver a descargar todos los recursos aunque ya existan:
 npm run assets:force
 ```
 
+## Administrador de contenido (Sanity)
+
+Todo el contenido se edita en **`/studio`** con Sanity. La puesta en marcha, las variables de entorno y la carga inicial están en [`docs/SANITY.md`](docs/SANITY.md).
+
+```bash
+cp .env.example .env.local   # agrega el Project ID y el token
+pnpm sanity:seed             # sube el contenido actual a Sanity
+```
+
+Sin variables de Sanity, el sitio usa el contenido por defecto de `lib/cms/defaults`.
+
 ## Rutas incluidas
 
 - `/` — Home

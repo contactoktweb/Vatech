@@ -1,8 +1,10 @@
 import type { MetadataRoute } from "next";
-import { productCatalog } from "../lib/productCatalog";
+import { getProducts } from "../lib/cms";
 import { absoluteUrl } from "../lib/site";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export const revalidate = 3600;
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date();
   const pages: MetadataRoute.Sitemap = [
     { url: absoluteUrl("/"), lastModified: now, changeFrequency: "weekly", priority: 1 },
@@ -12,7 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: absoluteUrl("/red-mundial-vatech"), lastModified: now, changeFrequency: "monthly", priority: 0.5 },
     { url: absoluteUrl("/distribuidores"), lastModified: now, changeFrequency: "monthly", priority: 0.8 },
   ];
-  const products: MetadataRoute.Sitemap = productCatalog.map((product) => ({
+  const products: MetadataRoute.Sitemap = (await getProducts()).map((product) => ({
     url: absoluteUrl(`/productos/${product.slug}`),
     lastModified: now,
     changeFrequency: "monthly",
