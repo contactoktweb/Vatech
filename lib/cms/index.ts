@@ -75,13 +75,18 @@ function completeProduct(raw: Partial<ProductDetail>): ProductDetail {
     base ?? ({ ...EMPTY_PRODUCT, slug: "", name: "", heroImage: EMPTY_IMAGE, cardImage: EMPTY_IMAGE, card: { title: "", description: "", image: EMPTY_IMAGE } } as ProductDetail),
     raw,
   );
-  // Si la tarjeta no tiene datos propios, se arma con el nombre, el resumen y la imagen del producto
+  // La tarjeta sigue al nombre y al resumen del producto, salvo que se le haya escrito un texto propio
+  // (el texto que dejó la carga inicial cuenta como "no editado")
+  const ownTitle = merged.card?.title && merged.card.title !== base?.card.title ? merged.card.title : "";
+  const ownDescription = merged.card?.description && merged.card.description !== base?.card.description ? merged.card.description : "";
+  const renamed = Boolean(base && merged.name !== base.name);
+  const resummarized = Boolean(base && merged.summary !== base.summary);
   return {
     ...merged,
     cardImage: merged.cardImage?.local ? merged.cardImage : merged.card?.image?.local ? merged.card.image : merged.heroImage,
     card: {
-      title: merged.card?.title || merged.name,
-      description: merged.card?.description || merged.summary,
+      title: ownTitle || (renamed || !merged.card?.title ? merged.name : merged.card.title),
+      description: ownDescription || (resummarized || !merged.card?.description ? merged.summary : merged.card.description),
       image: merged.card?.image?.local ? merged.card.image : merged.heroImage,
     },
   };
