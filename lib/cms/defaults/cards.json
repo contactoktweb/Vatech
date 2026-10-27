@@ -2,7 +2,6 @@
   "a9": {
     "group": "3d",
     "order": 1,
-    "title": "A9",
     "description": "Tecnología LITE en nuestro equipo con sistema 3 en 1 proporcionando imágenes precisas y de alta calidad, incluyendo una función extra de CT que permite realizar diagnósticos fundamentales y planificar tratamientos.",
     "image": {
       "local": "/assets/products/A9.png",
@@ -13,7 +12,6 @@
   "green-x12": {
     "group": "3d",
     "order": 2,
-    "title": "Green X12",
     "description": "El nuevo Green X 12 mejora la calidad de su imagen con mucho menos ruido a través de su Compressed Sensing Technology (CST), aumentando el proceso de reconstrucción 10 veces más rápido de lo normal.",
     "image": {
       "local": "/assets/products/X12.png",
@@ -24,7 +22,6 @@
   "green-x-12-se": {
     "group": "3d",
     "order": 3,
-    "title": "Green X-12 SE",
     "description": "Avanzado sistema de imagenología digital dental 4 en 1 (Pano, Ceph opcional, CBCT y escaneo de modelos) con tecnología de baja radiación y máxima resolución diagnóstica para tu clínica.",
     "image": {
       "local": "/assets/products/X12.png",
@@ -35,7 +32,6 @@
   "green-x16": {
     "group": "3d",
     "order": 4,
-    "title": "Green X 16",
     "description": "Green X 16 proporciona un gran campo de visión con la más alta resolución a través de tecnología CST de reconstrucción ultrarrápida, ideal para endodoncistas e implantólogos.",
     "image": {
       "local": "/assets/products/X18X16.png",
@@ -46,7 +42,6 @@
   "green-x18": {
     "group": "3d",
     "order": 5,
-    "title": "Green X 18",
     "description": "Green X 18 amplía las posibilidades diagnósticas con campo de visión extendido de un solo escaneo, diseñado para especialistas de ATM, periodoncistas y cirujanos maxilofaciales.",
     "image": {
       "local": "/assets/products/X18X16.png",
@@ -57,7 +52,6 @@
   "green-x21": {
     "group": "3d",
     "order": 6,
-    "title": "Green X21",
     "description": "El nuevo Green X21 con la máxima amplitud en diagnóstico 3D (FOV expandido hasta 21x19 cm) y escaneo facial. Próximamente disponible en Colombia.",
     "image": {
       "local": "/assets/products/X21-scaled.webp",
@@ -68,7 +62,6 @@
   "pax-i-plus": {
     "group": "2d",
     "order": 1,
-    "title": "PaX-i Plus",
     "description": "Calidad de Imagen Panorámica de 5.0 LP/MM CEPH RÁPIDO Tiempo de adquisición de 1.9 segundos",
     "image": {
       "local": "/assets/products/PAXIPLUS.png",
@@ -79,7 +72,6 @@
   "pax-i": {
     "group": "2d",
     "order": 2,
-    "title": "PaX-i",
     "description": "Proporciona la imagen panorámica más precisa y de alta calidad al combinar el procesamiento de imágenes.",
     "image": {
       "local": "/assets/products/PAXI-.png",
@@ -90,7 +82,6 @@
   "ezsensor-hd": {
     "group": "intraoral",
     "order": 1,
-    "title": "Ez Sensor HD",
     "description": "Haga su práctica fácil, rápida y profesional",
     "image": {
       "local": "/assets/products/HD.png",
@@ -101,7 +92,6 @@
   "ezsensor-classic": {
     "group": "intraoral",
     "order": 2,
-    "title": "Ez Sensor CLASSIC",
     "description": "Más delgado, más cómodo",
     "image": {
       "local": "/assets/products/CLASSIC.png",
@@ -112,7 +102,6 @@
   "ezray-air-portatil": {
     "group": "intraoral",
     "order": 3,
-    "title": "EzRay Air Portátil",
     "description": "Ligero, portátil y seguro",
     "image": {
       "local": "/assets/products/EZRAY-AIR-PORTATIL.png",
@@ -123,7 +112,6 @@
   "ez3d-i": {
     "group": "software",
     "order": 1,
-    "title": "Software 3D (Ez3D-i)",
     "description": "Visualización 3D precisa en tiempo real. Herramientas avanzadas de diagnóstico CBCT, simulación de implantes y vías aéreas.",
     "image": {
       "local": "/assets/products/EZ3D-I.webp",
@@ -134,7 +122,6 @@
   "ezdent-i": {
     "group": "software",
     "order": 2,
-    "title": "Software 2D (EzDent-i)",
     "description": "Gestión eficiente de imágenes 2D. Diagnóstico ágil, medición precisa, informes clínicos en un clic y administración de pacientes.",
     "image": {
       "local": "/assets/products/EZDENTIpng.webp",
@@ -145,7 +132,6 @@
   "ezortho": {
     "group": "software",
     "order": 3,
-    "title": "Software Especialidades (EzOrtho)",
     "description": "Diagnóstico avanzado para ortodoncia. Trazados cefalométricos automáticos con IA DAVIS, análisis ortodóncico y simulación 3D.",
     "image": {
       "local": "/assets/products/EZORTHOSOMBRA.webp",
@@ -156,7 +142,6 @@
   "clever-rc": {
     "group": "software",
     "order": 4,
-    "title": "Clever RC",
     "description": "Plataforma inteligente de gestión operativa e imagenológica de Vatech. Próximamente disponible en Colombia.",
     "image": {
       "local": "/assets/products/CLEVER-RC-scaled.webp",

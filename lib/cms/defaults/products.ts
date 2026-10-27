@@ -4,7 +4,7 @@ import { groupSpecs } from "../specs";
 import type { CatalogGroup, CmsFile, ProductDetail } from "../types";
 
 type RawProduct = (typeof rawProducts)[number] & { isComingSoon?: boolean };
-type Card = { group: CatalogGroup; order: number; title: string; description: string; image: ProductDetail["cardImage"] };
+type Card = { group: CatalogGroup; order: number; description: string; image: ProductDetail["cardImage"] };
 
 const cardBySlug = cards as Record<string, Card>;
 
@@ -31,8 +31,8 @@ export const defaultProducts: ProductDetail[] = (rawProducts as RawProduct[]).ma
     trainingVideos: raw.trainingVideos as Array<CmsFile | string>,
     cardImage: raw.cardImage,
     card: card
-      ? { title: card.title, description: card.description, image: card.image }
-      : { title: raw.name, description: raw.summary, image: raw.cardImage },
+      ? { description: card.description, image: card.image }
+      : { description: raw.summary, image: raw.cardImage },
     isComingSoon: Boolean(raw.isComingSoon),
   };
 });

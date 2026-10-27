@@ -276,7 +276,7 @@ export type ProductDetail = {
   catalogPdf: CmsFile | null;
   trainingVideos: Array<CmsFile | string>;
   cardImage: ProductAsset;
-  card: { title: string; description: string; image: ProductAsset };
+  card: { description: string; image: ProductAsset };
   isComingSoon?: boolean;
   seo?: Seo;
 };

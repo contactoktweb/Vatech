@@ -21,7 +21,7 @@ type Product = {
 
 // Tarjeta del catálogo a partir del documento del producto
 const toCard = (p: ProductDetail): Product => ({
-  name: p.card.title,
+  name: p.name,
   desc: p.card.description,
   local: p.card.image.local,
   source: p.card.image.source,

@@ -180,7 +180,7 @@ export const product = defineType({
     str("tagline", "Subtítulo", { group: "general" }),
     txt("summary", "Resumen", { group: "general", rows: 3 }),
 
-    section("card", "Tarjeta del catálogo", [str("title", "Nombre en la tarjeta", { description: "Opcional. Si no lo cambias, la tarjeta usa el nombre del producto." }), txt("description", "Descripción (aparece al pasar el cursor)", { rows: 3, description: "Opcional. Si no la cambias, usa el resumen del producto." }), image("image", "Imagen de la tarjeta")], {
+    section("card", "Tarjeta del catálogo", [txt("description", "Descripción (aparece al pasar el cursor)", { rows: 3, description: "Opcional. Si no la cambias, usa el resumen del producto." }), image("image", "Imagen de la tarjeta")], {
       group: "card",
       collapsed: false,
     }),

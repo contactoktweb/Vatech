@@ -72,20 +72,17 @@ const EMPTY_IMAGE = { local: "", source: "", alt: "" };
 function completeProduct(raw: Partial<ProductDetail>): ProductDetail {
   const base = defaultProducts.find((p) => p.slug === raw.slug);
   const merged = mergeContent<ProductDetail>(
-    base ?? ({ ...EMPTY_PRODUCT, slug: "", name: "", heroImage: EMPTY_IMAGE, cardImage: EMPTY_IMAGE, card: { title: "", description: "", image: EMPTY_IMAGE } } as ProductDetail),
+    base ?? ({ ...EMPTY_PRODUCT, slug: "", name: "", heroImage: EMPTY_IMAGE, cardImage: EMPTY_IMAGE, card: { description: "", image: EMPTY_IMAGE } } as ProductDetail),
     raw,
   );
-  // La tarjeta sigue al nombre y al resumen del producto, salvo que se le haya escrito un texto propio
+  // La tarjeta muestra el nombre del producto; su descripción sigue al resumen salvo que se le escriba una propia
   // (el texto que dejó la carga inicial cuenta como "no editado")
-  const ownTitle = merged.card?.title && merged.card.title !== base?.card.title ? merged.card.title : "";
   const ownDescription = merged.card?.description && merged.card.description !== base?.card.description ? merged.card.description : "";
-  const renamed = Boolean(base && merged.name !== base.name);
   const resummarized = Boolean(base && merged.summary !== base.summary);
   return {
     ...merged,
     cardImage: merged.cardImage?.local ? merged.cardImage : merged.card?.image?.local ? merged.card.image : merged.heroImage,
     card: {
-      title: ownTitle || (renamed || !merged.card?.title ? merged.name : merged.card.title),
       description: ownDescription || (resummarized || !merged.card?.description ? merged.summary : merged.card.description),
       image: merged.card?.image?.local ? merged.card.image : merged.heroImage,
     },
