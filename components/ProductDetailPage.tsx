@@ -21,22 +21,10 @@ function FeatureMedia({ images, title }: { images: ProductAsset[]; title: string
   </div>;
 }
 
-// Imagen de característica: no se amplía más de 1,2 veces su tamaño real, para que no se vea borrosa
+// Imagen de característica: no se amplía más de 1,3 veces su tamaño real, para que no se vea borrosa
 function FeatureImage({ asset }: { asset: ProductAsset }) {
   if (!asset?.local) return null;
-  return <OriginalAssetImage
-    localSrc={asset.local}
-    sourceSrc={asset.source}
-    alt={asset.alt || ""}
-    loading="lazy"
-    onLoad={(e) => {
-      const img = e.currentTarget;
-      // Los archivos @2x ya vienen ampliados: su tamaño real es la mitad
-      const scale = /@2x\./.test(asset.local) ? 0.65 : 1.2;
-      img.style.maxWidth = `${Math.round(img.naturalWidth * scale)}px`;
-      img.style.maxHeight = `${Math.round(img.naturalHeight * scale)}px`;
-    }}
-  />;
+  return <OriginalAssetImage localSrc={asset.local} sourceSrc={asset.source} alt={asset.alt || ""} loading="lazy" maxUpscale={1.3} />;
 }
 
 function mediaIdentity(video: CmsFile | string) {

@@ -22,6 +22,7 @@ export default function DistributorForm({ content: c }: { content: DistributorsP
 
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
+  const [honeypot, setHoneypot] = useState("");
 
   const buildWhatsAppUrl = (data: typeof formData) => {
     const text = [
@@ -61,7 +62,7 @@ export default function DistributorForm({ content: c }: { content: DistributorsP
     return `mailto:${TARGET_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>, channel: "whatsapp" | "email" = "whatsapp") => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>, channel: "whatsapp" | "email" = "whatsapp") => {
     e.preventDefault();
 
     if (!formData.nombre || !formData.correo || !formData.celular || !formData.ciudad) {
@@ -73,30 +74,19 @@ export default function DistributorForm({ content: c }: { content: DistributorsP
     setStatus("submitting");
     setErrorMessage("");
 
-    try {
-      // Registrar lead en la API para trazabilidad interna
-      await fetch("/api/distribuidor", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+    // El correo al equipo de mercadeo se envía en segundo plano; el canal elegido se abre de inmediato
+    fetch("/api/distribuidor", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ ...formData, sitio_web: honeypot }),
+      keepalive: true,
+    }).catch(() => {});
 
-      setStatus("success");
-
-      // Abrir canal elegido
-      if (channel === "whatsapp") {
-        window.open(buildWhatsAppUrl(formData), "_blank", "noopener,noreferrer");
-      } else {
-        window.location.href = buildMailtoUrl(formData);
-      }
-    } catch {
-      // Incluso ante error de red en API, el canal directo (WhatsApp/Mailto) debe funcionar
-      setStatus("success");
-      if (channel === "whatsapp") {
-        window.open(buildWhatsAppUrl(formData), "_blank", "noopener,noreferrer");
-      } else {
-        window.location.href = buildMailtoUrl(formData);
-      }
+    setStatus("success");
+    if (channel === "whatsapp") {
+      window.open(buildWhatsAppUrl(formData), "_blank", "noopener,noreferrer");
+    } else {
+      window.location.href = buildMailtoUrl(formData);
     }
   };
 
@@ -147,6 +137,17 @@ export default function DistributorForm({ content: c }: { content: DistributorsP
               {errorMessage}
             </div>
           )}
+
+          <input
+            className="form-honeypot"
+            name="sitio_web"
+            type="text"
+            tabIndex={-1}
+            autoComplete="off"
+            aria-hidden="true"
+            value={honeypot}
+            onChange={(e) => setHoneypot(e.target.value)}
+          />
 
           <div className="form-group">
             <label htmlFor="dist-nombre">

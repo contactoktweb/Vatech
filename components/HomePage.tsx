@@ -392,10 +392,18 @@ export default function HomePage({ content }: { content: HomePageContent }) {
             const product = data.get("product") || "Equipos Vatech";
             const message = data.get("message") || "";
             const text = `Hola Vatech Colombia, mi nombre es ${name}. Deseo cotizar: ${product}. Tel: ${phone}, Email: ${email}. Mensaje: ${message}`;
+            // El correo al equipo de mercadeo se envía en segundo plano; WhatsApp se abre de inmediato
+            fetch("/api/cotizacion", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(Object.fromEntries(data)),
+              keepalive: true,
+            }).catch(() => {});
             window.open(whatsapp(text), "_blank");
           }}>
             <h3>{contactSection.form.title}</h3>
             <p>{contactSection.form.text}</p>
+            <input className="form-honeypot" name="sitio_web" type="text" tabIndex={-1} autoComplete="off" aria-hidden="true" />
 
             <div className="form-group">
               <label htmlFor="quote-name">{contactSection.form.nameLabel}</label>

@@ -2,7 +2,7 @@
  * Aplica en Sanity los cambios de contenido del 28 de octubre, sin tocar el resto de lo editado:
  *   - Redes sociales: sin TikTok y con el YouTube de Vatech America.
  *   - Imágenes nuevas o de mejor calidad en las características de Green X16, Green X18, PaX-i,
- *     EzOrtho, EzSensor Classic y Ez3D-i.
+ *     EzOrtho y EzSensor Classic.
  *
  * Uso:
  *   pnpm sanity:update            → aplica los cambios
@@ -13,7 +13,7 @@
 import { defaultProducts, defaultSettings } from "../lib/cms/defaults";
 import { client, dataset, dryRun, projectId, toSanity } from "./sanity-shared";
 
-const PRODUCTS = ["green-x16", "green-x18", "green-x16-green-x18", "pax-i", "ezortho", "ezsensor-classic", "ez3d-i"];
+const PRODUCTS = ["green-x16", "green-x18", "green-x16-green-x18", "pax-i", "ezortho", "ezsensor-classic"];
 
 type SanityFeature = { _key: string; title?: string; images?: { asset?: { _ref?: string } }[] };
 

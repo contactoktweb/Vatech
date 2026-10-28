@@ -2928,3 +2928,6 @@ h1, .hero-title { line-height: 1 !important; }
 .world-map-dots { position:absolute; inset:0; width:100%; height:auto; opacity:.9; }
 .world-map svg .map-lines path { stroke:rgba(219,7,47,.35); stroke-dasharray:3 6; }
 .map-dots .office { fill:#ff5a72; opacity:.85; }
+
+/* Campo trampa contra bots en los formularios de prospectos */
+.form-honeypot{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important}
