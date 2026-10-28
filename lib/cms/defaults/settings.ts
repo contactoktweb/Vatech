@@ -22,8 +22,7 @@ export const defaultSettings: SiteSettings = {
   social: [
     { platform: "facebook", url: "https://www.facebook.com/vatechcolombia/?locale=es_LA" },
     { platform: "instagram", url: "https://www.instagram.com/vatech.colombia/?hl=en" },
-    { platform: "youtube", url: "https://www.youtube.com/channel/UCUoUvlHzian9vm7rkKLRFQw?view_as=subscriber" },
-    { platform: "tiktok", url: "https://www.tiktok.com/@vatechcolombia" },
+    { platform: "youtube", url: "https://www.youtube.com/@vatechamerica" },
   ],
   navigation: [
     {

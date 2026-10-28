@@ -9,6 +9,16 @@ import { SERVICE_ICONS, STAT_ICONS } from "./homeIcons";
 import { Lines, Rich } from "@/lib/cms/text";
 import type { CmsImage, HomePageContent } from "@/lib/cms/types";
 
+// Sedes VATECH sobre el mapa del mundo (coordenadas en el mismo sistema que /assets/world-dots.svg)
+const WORLD_OFFICES: Record<string, [number, number]> = {
+  "Bogotá": [264.8, 207.3], "Nueva Jersey": [265.1, 107.8], "São Paulo": [333.3, 285.3], "París": [456.5, 85.8],
+  "Barcelona": [456, 106], "Londres": [449.5, 78.9], "Praga": [486.2, 82.5], "Moscú": [544, 66.9], "Dubái": [588.2, 150.9],
+  "Nueva Delhi": [642.9, 141.6], "Shanghái": [753.5, 134.5], "Corea": [767.5, 117.9], "Taipéi": [753.9, 151.2],
+  "Hong Kong": [735.6, 159], "Hanói": [714.4, 162.4], "Kuala Lumpur": [704, 211.8], "Yakarta": [717, 237.4], "Sídney": [827.7, 313.4],
+};
+// Conexiones desde la casa matriz en Corea
+const WORLD_LINKS: [string, string][] = [["Corea", "Bogotá"], ["Corea", "París"], ["Corea", "Sídney"], ["Bogotá", "São Paulo"], ["Bogotá", "Nueva Jersey"]];
+
 // Posición fija de los puntos interactivos sobre la imagen de tecnología
 const HOTSPOT_POSITIONS = [
   { x: "38%", y: "20%" },
@@ -314,15 +324,17 @@ export default function HomePage({ content }: { content: HomePageContent }) {
           <a href={global.link.href} className="text-link light">{global.link.label} <Arrow /></a>
         </div>
         <div className="world-map" aria-hidden="true" data-reveal>
-          <svg viewBox="0 0 900 360" role="presentation">
+          <img className="world-map-dots" src="/assets/world-dots.svg" alt="" />
+          <svg viewBox="0 0 900 380" role="presentation">
             <g className="map-lines">
-              <path d="M90 120 C160 60, 250 64, 302 130 S398 190, 454 132 S580 72, 670 120 S784 196, 840 160" />
-              <path d="M180 170 C250 220, 310 210, 360 178 S470 130, 530 180 S650 240, 760 210" />
-              <path d="M300 86 C350 120, 380 150, 450 150 S570 140, 620 90" />
+              {WORLD_LINKS.map(([from, to]) => {
+                const [x1, y1] = WORLD_OFFICES[from]; const [x2, y2] = WORLD_OFFICES[to];
+                return <path key={`${from}-${to}`} d={`M${x1} ${y1} Q${(x1 + x2) / 2} ${Math.min(y1, y2) - 70} ${x2} ${y2}`} />;
+              })}
             </g>
             <g className="map-dots">
-              {[110,150,190,235,280,325,380,430,475,520,565,610,655,700,745,790].map((x, i) => (
-                <circle key={x} cx={x} cy={90 + ((i * 47) % 160)} r={i % 4 === 0 ? 6 : 3.2} className={i % 4 === 0 ? "hot" : ""} />
+              {Object.entries(WORLD_OFFICES).map(([name, [x, y]]) => (
+                <circle key={name} cx={x} cy={y} r={name === "Bogotá" || name === "Corea" ? 6.5 : 4} className={name === "Bogotá" || name === "Corea" ? "hot" : "office"} />
               ))}
             </g>
           </svg>

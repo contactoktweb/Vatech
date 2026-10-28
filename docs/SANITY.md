@@ -65,11 +65,20 @@ Para verlo al instante, configura el webhook (opcional):
 3. Dataset `production`, disparar en *Create*, *Update* y *Delete*.
 4. En *Secret* pon el mismo valor de `SANITY_REVALIDATE_SECRET`.
 
-## 4. Productos nuevos
+## 4. Actualizaciones de contenido desde el código
+
+Cuando un cambio pedido toca contenido que ya está en Sanity (por ejemplo redes sociales o imágenes de productos), se entrega un script que actualiza **solo esos campos**, sin pisar lo demás:
+
+```bash
+pnpm sanity:update --dry-run   # muestra qué cambiaría
+pnpm sanity:update             # aplica los cambios
+```
+
+## 5. Productos nuevos
 
 Crea un documento en **Productos**, completa al menos el nombre, la dirección web y la imagen principal, elige la **pestaña del catálogo** y el **orden**, y publica. La ficha queda disponible en `/productos/<dirección>` sin volver a desplegar.
 
-## 5. Archivos del código
+## 6. Archivos del código
 
 | Archivo | Para qué sirve |
 | --- | --- |
@@ -79,5 +88,7 @@ Crea un documento en **Productos**, completa al menos el nombre, la dirección w
 | `lib/cms/index.ts` | Lee el contenido de Sanity y lo combina con el contenido por defecto |
 | `lib/cms/defaults/` | Contenido original del sitio (respaldo y carga inicial) |
 | `scripts/sanity-seed.ts` | Carga inicial del contenido |
+| `scripts/sanity-update.ts` | Actualización puntual de campos en Sanity |
+| `scripts/sanity-shared.ts` | Funciones compartidas por los scripts (subida de imágenes) |
 | `app/studio/` | Ruta `/studio` |
 | `app/api/revalidate/` | Webhook para actualizar al instante |

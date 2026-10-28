@@ -41,7 +41,7 @@ export default async function QuienesSomosPage() {
       <section className="number-one-section">
         <div className="section-sticky-title" data-reveal><p className="eyebrow red">{reasons.eyebrow}</p><h2><Lines text={reasons.title} /></h2><OriginalAssetImage localSrc={reasons.image.local} sourceSrc={reasons.image.source} alt={reasons.image.alt || ""} className="number-one-source-art" loading="lazy"/></div>
         <div className="reason-list">
-          {reasons.items.map((reason, i) => <article key={`${reason}-${i}`} data-reveal><span>{String(i+1).padStart(2,"0")}</span><p>{reason}</p><i>↗</i></article>)}
+          {reasons.items.map((reason, i) => <article key={`${reason}-${i}`} data-reveal><span>{String(i+1).padStart(2,"0")}</span><p>{reason}</p></article>)}
         </div>
       </section>
     </SubpageShell>

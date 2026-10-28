@@ -7,8 +7,10 @@ import type { ReactNode } from "react";
 import { useSiteSettings } from "./SiteSettingsProvider";
 
 function SmartLink({ href, children, className, onClick }: { href: string; children: ReactNode; className?: string; onClick?: () => void }) {
-  const external = href.startsWith("http");
-  if (external) return <a href={href} className={className} onClick={onClick}>{children}</a>;
+  // Los enlaces externos y los que llevan a una sección (#) usan un enlace normal:
+  // así el navegador avisa el cambio de sección (p. ej. la pestaña de /productos#sistema-2d)
+  const native = href.startsWith("http") || href.includes("#");
+  if (native) return <a href={href} className={className} onClick={onClick}>{children}</a>;
   return <Link href={href} className={className} onClick={onClick}>{children}</Link>;
 }
 

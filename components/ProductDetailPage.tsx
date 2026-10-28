@@ -17,8 +17,26 @@ function SourceImage({ asset, className = "", loading = "lazy" }: { asset?: Prod
 function FeatureMedia({ images, title }: { images: ProductAsset[]; title: string }) {
   if (!images.length) return <div className="pd-feature-graphic" aria-hidden="true"><span>VATECH</span><i /><b>+</b></div>;
   return <div className={`pd-feature-media ${images.length > 1 ? "multi" : ""}`}>
-    {images.slice(0, 3).map((asset, index) => <SourceImage key={`${asset.local}-${index}`} asset={asset} />)}
+    {images.slice(0, 3).map((asset, index) => <FeatureImage key={`${asset.local}-${index}`} asset={asset} />)}
   </div>;
+}
+
+// Imagen de característica: no se amplía más de 1,2 veces su tamaño real, para que no se vea borrosa
+function FeatureImage({ asset }: { asset: ProductAsset }) {
+  if (!asset?.local) return null;
+  return <OriginalAssetImage
+    localSrc={asset.local}
+    sourceSrc={asset.source}
+    alt={asset.alt || ""}
+    loading="lazy"
+    onLoad={(e) => {
+      const img = e.currentTarget;
+      // Los archivos @2x ya vienen ampliados: su tamaño real es la mitad
+      const scale = /@2x\./.test(asset.local) ? 0.65 : 1.2;
+      img.style.maxWidth = `${Math.round(img.naturalWidth * scale)}px`;
+      img.style.maxHeight = `${Math.round(img.naturalHeight * scale)}px`;
+    }}
+  />;
 }
 
 function mediaIdentity(video: CmsFile | string) {

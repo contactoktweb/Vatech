@@ -11,7 +11,8 @@
     "optimize:media": "python3 scripts/optimize-media.py",
     "predev": "npm run assets",
     "prebuild": "npm run assets",
-    "sanity:seed": "tsx --env-file-if-exists=.env.local scripts/sanity-seed.ts"
+    "sanity:seed": "tsx --env-file-if-exists=.env.local scripts/sanity-seed.ts",
+    "sanity:update": "tsx --env-file-if-exists=.env.local scripts/sanity-update.ts"
   },
   "dependencies": {
     "@sanity/icons": "^5.2.3",

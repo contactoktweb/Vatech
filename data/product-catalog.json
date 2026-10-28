@@ -549,7 +549,13 @@
         "text": [
           "Green X 16 ofrece un voxel de hasta 49.5 µm para visualizar detalles anatómicos de alta complejidad, conductos radiculares y microestructuras óseas con tecnología de reconstrucción CST."
         ],
-        "images": []
+        "images": [
+          {
+            "local": "/assets/product-details/green-x16/Green-X-03.png",
+            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/Green-X-03.png",
+            "alt": "Green X 16: modo dental vs. modo ENDO de 49.5 µm"
+          }
+        ]
       }
     ],
     "configurationImages": [],
@@ -605,7 +611,13 @@
         "text": [
           "Green X 18 proporciona un campo de visión de un solo escaneo ideal para el análisis completo de arcadas dentales, vías aéreas y articulación temporomandibular (ATM)."
         ],
-        "images": []
+        "images": [
+          {
+            "local": "/assets/product-details/green-x18/Tabla-05-green-x18.png",
+            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/Tabla-05.png",
+            "alt": "Green X 18: tamaños de FOV hasta 18x24"
+          }
+        ]
       }
     ],
     "configurationImages": [],
@@ -693,7 +705,13 @@
         "text": [
           "Green X 16 ofrece un voxel de hasta 49.5 µm para visualizar detalles anatómicos de alta complejidad, conductos radiculares y microestructuras óseas con tecnología de reconstrucción CST."
         ],
-        "images": []
+        "images": [
+          {
+            "local": "/assets/product-details/green-x16-green-x18/Green-X-03.png",
+            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/Green-X-03.png",
+            "alt": "Green X: modo dental vs. modo ENDO de 49.5 µm"
+          }
+        ]
       }
     ],
     "configurationImages": [],
@@ -782,9 +800,9 @@
         ],
         "images": [
           {
-            "local": "/assets/product-details/pax-i/pax-i-new-standard-panoramic-image-qpv1emgnzz8u7q5yf9yj2sf45ayntp903zv346cpny.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/pax-i-new-standard-panoramic-image-qpv1emgnzz8u7q5yf9yj2sf45ayntp903zv346cpny.png",
-            "alt": "pax-i-new-standard-panoramic-image"
+            "local": "/assets/product-details/pax-i/pax-i-f1.png",
+            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/pax-i-f1.png",
+            "alt": "PaX-i: dos sensores dedicados para Pano y Ceph"
           }
         ]
       },
@@ -793,7 +811,13 @@
         "text": [
           "Imagen panorámica clara y nítida para una mejor visualización de detalles específicamente en la parte anterior y raíces."
         ],
-        "images": []
+        "images": [
+          {
+            "local": "/assets/product-details/pax-i/pax-i-new-standard-panoramic-image.png",
+            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/pax-i-new-standard-panoramic-image.png",
+            "alt": "PaX-i: nuevo estándar de imagen panorámica"
+          }
+        ]
       },
       {
         "title": "DIAGNÓSTICO FÁCIL Y EFICIENTE CON VARIOS MODOS DE CAPTURA",
@@ -820,7 +844,13 @@
         "text": [
           "Valor de diagnóstico extendido para una visión general."
         ],
-        "images": []
+        "images": [
+          {
+            "local": "/assets/product-details/pax-i/pax-i-f2.png",
+            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/pax-i-f2.png",
+            "alt": "PaX-i: cefalometría para ortodoncistas"
+          }
+        ]
       },
       {
         "title": "CEPHALOMETRIC (SCAN CEPH)",
@@ -1053,9 +1083,9 @@
         ],
         "images": [
           {
-            "local": "/assets/product-details/ezsensor-classic/slim-qpv1emgkcex8rhpm6reebve26todo3je92l2quhxew.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/slim-qpv1emgkcex8rhpm6reebve26todo3je92l2quhxew.png",
-            "alt": "slim"
+            "local": "/assets/product-details/ezsensor-classic/slim.png",
+            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/slim.png",
+            "alt": "EzSensor Classic ultra delgado"
           }
         ]
       },
@@ -1066,9 +1096,9 @@
         ],
         "images": [
           {
-            "local": "/assets/product-details/ezsensor-classic/diente-qpv1emglk9p3wwj29ll3wueeubft1yrxjdoevag7fo.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/diente-qpv1emglk9p3wwj29ll3wueeubft1yrxjdoevag7fo.png",
-            "alt": "diente"
+            "local": "/assets/product-details/ezsensor-classic/diente.png",
+            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/diente.png",
+            "alt": "EzSensor Classic: diseño ergonómico"
           }
         ]
       },
@@ -1084,9 +1114,9 @@
             "alt": "Ez Sensor CLASSIC"
           },
           {
-            "local": "/assets/product-details/ezsensor-classic/dos-qpv1emggouncp1a4ygvn69v1dvqpc5rc6lskge8000.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/dos-qpv1emggouncp1a4ygvn69v1dvqpc5rc6lskge8000.png",
-            "alt": "dos"
+            "local": "/assets/product-details/ezsensor-classic/dos.png",
+            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/dos.png",
+            "alt": "EzSensor Classic: imagen precisa"
           }
         ]
       }
@@ -1256,9 +1286,9 @@
         ],
         "images": [
           {
-            "local": "/assets/product-details/ezortho/Imagen_1-qpv1emgqogjqqtyqliroyj1hkzn02lyzc9v86r1pgs.png",
-            "source": "https://vatechmexico.com/wp-content/uploads/elementor/thumbs/Imagen_1-qpv1emgqogjqqtyqliroyj1hkzn02lyzc9v86r1pgs.png",
-            "alt": "Imagen_1"
+            "local": "/assets/product-details/ezortho/Imagen_1.png",
+            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/Imagen_1.png",
+            "alt": "EzOrtho: digitaliza y analiza"
           }
         ]
       },
@@ -1313,7 +1343,13 @@
         "text": [
           "EzOrtho genera una foto 3D a partir de las imágenes fotográficas frontales y laterales de un paciente, permitiendo la planificación del tratamiento y la consulta con la imagen de la cara 3D de un paciente desde varios ángulos."
         ],
-        "images": []
+        "images": [
+          {
+            "local": "/assets/product-details/ezortho/imagen_ezortho2021.png",
+            "source": "https://vatechmexico.com/wp-content/uploads/2023/07/imagen_ezortho2021.png",
+            "alt": "EzOrtho: análisis facial y foto 3D"
+          }
+        ]
       },
       {
         "title": "SIMULACIÓN VTO/STO",
@@ -1435,7 +1471,7 @@
         ],
         "images": [
           {
-            "local": "/assets/product-details/ez3d-i/2_Des2-1.png",
+            "local": "/assets/product-details/ez3d-i/2_Des2-1@2x.png",
             "source": "https://vatechmexico.com/wp-content/uploads/2023/07/2_Des2-1.png",
             "alt": "Modos de coloración VR en Ez3D-i"
           }
@@ -1450,17 +1486,17 @@
         ],
         "images": [
           {
-            "local": "/assets/product-details/ez3d-i/2_Des3-1.png",
+            "local": "/assets/product-details/ez3d-i/2_Des3-1@2x.png",
             "source": "https://vatechmexico.com/wp-content/uploads/2023/07/2_Des3-1.png",
             "alt": "Herramienta de consulta virtual de Ez3D-i"
           },
           {
-            "local": "/assets/product-details/ez3d-i/2_Des4-1.png",
+            "local": "/assets/product-details/ez3d-i/2_Des4-1@2x.png",
             "source": "https://vatechmexico.com/wp-content/uploads/2023/07/2_Des4-1.png",
             "alt": "Simulación de implantes en Ez3D-i"
           },
           {
-            "local": "/assets/product-details/ez3d-i/2_Des5.png",
+            "local": "/assets/product-details/ez3d-i/2_Des5@2x.png",
             "source": "https://vatechmexico.com/wp-content/uploads/2023/07/2_Des5.png",
             "alt": "Vista transversal y dibujo del canal en Ez3D-i"
           }
