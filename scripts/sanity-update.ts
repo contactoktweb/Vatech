@@ -3,6 +3,7 @@
  *   - Redes sociales: sin TikTok y con el YouTube de Vatech America.
  *   - Imágenes nuevas o de mejor calidad en las características de Green X16, Green X18, PaX-i,
  *     EzOrtho y EzSensor Classic.
+ *   - Green X21: el video teaser propio en la ficha del producto (antes había un video de YouTube de relleno).
  *
  * Uso:
  *   pnpm sanity:update            → aplica los cambios
@@ -50,6 +51,18 @@ async function main() {
     }
     console.log(`→ ${product.name}: ${changes} características con imágenes`);
     if (!dryRun && changes) await patch.commit();
+  }
+
+  // Video teaser de Green X21
+  const x21 = defaultProducts.find((p) => p.slug === "green-x21");
+  if (x21) {
+    const trainingVideos = await toSanity(x21.trainingVideos as never, ["trainingVideos"]);
+    console.log("→ Green X21: video teaser en la ficha");
+    if (!dryRun) {
+      const exists = await client.getDocument("product-green-x21");
+      if (exists) await client.patch("product-green-x21").set({ trainingVideos }).commit();
+      else console.warn("  ! No existe product-green-x21 en Sanity; se omite.");
+    }
   }
 
   console.log("\nListo. Los cambios se ven en el sitio en máximo 1 minuto.");

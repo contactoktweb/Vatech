@@ -2600,7 +2600,7 @@ body { font-size:17px; }
   position: relative;
   max-width: 900px;
   margin: 0 auto 36px;
-  padding-bottom: 50%;
+  padding-bottom: min(56.25%, 506px);
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 20px 50px rgba(0,0,0,0.15);
@@ -2614,6 +2614,8 @@ body { font-size:17px; }
   width: 100%;
   height: 100%;
   border: none;
+  object-fit: contain;
+  background: #000;
 }
 
 .pd-teaser-actions {

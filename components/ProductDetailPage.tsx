@@ -156,13 +156,28 @@ export default function ProductDetailPage({ product, related, labels: L }: { pro
           </div>
           {uniqueVideos.length > 0 && (
             <div className="pd-teaser-player-box">
-              <iframe
-                src={typeof uniqueVideos[0] === "string" ? uniqueVideos[0] : uniqueVideos[0].source}
-                title={`${product.name} Video Teaser Oficial VATECH`}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                className="pd-teaser-main-iframe"
-              />
+              {typeof uniqueVideos[0] === "string" ? (
+                <iframe
+                  src={uniqueVideos[0]}
+                  title={`${product.name} Video Teaser Oficial VATECH`}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="pd-teaser-main-iframe"
+                />
+              ) : (
+                // Video subido (archivo): se reproduce con el reproductor del navegador
+                <video
+                  className="pd-teaser-main-iframe"
+                  title={`${product.name} Video Teaser Oficial VATECH`}
+                  controls
+                  playsInline
+                  preload="metadata"
+                  poster={product.heroImage?.local}
+                >
+                  <source src={uniqueVideos[0].local} type="video/mp4" />
+                  {uniqueVideos[0].source !== uniqueVideos[0].local && <source src={uniqueVideos[0].source} type="video/mp4" />}
+                </video>
+              )}
             </div>
           )}
           <div className="pd-teaser-actions" id="contacto-preventa">

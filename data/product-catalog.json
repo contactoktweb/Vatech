@@ -674,7 +674,10 @@
     "gallery": [],
     "catalogPdf": null,
     "trainingVideos": [
-      "https://www.youtube.com/embed/XHOmBV4js_E"
+      {
+        "local": "/Recursos/Confidential_Green%20X%2021%20Teaser%20video.mp4",
+        "source": "/Recursos/Confidential_Green%20X%2021%20Teaser%20video.mp4"
+      }
     ],
     "sourceComplete": true,
     "cardImage": {
