@@ -1,6 +1,7 @@
 "use client";
 
 import { CSSProperties, useEffect, useRef, useState } from "react";
+import { sanitySrc, sanitySrcSet } from "@/lib/cms/image";
 import SiteHeader from "./SiteHeader";
 import SiteFooter from "./SiteFooter";
 import { useSiteSettings, useWhatsAppLink } from "./SiteSettingsProvider";
@@ -47,7 +48,7 @@ function Arrow() {
   return <span aria-hidden="true" className="arrow">→</span>;
 }
 
-function DeviceImage({ asset, alt, className = "" }: { asset?: CmsImage; alt: string; className?: string }) {
+function DeviceImage({ asset, alt, className = "", loading = "lazy" }: { asset?: CmsImage; alt: string; className?: string; loading?: "lazy" | "eager" }) {
   const [src, setSrc] = useState(asset?.local ?? "");
   const [failed, setFailed] = useState(false);
   useEffect(() => { setSrc(asset?.local ?? ""); setFailed(false); }, [asset?.local]);
@@ -63,7 +64,7 @@ function DeviceImage({ asset, alt, className = "" }: { asset?: CmsImage; alt: st
       </div>
     );
   }
-  return <img src={src} alt={asset.alt || alt} className={className} data-original-source={asset.source} onError={() => src === asset.local && asset.source !== asset.local ? setSrc(asset.source) : setFailed(true)} />;
+  return <img src={sanitySrc(src)} srcSet={sanitySrcSet(src)} sizes="(max-width: 700px) 100vw, 50vw" alt={asset.alt || alt} className={className} loading={loading} decoding="async" data-original-source={asset.source} onError={() => src === asset.local && asset.source !== asset.local ? setSrc(asset.source) : setFailed(true)} />;
 }
 
 const mailto = (email: string, subject?: string, body?: string) => {
@@ -157,7 +158,7 @@ export default function HomePage({ content }: { content: HomePageContent }) {
           <div className="scan-ring ring-1" />
           <div className="scan-ring ring-2" />
           <div className="scan-ring ring-3" />
-          <DeviceImage asset={hero.image} alt="Equipo CBCT dental VATECH" className="hero-device" />
+          <DeviceImage asset={hero.image} alt="Equipo CBCT dental VATECH" className="hero-device" loading="eager" />
           <div className="floating-spec spec-a"><b>SMART</b><span>PRECISION<br />IMAGING</span></div>
           <div className="floating-spec spec-b"><span>3D / CBCT</span><b>SCAN</b></div>
         </div>

@@ -26,7 +26,7 @@ export const siteSettings = defineType({
         image("dark", "Logo negro", { description: "Para fondos claros." }),
         image("color", "Logo a color", { description: "Para datos de Google y documentos." }),
       ],
-      { group: "brand", collapsed: false },
+      { description: "Logos del menú superior, el pie de página y la página en construcción.", group: "brand", collapsed: false },
     ),
 
     section(
@@ -42,10 +42,10 @@ export const siteSettings = defineType({
         strings("addressLines", "Dirección completa (una línea por renglón)"),
         defineField({ name: "mapsUrl", title: "Enlace de Google Maps", type: "url" }),
       ],
-      { group: "contact", collapsed: false },
+      { description: "Datos que se repiten en todo el sitio: botón de WhatsApp, correo de contacto, dirección y mapa.", group: "contact", collapsed: false },
     ),
 
-    defineField({ name: "social", title: "Redes sociales", type: "array", of: [{ type: "socialLink" }], group: "social" }),
+    defineField({ name: "social", title: "Redes sociales", type: "array", of: [{ type: "socialLink" }], group: "social", description: "Íconos de redes sociales del pie de página, en el mismo orden de esta lista." }),
 
     defineField({
       name: "navigation",
@@ -93,7 +93,7 @@ export const siteSettings = defineType({
         link("credit", "Crédito de desarrollo"),
         link("privacy", "Aviso de privacidad"),
       ],
-      { group: "footer", collapsed: false },
+      { description: "Pie de página que aparece al final de todas las páginas.", group: "footer", collapsed: false },
     ),
 
     section(
@@ -106,7 +106,7 @@ export const siteSettings = defineType({
         str("domain", "Dominio"),
         str("buttonLabel", "Texto del botón de WhatsApp"),
       ],
-      { group: "construction", collapsed: false },
+      { description: "Página que ven los visitantes del dominio vatechcolombia.com.co mientras el sitio está en construcción.", group: "construction", collapsed: false },
     ),
 
     section(
@@ -117,7 +117,7 @@ export const siteSettings = defineType({
         txt("description", "Descripción por defecto", { rows: 3 }),
         strings("keywords", "Palabras clave"),
       ],
-      { group: "seo", collapsed: false },
+      { description: "Título y descripción por defecto para Google y la imagen al compartir enlaces del sitio.", group: "seo", collapsed: false },
     ),
   ],
   preview: { prepare: () => ({ title: "Configuración general", media: CogIcon }) },

@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import type { ImgHTMLAttributes } from "react";
+import { sanitySrc, sanitySrcSet } from "@/lib/cms/image";
 
 type Props = ImgHTMLAttributes<HTMLImageElement> & {
   localSrc: string;
@@ -16,7 +17,7 @@ function capSize(img: HTMLImageElement, maxUpscale?: number) {
   img.style.maxHeight = `${Math.round(img.naturalHeight * maxUpscale)}px`;
 }
 
-export default function OriginalAssetImage({ localSrc, sourceSrc, alt = "", decoding = "async", maxUpscale, onLoad, ...props }: Props) {
+export default function OriginalAssetImage({ localSrc, sourceSrc, alt = "", decoding = "async", maxUpscale, onLoad, sizes = "(max-width: 700px) 100vw, 50vw", ...props }: Props) {
   const [src, setSrc] = useState(localSrc);
   const imgRef = useRef<HTMLImageElement>(null);
 
@@ -41,7 +42,9 @@ export default function OriginalAssetImage({ localSrc, sourceSrc, alt = "", deco
     <img
       {...props}
       ref={imgRef}
-      src={src}
+      src={sanitySrc(src)}
+      srcSet={sanitySrcSet(src)}
+      sizes={sanitySrcSet(src) ? sizes : undefined}
       alt={alt}
       decoding={decoding}
       data-original-source={sourceSrc}

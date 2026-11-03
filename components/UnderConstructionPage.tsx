@@ -1,6 +1,7 @@
 "use client";
 
 import { useSiteSettings, useWhatsAppLink } from "./SiteSettingsProvider";
+import { sanityWidth } from "@/lib/cms/image";
 import { CreditIcon, WhatsAppIcon } from "./icons";
 
 export default function UnderConstructionPage() {
@@ -17,7 +18,7 @@ export default function UnderConstructionPage() {
       <div className="construction-minimal-card">
         <div className="construction-minimal-logo">
           <img
-            src={logos.light.local}
+            src={sanityWidth(logos.light.local, 480)}
             alt={logos.light.alt || siteName}
             width={210}
             height={44}

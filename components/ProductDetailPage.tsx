@@ -7,11 +7,12 @@ import SiteHeader from "./SiteHeader";
 import SiteFooter from "./SiteFooter";
 import { useSiteSettings, useWhatsAppLink } from "./SiteSettingsProvider";
 import { Lines, withProduct } from "@/lib/cms/text";
+import { sanityWidth } from "@/lib/cms/image";
 import type { CmsFile, ProductAsset, ProductDetail, ProductPageLabels } from "@/lib/cms/types";
 
-function SourceImage({ asset, className = "", loading = "lazy" }: { asset?: ProductAsset; className?: string; loading?: "lazy" | "eager" }) {
+function SourceImage({ asset, className = "", loading = "lazy", sizes }: { asset?: ProductAsset; className?: string; loading?: "lazy" | "eager"; sizes?: string }) {
   if (!asset?.local) return null;
-  return <OriginalAssetImage localSrc={asset.local} sourceSrc={asset.source} alt={asset.alt || ""} className={className} loading={loading} />;
+  return <OriginalAssetImage localSrc={asset.local} sourceSrc={asset.source} alt={asset.alt || ""} className={className} loading={loading} sizes={sizes} />;
 }
 
 function FeatureMedia({ images, title }: { images: ProductAsset[]; title: string }) {
@@ -31,7 +32,7 @@ function mediaIdentity(video: CmsFile | string) {
   return typeof video === "string" ? video.split("?")[0] : video.source || video.local;
 }
 
-function ProductVideo({ video, productName, index }: { video: CmsFile | string; productName: string; index: number }) {
+function ProductVideo({ video, productName, index, poster }: { video: CmsFile | string; productName: string; index: number; poster?: string }) {
   if (typeof video === "string") {
     return <iframe
       className={index === 0 ? "pd-video-primary" : ""}
@@ -43,7 +44,8 @@ function ProductVideo({ video, productName, index }: { video: CmsFile | string; 
     />;
   }
 
-  return <video className={index === 0 ? "pd-video-primary" : ""} controls playsInline preload="metadata">
+  // Sin precarga: el video se descarga solo cuando el visitante le da play; mientras tanto se ve la foto del equipo
+  return <video className={index === 0 ? "pd-video-primary" : ""} controls playsInline preload="none" poster={poster}>
     <source src={video.local} />
     <source src={video.source} />
     Tu navegador no puede reproducir este video.
@@ -106,10 +108,6 @@ export default function ProductDetailPage({ product, related, labels: L }: { pro
         </div>
         <div className="pd-hero-stage">
           <div className="pd-orbit pd-orbit-1" /><div className="pd-orbit pd-orbit-2" /><div className="pd-orbit pd-orbit-3" />
-          {product.heroVideo && <video className="pd-hero-video" autoPlay muted loop playsInline preload="metadata">
-            <source src={product.heroVideo.local} />
-            <source src={product.heroVideo.source} />
-          </video>}
           <SourceImage asset={product.heroImage} className="pd-hero-product" loading="eager" />
           {product.isComingSoon ? (
             <span className="pd-stage-label label-soon">{L.comingSoonShort}</span>
@@ -171,8 +169,8 @@ export default function ProductDetailPage({ product, related, labels: L }: { pro
                   title={`${product.name} Video Teaser Oficial VATECH`}
                   controls
                   playsInline
-                  preload="metadata"
-                  poster={product.heroImage?.local}
+                  preload="none"
+                  poster={product.heroImage?.local && sanityWidth(product.heroImage.local, 1080)}
                 >
                   <source src={uniqueVideos[0].local} type="video/mp4" />
                   {uniqueVideos[0].source !== uniqueVideos[0].local && <source src={uniqueVideos[0].source} type="video/mp4" />}
@@ -251,7 +249,7 @@ export default function ProductDetailPage({ product, related, labels: L }: { pro
           <h2>{uniqueVideos.length > 1 ? L.videoTitleMultiple : L.videoTitleSingle}</h2>
         </div>
         <div className="pd-training-grid">
-          {uniqueVideos.map((video, index) => <ProductVideo key={`${mediaIdentity(video)}-${index}`} video={video} productName={product.name} index={index} />)}
+          {uniqueVideos.map((video, index) => <ProductVideo key={`${mediaIdentity(video)}-${index}`} video={video} productName={product.name} index={index} poster={product.heroImage?.local && sanityWidth(product.heroImage.local, 1080)} />)}
         </div>
       </section>}
 
@@ -269,7 +267,7 @@ export default function ProductDetailPage({ product, related, labels: L }: { pro
       {related.length > 0 && <section className="pd-related">
         <div className="pd-related-head"><p className="pd-section-label">{L.relatedLabel}</p><h2>{L.relatedTitle}</h2></div>
         <div className="pd-related-grid">{related.map((item) => <Link href={`/productos/${item.slug}`} key={item.slug} className="pd-related-card">
-          <div><SourceImage asset={item.cardImage} /><span>Explorar →</span></div><h3>{item.name}</h3><p>{item.summary}</p>
+          <div><SourceImage asset={item.cardImage} sizes="(max-width: 700px) 100vw, (max-width: 1000px) 50vw, 33vw" /><span>Explorar →</span></div><h3>{item.name}</h3><p>{item.summary}</p>
         </Link>)}</div>
       </section>}
     </main>

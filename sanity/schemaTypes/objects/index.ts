@@ -35,10 +35,11 @@ export const cmsFile = defineType({
   title: "Archivo",
   type: "object",
   icon: DocumentIcon,
-  description: "Sube el archivo o pega una URL. Si hay archivo, se usa el archivo.",
+  description: "Sube el archivo desde tu computador.",
   fields: [
     defineField({ name: "file", title: "Archivo", type: "file" }),
-    str("url", "URL del archivo", { description: "Ruta en el sitio (/assets/…) o URL completa." }),
+    // Ruta interna usada por el contenido inicial; no se muestra en el Studio. Si se sube un archivo, se usa el archivo.
+    str("url", "URL del archivo", { hidden: true }),
   ],
 });
 
@@ -65,8 +66,8 @@ export const productVideo = defineType({
     }),
   ],
   preview: {
-    select: { kind: "kind", url: "embedUrl", fileUrl: "file.url" },
-    prepare: ({ kind, url, fileUrl }) => ({ title: kind === "embed" ? url : fileUrl || "Archivo de video", media: PlayIcon }),
+    select: { kind: "kind", url: "embedUrl", fileName: "file.file.asset.originalFilename" },
+    prepare: ({ kind, url, fileName }) => ({ title: kind === "embed" ? url : fileName || "Archivo de video", media: PlayIcon }),
   },
 });
 

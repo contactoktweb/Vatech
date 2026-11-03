@@ -9,6 +9,10 @@ import { useSiteSettings } from "./SiteSettingsProvider";
 import ProductComparisonTable3D from "./ProductComparisonTable3D";
 import { Lines } from "@/lib/cms/text";
 import type { ProductDetail, ProductsPageContent } from "@/lib/cms/types";
+import { sanitySrc, sanitySrcSet } from "@/lib/cms/image";
+
+// Ancho de las tarjetas del catálogo: una columna en celular, dos en tableta, tres en computador
+const CARD_SIZES = "(max-width: 700px) 100vw, (max-width: 1000px) 50vw, 33vw";
 
 type Product = {
   name: string;
@@ -46,7 +50,7 @@ function ProductCard({ product, index, labels }: { product: Product; index: numb
         )}
       </div>
       <div className="catalog-image">
-        <OriginalAssetImage localSrc={product.local} sourceSrc={product.source} alt={product.name} />
+        <OriginalAssetImage localSrc={product.local} sourceSrc={product.source} alt={product.name} sizes={CARD_SIZES} />
         <div className="catalog-scan" />
         <p className="catalog-hover-desc">{product.desc}</p>
       </div>
@@ -79,7 +83,7 @@ export default function ProductsPage({ content, products }: { content: ProductsP
 
   // Precarga las imágenes de todas las categorías para que el cambio de pestaña sea instantáneo
   useEffect(()=>{
-    const preload = () => [...byGroup(products, "3d"), ...byGroup(products, "2d"), ...byGroup(products, "intraoral")].forEach(p => { const img = new Image(); img.decoding = "async"; img.src = p.local; });
+    const preload = () => [...byGroup(products, "3d"), ...byGroup(products, "2d"), ...byGroup(products, "intraoral")].forEach(p => { const img = new Image(); img.decoding = "async"; img.sizes = CARD_SIZES; img.srcset = sanitySrcSet(p.local) || ""; img.src = sanitySrc(p.local); });
     const w = window as Window & { requestIdleCallback?: (cb: () => void) => number };
     if (w.requestIdleCallback) w.requestIdleCallback(preload); else setTimeout(preload, 600);
   },[products]);
@@ -145,7 +149,7 @@ export default function ProductsPage({ content, products }: { content: ProductsP
           {software.map((p, i) => (
             <a href={p.href} className={`software-card ${p.isComingSoon ? "software-card-soon" : ""}`} data-product-reveal key={p.href}>
               <div className="software-visual">
-                <OriginalAssetImage localSrc={p.local} sourceSrc={p.source} alt={p.name}/>
+                <OriginalAssetImage localSrc={p.local} sourceSrc={p.source} alt={p.name} sizes={CARD_SIZES} />
                 {p.isComingSoon ? (
                   <span className="software-badge-soon">{softwareSection.comingSoonLabel}</span>
                 ) : (

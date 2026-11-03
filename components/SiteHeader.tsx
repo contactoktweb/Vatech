@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { sanityWidth } from "@/lib/cms/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import type { ReactNode } from "react";
@@ -39,7 +40,7 @@ export default function SiteHeader({ solid }: { solid?: boolean }) {
     <>
       <header className={`site-header ${scrolled ? "scrolled" : ""} ${isSolid ? "header-solid" : ""}`}>
         <Link href="/" className="brand" aria-label={siteName}>
-          <img src={logos.light.local} alt={logos.light.alt || siteName} className="brand-logo" />
+          <img src={sanityWidth(logos.light.local, 480)} alt={logos.light.alt || siteName} className="brand-logo" />
         </Link>
 
         <nav className="desktop-nav" aria-label="Navegación principal">

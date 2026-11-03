@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { sanityWidth } from "@/lib/cms/image";
 import type { ReactNode } from "react";
 import { useSiteSettings, useWhatsAppLink } from "./SiteSettingsProvider";
 import { CreditIcon, SOCIAL_ICONS, SOCIAL_NAMES, WhatsAppIcon } from "./icons";
@@ -17,7 +18,7 @@ export default function SiteFooter() {
   return (
     <footer id="footer" className="footer">
       <div className="footer-brand">
-        <img src={logos.light.local} alt={logos.light.alt || siteName} style={{ maxWidth: "180px", height: "auto" }} />
+        <img src={sanityWidth(logos.light.local, 480)} alt={logos.light.alt || siteName} style={{ maxWidth: "180px", height: "auto" }} />
         <p>{footer.tagline}</p>
         {footer.showConstructionNotice && footer.constructionNotice && (
           <div className="footer-status-pill">

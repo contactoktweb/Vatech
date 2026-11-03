@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { sanityWidth } from "@/lib/cms/image";
 import Link from "next/link";
 import OriginalAssetImage from "./OriginalAssetImage";
 import { useWhatsAppLink } from "./SiteSettingsProvider";
@@ -145,8 +146,8 @@ export default function ProductComparisonTable3D({ comparison, teaser }: { compa
                 className="x21-iframe"
                 controls
                 playsInline
-                preload="metadata"
-                poster={teaser.image?.local}
+                preload="none"
+                poster={teaser.image?.local && sanityWidth(teaser.image.local, 1080)}
               />
             </div>
           )}

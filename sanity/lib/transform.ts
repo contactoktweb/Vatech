@@ -10,7 +10,7 @@ export function imageUrl(ref: string) {
   const match = IMAGE_REF.exec(ref);
   if (!match) return "";
   const [, id, size, ext] = match;
-  const format = ext === "svg" || ext === "gif" ? "" : "?auto=format&fit=max&w=2400";
+  const format = ext === "svg" || ext === "gif" ? "" : "?auto=format&fit=max&w=1600";
   return `https://cdn.sanity.io/images/${projectId}/${dataset}/${id}-${size}.${ext}${format}`;
 }
 
