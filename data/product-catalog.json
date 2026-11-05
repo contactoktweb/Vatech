@@ -1810,7 +1810,12 @@
     "dimensionImages": [],
     "gallery": [],
     "catalogPdf": null,
-    "trainingVideos": [],
+    "trainingVideos": [
+      {
+        "local": "/assets/product-details/clever-rc/Clever-RC-Teaser.mp4",
+        "source": "/assets/product-details/clever-rc/Clever-RC-Teaser.mp4"
+      }
+    ],
     "cardImage": {
       "local": "/assets/products/CLEVER-RC-scaled.webp",
       "source": "https://vatechmexico.com/wp-content/uploads/2026/08/CLEVER-RC-scaled.png",

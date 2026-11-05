@@ -1,9 +1,7 @@
 /**
- * Aplica en Sanity los cambios de contenido del 28 de octubre, sin tocar el resto de lo editado:
- *   - Redes sociales: sin TikTok y con el YouTube de Vatech America.
- *   - Imágenes nuevas o de mejor calidad en las características de Green X16, Green X18, PaX-i,
- *     EzOrtho y EzSensor Classic.
- *   - Green X21: el video teaser propio en la ficha del producto (antes había un video de YouTube de relleno).
+ * Aplica en Sanity los cambios de contenido del 5 de noviembre, sin tocar el resto de lo editado:
+ *   - Distribuidores: la misma lista, en orden alfabético, en todas las regiones del directorio.
+ *   - Clever RC: video teaser en la ficha del producto.
  *
  * Uso:
  *   pnpm sanity:update            → aplica los cambios
@@ -11,57 +9,40 @@
  *
  * Variables necesarias en .env.local: NEXT_PUBLIC_SANITY_PROJECT_ID, NEXT_PUBLIC_SANITY_DATASET, SANITY_API_WRITE_TOKEN
  */
-import { defaultProducts, defaultSettings } from "../lib/cms/defaults";
-import { client, dataset, dryRun, projectId, toSanity } from "./sanity-shared";
+import { defaultDistributors, defaultProducts } from "../lib/cms/defaults";
+import { client, dataset, dryRun, newKey, projectId, toSanity } from "./sanity-shared";
 
-const PRODUCTS = ["green-x16", "green-x18", "green-x16-green-x18", "pax-i", "ezortho", "ezsensor-classic"];
-
-type SanityFeature = { _key: string; title?: string; images?: { asset?: { _ref?: string } }[] };
+type Region = { _key: string; place?: string };
 
 async function main() {
   console.log(`Sanity · proyecto ${projectId} · dataset ${dataset}${dryRun ? " · simulación" : ""}`);
 
-  // Redes sociales
-  const social = await toSanity(defaultSettings.social, ["social"]);
-  console.log(`→ Redes sociales: ${defaultSettings.social.map((s) => s.platform).join(", ")}`);
-  if (!dryRun) await client.patch("siteSettings").set({ social }).commit();
-
-  // Imágenes de características, buscando cada característica por su título
-  for (const slug of PRODUCTS) {
-    const product = defaultProducts.find((p) => p.slug === slug);
-    if (!product) continue;
-    const id = `product-${slug}`;
-    const doc = dryRun ? null : await client.getDocument<{ features?: SanityFeature[] }>(id);
-    if (!dryRun && !doc) {
-      console.warn(`  ! No existe ${id} en Sanity; se omite.`);
-      continue;
-    }
-    const patch = client.patch(id);
-    let changes = 0;
-    for (const feature of product.features) {
-      if (!feature.images.length) continue;
-      const target = doc?.features?.find((f) => f.title?.trim().toLowerCase() === feature.title.trim().toLowerCase());
-      if (!dryRun && !target) {
-        console.warn(`  ! ${product.name}: no se encontró la característica «${feature.title}»; se omite.`);
-        continue;
+  // Distribuidores: se conserva cada región (nombre y orden) y se reemplaza su lista
+  const names = defaultDistributors.directory.regions[0].distributors.map((d) => d.name);
+  console.log(`→ Distribuidores en todas las regiones: ${names.join(", ")}`);
+  if (!dryRun) {
+    const doc = await client.getDocument<{ directory?: { regions?: Region[] } }>("distributorsPage");
+    const regions = doc?.directory?.regions ?? [];
+    if (!regions.length) console.warn("  ! No hay regiones en la página de distribuidores; se omite.");
+    else {
+      const patch = client.patch("distributorsPage");
+      for (const region of regions) {
+        patch.set({ [`directory.regions[_key=="${region._key}"].distributors`]: names.map((name) => ({ _key: newKey(), _type: "distributor", name })) });
       }
-      const images = await toSanity(feature.images, ["images"]);
-      if (target) patch.set({ [`features[_key=="${target._key}"].images`]: images });
-      changes++;
+      await patch.commit();
+      console.log(`  ${regions.length} regiones actualizadas`);
     }
-    console.log(`→ ${product.name}: ${changes} características con imágenes`);
-    if (!dryRun && changes) await patch.commit();
   }
 
-  // Video teaser de Green X21
-  const x21 = defaultProducts.find((p) => p.slug === "green-x21");
-  if (x21) {
-    const trainingVideos = await toSanity(x21.trainingVideos as never, ["trainingVideos"]);
-    console.log("→ Green X21: video teaser en la ficha");
+  // Video teaser de Clever RC
+  const clever = defaultProducts.find((p) => p.slug === "clever-rc");
+  if (clever) {
+    const trainingVideos = await toSanity(clever.trainingVideos as never, ["trainingVideos"]);
+    console.log("→ Clever RC: video teaser en la ficha");
     if (!dryRun) {
-      const exists = await client.getDocument("product-green-x21");
-      if (exists) await client.patch("product-green-x21").set({ trainingVideos }).commit();
-      else console.warn("  ! No existe product-green-x21 en Sanity; se omite.");
+      const exists = await client.getDocument("product-clever-rc");
+      if (exists) await client.patch("product-clever-rc").set({ trainingVideos }).commit();
+      else console.warn("  ! No existe product-clever-rc en Sanity; se omite.");
     }
   }
 

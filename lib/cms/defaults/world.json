@@ -194,16 +194,22 @@
       "place": "Bogotá D.C.",
       "distributors": [
         {
-          "name": "DEPÓSITO DENTAL ALFOR",
-          "status": "Certificado"
+          "name": "Alfa"
         },
         {
-          "name": "SISTEMAS ODONTOMEDICOS LTDA",
-          "status": "Certificado"
+          "name": "Alfor Dentales"
         },
         {
-          "name": "ELEGIR SOLUCIONES",
-          "status": "Distribuidor Autorizado"
+          "name": "Asedis"
+        },
+        {
+          "name": "Elegir Soluciones"
+        },
+        {
+          "name": "Sistemas Odontomedicos"
+        },
+        {
+          "name": "XR Digital Imaging"
         }
       ]
     },
@@ -211,15 +217,22 @@
       "place": "Medellín / Antioquia",
       "distributors": [
         {
-          "name": "DEPÓSITO DENTAL ALFOR",
-          "status": "Certificado"
+          "name": "Alfa"
         },
         {
-          "name": "SISTEMAS ODONTOMEDICOS LTDA",
-          "status": "Certificado"
+          "name": "Alfor Dentales"
         },
         {
-          "name": "DENTAL SOLUTIONS ANTIOQUIA"
+          "name": "Asedis"
+        },
+        {
+          "name": "Elegir Soluciones"
+        },
+        {
+          "name": "Sistemas Odontomedicos"
+        },
+        {
+          "name": "XR Digital Imaging"
         }
       ]
     },
@@ -227,15 +240,22 @@
       "place": "Cali / Valle del Cauca",
       "distributors": [
         {
-          "name": "SISTEMAS ODONTOMEDICOS LTDA",
-          "status": "Certificado"
+          "name": "Alfa"
         },
         {
-          "name": "VOXEL DENTAL",
-          "status": "Distribuidor Autorizado"
+          "name": "Alfor Dentales"
         },
         {
-          "name": "DEPÓSITO DENTAL ALFOR"
+          "name": "Asedis"
+        },
+        {
+          "name": "Elegir Soluciones"
+        },
+        {
+          "name": "Sistemas Odontomedicos"
+        },
+        {
+          "name": "XR Digital Imaging"
         }
       ]
     },
@@ -243,12 +263,22 @@
       "place": "Barranquilla / Atlántico",
       "distributors": [
         {
-          "name": "EQUIPOS DENTALES DEL CARIBE",
-          "status": "Certificado"
+          "name": "Alfa"
         },
         {
-          "name": "DEPÓSITO DENTAL ALFOR",
-          "status": "Certificado"
+          "name": "Alfor Dentales"
+        },
+        {
+          "name": "Asedis"
+        },
+        {
+          "name": "Elegir Soluciones"
+        },
+        {
+          "name": "Sistemas Odontomedicos"
+        },
+        {
+          "name": "XR Digital Imaging"
         }
       ]
     },
@@ -256,11 +286,22 @@
       "place": "Bucaramanga / Santander",
       "distributors": [
         {
-          "name": "BIOMÉDICA DENTAL SANTANDER",
-          "status": "Certificado"
+          "name": "Alfa"
         },
         {
-          "name": "SISTEMAS ODONTOMEDICOS LTDA"
+          "name": "Alfor Dentales"
+        },
+        {
+          "name": "Asedis"
+        },
+        {
+          "name": "Elegir Soluciones"
+        },
+        {
+          "name": "Sistemas Odontomedicos"
+        },
+        {
+          "name": "XR Digital Imaging"
         }
       ]
     },
@@ -268,11 +309,22 @@
       "place": "Eje Cafetero",
       "distributors": [
         {
-          "name": "DENTAL ALFOR",
-          "status": "Certificado"
+          "name": "Alfa"
         },
         {
-          "name": "SISTEMAS ODONTOMEDICOS LTDA"
+          "name": "Alfor Dentales"
+        },
+        {
+          "name": "Asedis"
+        },
+        {
+          "name": "Elegir Soluciones"
+        },
+        {
+          "name": "Sistemas Odontomedicos"
+        },
+        {
+          "name": "XR Digital Imaging"
         }
       ]
     },
@@ -280,11 +332,22 @@
       "place": "Cartagena / Bolívar",
       "distributors": [
         {
-          "name": "CARIBE DENTAL",
-          "status": "Distribuidor Autorizado"
+          "name": "Alfa"
         },
         {
-          "name": "EQUIPOS DENTALES DEL CARIBE"
+          "name": "Alfor Dentales"
+        },
+        {
+          "name": "Asedis"
+        },
+        {
+          "name": "Elegir Soluciones"
+        },
+        {
+          "name": "Sistemas Odontomedicos"
+        },
+        {
+          "name": "XR Digital Imaging"
         }
       ]
     }
