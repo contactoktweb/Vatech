@@ -2530,10 +2530,11 @@ body { font-size:17px; }
   border-color: rgba(230, 0, 18, 0.25) !important;
 }
 
-.software-badge-soon {
+.software-visual .software-badge-soon {
   position: absolute;
   top: 16px;
-  right: 18px;
+  left: 18px;
+  right: auto;
   background: #e60012;
   color: #ffffff;
   font-size: 12px;
