@@ -13,7 +13,7 @@ const singletonActions = new Set(["publish", "discardChanges", "restore"]);
 export default defineConfig({
   name: "vatech-colombia",
   title: "VATECH Colombia",
-  basePath: "/studio",
+  basePath: "/admin",
   projectId: projectId || "sin-configurar",
   dataset,
   schema: {

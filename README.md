@@ -21,7 +21,7 @@ npm run assets:force
 
 ## Administrador de contenido (Sanity)
 
-Todo el contenido se edita en **`/studio`** con Sanity. La puesta en marcha, las variables de entorno y la carga inicial están en [`docs/SANITY.md`](docs/SANITY.md).
+Todo el contenido se edita en **`/admin`** con Sanity. La puesta en marcha, las variables de entorno y la carga inicial están en [`docs/SANITY.md`](docs/SANITY.md).
 
 ```bash
 cp .env.example .env.local   # agrega el Project ID y el token

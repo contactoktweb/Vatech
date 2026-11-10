@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
 };
 
-// Layout raíz mínimo: el sitio usa app/(site)/layout.tsx y el administrador de contenido usa /studio
+// Layout raíz mínimo: el sitio usa app/(site)/layout.tsx y el administrador de contenido usa /admin
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="es-CO">

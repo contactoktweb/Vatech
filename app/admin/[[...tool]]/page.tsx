@@ -1,6 +1,6 @@
 import Studio from "./Studio";
 
-// Administrador de contenido de Sanity, disponible en /studio
+// Administrador de contenido de Sanity, disponible en /admin
 export const dynamic = "force-static";
 
 export { metadata, viewport } from "next-sanity/studio";

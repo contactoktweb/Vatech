@@ -2,7 +2,7 @@
 
 Todo el contenido del sitio se edita desde Sanity: textos, imágenes, productos, logos, redes sociales, datos de contacto, menú y pie de página. El diseño (colores, clases, íconos) sigue en el código.
 
-El administrador está dentro del mismo sitio, en **`/studio`** (por ejemplo `https://www.vatechcolombia.com.co/studio`).
+El administrador está dentro del mismo sitio, en **`/admin`** (por ejemplo `https://www.vatechcolombia.com.co/admin`; `/studio` redirige aquí).
 
 ## 1. Puesta en marcha (una sola vez)
 
@@ -32,7 +32,7 @@ El administrador está dentro del mismo sitio, en **`/studio`** (por ejemplo `ht
 
    Esto crea las páginas, los 16 productos y sube las ~110 imágenes. Si un documento ya existe en Sanity, se conserva (no pisa ediciones). Para reemplazar todo con el contenido original: `pnpm sanity:seed --force`. Para ver qué se cargaría sin subir nada: `pnpm sanity:seed --dry-run`.
 
-7. Abre `http://localhost:3000/studio`, inicia sesión con tu cuenta de Sanity y listo.
+7. Abre `http://localhost:3000/admin`, inicia sesión con tu cuenta de Sanity y listo.
 
 > Mientras no haya Project ID configurado, el sitio funciona igual que siempre con el contenido por defecto (`lib/cms/defaults`).
 
@@ -90,5 +90,5 @@ Crea un documento en **Productos**, completa al menos el nombre, la dirección w
 | `scripts/sanity-seed.ts` | Carga inicial del contenido |
 | `scripts/sanity-update.ts` | Actualización puntual de campos en Sanity |
 | `scripts/sanity-shared.ts` | Funciones compartidas por los scripts (subida de imágenes) |
-| `app/studio/` | Ruta `/studio` |
+| `app/admin/` | Ruta `/admin` |
 | `app/api/revalidate/` | Webhook para actualizar al instante |
