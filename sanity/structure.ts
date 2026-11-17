@@ -1,5 +1,5 @@
 import type { StructureResolver } from "sanity/structure";
-import { CogIcon, CubeIcon, DesktopIcon, DocumentsIcon, PackageIcon } from "./icons";
+import { CogIcon, CubeIcon, DesktopIcon, DocumentsIcon, LockIcon, PackageIcon } from "./icons";
 
 const singleton = (S: Parameters<StructureResolver>[0], id: string, title: string) =>
   S.listItem().id(id).title(title).schemaType(id).child(S.document().schemaType(id).documentId(id).title(title));
@@ -32,6 +32,7 @@ export const structure: StructureResolver = (S) =>
               singleton(S, "worldNetworkPage", "Red mundial"),
               singleton(S, "distributorsPage", "Distribuidores"),
               singleton(S, "productsPage", "Página de productos").icon(DesktopIcon),
+              singleton(S, "privacyPage", "Política de privacidad").icon(LockIcon),
             ]),
         ),
       S.divider(),

@@ -1,4 +1,5 @@
 import { defineField, defineType } from "sanity";
+import { LockIcon } from "../../icons";
 import {
   CaseIcon, CheckmarkCircleIcon, EarthGlobeIcon, EnvelopeIcon, HeartIcon, InfoOutlineIcon, PinIcon,
   RocketIcon, SearchIcon, StarIcon, UsersIcon,
@@ -201,4 +202,35 @@ export const distributorsPage = defineType({
     seoField(),
   ],
   preview: { prepare: () => ({ title: "Distribuidores", media: CaseIcon }) },
+});
+
+export const privacyPage = defineType({
+  name: "privacyPage",
+  title: "Política de privacidad",
+  type: "document",
+  icon: LockIcon,
+  groups: [heroGroup, { name: "content", title: "Contenido", icon: InfoOutlineIcon }, seoGroup],
+  fields: [
+    section(
+      "hero",
+      "Encabezado",
+      [str("eyebrow", "Antetítulo"), str("title", "Título"), txt("lead", "Texto", { rows: 2 })],
+      { group: "hero", collapsed: false, description: "Primera sección de la página /politica-de-privacidad, enlazada desde el pie de página y desde la casilla de autorización de los formularios." },
+    ),
+    str("updated", "Fecha de actualización", { group: "content", description: "Se muestra al inicio de la página. Cámbiala cada vez que modifiques la política." }),
+    paragraphs("intro", "Introducción", { group: "content", description: "Párrafos antes de las secciones." }),
+    list(
+      "sections",
+      "Secciones",
+      [
+        str("title", "Título"),
+        paragraphs("paragraphs", "Párrafos"),
+        strings("items", "Lista de puntos", { description: "Opcional. Se muestra como lista con viñetas después de los párrafos." }),
+      ],
+      { title: "title" },
+      { group: "content", itemTitle: "Sección", description: "Cada sección de la política, en orden. Arrástralas para cambiar el orden." },
+    ),
+    seoField(),
+  ],
+  preview: { prepare: () => ({ title: "Política de privacidad", media: LockIcon }) },
 });

@@ -2,6 +2,7 @@
 
 import { CSSProperties, useEffect, useRef, useState } from "react";
 import { sanitySrc, sanitySrcSet } from "@/lib/cms/image";
+import ConsentCheckbox from "./ConsentCheckbox";
 import SiteHeader from "./SiteHeader";
 import SiteFooter from "./SiteFooter";
 import { useSiteSettings, useWhatsAppLink } from "./SiteSettingsProvider";
@@ -160,7 +161,7 @@ export default function HomePage({ content }: { content: HomePageContent }) {
           <div className="scan-ring ring-3" />
           <DeviceImage asset={hero.image} alt="Equipo CBCT dental VATECH" className="hero-device" loading="eager" />
           <div className="floating-spec spec-a"><b>SMART</b><span>PRECISION<br />IMAGING</span></div>
-          <div className="floating-spec spec-b"><span>3D / CBCT</span><b>SCAN</b></div>
+          <div className="floating-spec spec-b"><span>DOUBLE</span><b>SCAN</b></div>
         </div>
       </section>
 
@@ -433,6 +434,8 @@ export default function HomePage({ content }: { content: HomePageContent }) {
               <label htmlFor="quote-message">{contactSection.form.messageLabel}</label>
               <textarea id="quote-message" name="message" rows={3} placeholder={contactSection.form.messagePlaceholder} />
             </div>
+
+            <ConsentCheckbox />
 
             <button type="submit" className="btn btn-primary submit-btn">
               {contactSection.form.submitLabel} <Arrow />

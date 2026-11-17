@@ -11,6 +11,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: absoluteUrl("/productos"), lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: absoluteUrl("/quienes-somos"), lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: absoluteUrl("/filosofia"), lastModified: now, changeFrequency: "monthly", priority: 0.5 },
+    { url: absoluteUrl("/politica-de-privacidad"), lastModified: now, changeFrequency: "yearly", priority: 0.2 },
     { url: absoluteUrl("/red-mundial-vatech"), lastModified: now, changeFrequency: "monthly", priority: 0.5 },
     { url: absoluteUrl("/distribuidores"), lastModified: now, changeFrequency: "monthly", priority: 0.8 },
   ];

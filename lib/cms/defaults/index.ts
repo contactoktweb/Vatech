@@ -9,3 +9,4 @@ export {
   defaultProductLabels,
 } from "./pages";
 export { defaultProducts } from "./products";
+export { defaultPrivacy } from "./privacy";

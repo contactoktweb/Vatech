@@ -41,8 +41,9 @@ export type SiteSettings = {
     showConstructionNotice: boolean;
     constructionNotice: string;
     credit: CmsLink;
-    privacy: CmsLink;
   };
+  /** Casilla de autorización de datos que aparece en todos los formularios */
+  consent: { text: string; linkLabel: string };
   underConstruction: {
     badge: string;
     title: string;
@@ -54,6 +55,14 @@ export type SiteSettings = {
 };
 
 export type SectionHead = { eyebrow: string; title: string; text?: string };
+
+export type PrivacyPageContent = {
+  seo: Seo;
+  hero: { eyebrow: string; title: string; lead: string };
+  updated: string;
+  intro: string[];
+  sections: { title: string; paragraphs: string[]; items: string[] }[];
+};
 
 export type PageHero = { eyebrow: string; title: string; highlight: string; lead: string };
 
@@ -310,4 +319,16 @@ export type ProductPageLabels = {
   relatedTitle: string;
   primaryButton: string;
   secondaryButton: string;
+  infoMessage: string;
+  catalogHeroButton: string;
+  catalogFormTitle: string;
+  catalogFormText: string;
+  catalogFormName: string;
+  catalogFormEmail: string;
+  catalogFormPhone: string;
+  catalogFormCity: string;
+  catalogFormSubmit: string;
+  catalogReadyTitle: string;
+  catalogReadyText: string;
+  catalogPendingText: string;
 };

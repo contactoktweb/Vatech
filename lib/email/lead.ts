@@ -23,9 +23,13 @@ export async function readBody(request: Request) {
 }
 
 /** Valida lo mínimo, arma la plantilla y envía el correo del prospecto */
-export async function deliverLead(lead: Lead, honeypot: string) {
+export async function deliverLead(lead: Lead, honeypot: string, consent: string) {
   // A un bot se le responde como si todo hubiera salido bien, sin enviar nada
   if (honeypot) return NextResponse.json({ success: true });
+
+  if (!consent) {
+    return NextResponse.json({ error: "Debes autorizar el tratamiento de tus datos personales." }, { status: 400 });
+  }
 
   if (!lead.name || !lead.phone || !EMAIL.test(lead.email)) {
     return NextResponse.json({ error: "Revisa el nombre, el celular y el correo electrónico." }, { status: 400 });
@@ -34,7 +38,8 @@ export async function deliverLead(lead: Lead, honeypot: string) {
   try {
     const settings = await getSiteSettings();
     const logo = settings.logos.light?.local || "/brand/vatech-colombia-white.png";
-    const email = renderLeadEmail(lead, {
+    const fields = [...lead.fields, { label: "Autorización de datos", value: "Sí, aceptó la política de privacidad" }];
+    const email = renderLeadEmail({ ...lead, fields }, {
       siteName: settings.siteName,
       siteUrl: SITE_URL,
       logoUrl: absoluteUrl(logo),

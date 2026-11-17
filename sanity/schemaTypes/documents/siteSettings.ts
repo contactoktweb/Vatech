@@ -91,9 +91,18 @@ export const siteSettings = defineType({
         bool("showConstructionNotice", "Mostrar aviso de sitio en construcción"),
         str("constructionNotice", "Aviso de sitio en construcción"),
         link("credit", "Crédito de desarrollo"),
-        link("privacy", "Aviso de privacidad"),
       ],
       { description: "Pie de página que aparece al final de todas las páginas.", group: "footer", collapsed: false },
+    ),
+
+    section(
+      "consent",
+      "Autorización de datos en formularios",
+      [
+        txt("text", "Texto de la casilla", { rows: 3, description: "Aparece junto a la casilla que el visitante debe marcar antes de enviar cualquier formulario (cotización, distribuidores y descarga de catálogos)." }),
+        str("linkLabel", "Texto del enlace a la política", { description: "Va al final del texto de la casilla y abre la página de Política de privacidad." }),
+      ],
+      { description: "Autorización para el tratamiento y el uso compartido de los datos personales (Ley 1581 de 2012).", group: "contact", collapsed: false },
     ),
 
     section(

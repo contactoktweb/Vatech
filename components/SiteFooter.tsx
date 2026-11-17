@@ -90,9 +90,7 @@ export default function SiteFooter() {
           {footer.credit.label}{" "}
           <span style={{ display: "inline-flex", color: "#ffffff" }}><CreditIcon size={13} /></span>
         </a>
-        <a href={footer.privacy.href} target="_blank" rel="noopener noreferrer">
-          {footer.privacy.label}
-        </a>
+        <Link href="/politica-de-privacidad">Política de privacidad y tratamiento de datos</Link>
       </div>
     </footer>
   );

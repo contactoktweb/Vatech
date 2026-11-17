@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { FormEvent } from "react";
+import ConsentCheckbox from "./ConsentCheckbox";
 import { useSiteSettings } from "./SiteSettingsProvider";
 import { CheckIcon, MailIcon } from "./icons";
 import type { DistributorsPageContent } from "@/lib/cms/types";
@@ -23,6 +24,7 @@ export default function DistributorForm({ content: c }: { content: DistributorsP
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
   const [honeypot, setHoneypot] = useState("");
+  const [autorizacion, setAutorizacion] = useState(false);
 
   const buildWhatsAppUrl = (data: typeof formData) => {
     const text = [
@@ -71,6 +73,12 @@ export default function DistributorForm({ content: c }: { content: DistributorsP
       return;
     }
 
+    if (!autorizacion) {
+      setErrorMessage("Para continuar, autoriza el tratamiento de tus datos personales.");
+      setStatus("error");
+      return;
+    }
+
     setStatus("submitting");
     setErrorMessage("");
 
@@ -78,7 +86,7 @@ export default function DistributorForm({ content: c }: { content: DistributorsP
     fetch("/api/distribuidor", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ ...formData, sitio_web: honeypot }),
+      body: JSON.stringify({ ...formData, sitio_web: honeypot, autorizacion: "si" }),
       keepalive: true,
     }).catch(() => {});
 
@@ -225,6 +233,8 @@ export default function DistributorForm({ content: c }: { content: DistributorsP
               onChange={(e) => setFormData({ ...formData, mensaje: e.target.value })}
             />
           </div>
+
+          <ConsentCheckbox checked={autorizacion} onChange={setAutorizacion} />
 
           <div className="form-actions-split">
             <button

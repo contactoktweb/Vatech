@@ -30,5 +30,6 @@ export async function POST(request: Request) {
       ],
     },
     field(body, HONEYPOT),
+    field(body, "autorizacion"),
   );
 }

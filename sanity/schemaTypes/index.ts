@@ -1,7 +1,7 @@
 import { objectTypes } from "./objects";
 import { siteSettings } from "./documents/siteSettings";
 import { homePage } from "./documents/homePage";
-import { aboutPage, distributorsPage, philosophyPage, worldNetworkPage } from "./documents/pages";
+import { aboutPage, distributorsPage, philosophyPage, privacyPage, worldNetworkPage } from "./documents/pages";
 import { product, productsPage } from "./documents/products";
 
 export const schemaTypes = [
@@ -13,6 +13,7 @@ export const schemaTypes = [
   worldNetworkPage,
   distributorsPage,
   productsPage,
+  privacyPage,
   product,
 ];
 
@@ -25,4 +26,5 @@ export const SINGLETONS = [
   { id: "worldNetworkPage", type: "worldNetworkPage", title: "Red mundial" },
   { id: "distributorsPage", type: "distributorsPage", title: "Distribuidores" },
   { id: "productsPage", type: "productsPage", title: "Página de productos" },
+  { id: "privacyPage", type: "privacyPage", title: "Política de privacidad" },
 ] as const;

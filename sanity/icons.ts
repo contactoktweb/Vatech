@@ -1,5 +1,6 @@
 // Iconos del Studio (@sanity/icons se importa por archivo en esta versión)
 export { CogIcon } from "@sanity/icons/Cog";
+export { LockIcon } from "@sanity/icons/Lock";
 export { HomeIcon } from "@sanity/icons/Home";
 export { UsersIcon } from "@sanity/icons/Users";
 export { HeartIcon } from "@sanity/icons/Heart";

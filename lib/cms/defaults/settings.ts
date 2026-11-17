@@ -100,7 +100,10 @@ export const defaultSettings: SiteSettings = {
     showConstructionNotice: true,
     constructionNotice: "Sitio en construcción — próximamente www.vatechcolombia.com",
     credit: { label: "Desarrollado por K&T", href: "https://www.kytcode.lat" },
-    privacy: { label: "Aviso de privacidad", href: "https://vatech.com/privacy-policy" },
+  },
+  consent: {
+    text: "Autorizo a VATECH Colombia el tratamiento de mis datos personales para atender esta solicitud y a compartirlos con VATECH Global y su red de distribuidores autorizados en Colombia, de acuerdo con la",
+    linkLabel: "Política de privacidad y tratamiento de datos",
   },
   underConstruction: {
     badge: "Próximamente",

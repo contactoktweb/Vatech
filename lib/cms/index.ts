@@ -7,6 +7,7 @@ import {
   defaultDistributors,
   defaultHome,
   defaultPhilosophy,
+  defaultPrivacy,
   defaultProducts,
   defaultProductsPage,
   defaultSettings,
@@ -17,6 +18,7 @@ import type {
   DistributorsPageContent,
   HomePageContent,
   PhilosophyPageContent,
+  PrivacyPageContent,
   ProductDetail,
   ProductsPageContent,
   SiteSettings,
@@ -46,6 +48,7 @@ export const getPhilosophyPage = singleton<PhilosophyPageContent>("philosophyPag
 export const getWorldNetworkPage = singleton<WorldNetworkPageContent>("worldNetworkPage", defaultWorld);
 export const getDistributorsPage = singleton<DistributorsPageContent>("distributorsPage", defaultDistributors);
 export const getProductsPage = singleton<ProductsPageContent>("productsPage", defaultProductsPage);
+export const getPrivacyPage = singleton<PrivacyPageContent>("privacyPage", defaultPrivacy);
 
 const EMPTY_PRODUCT: Omit<ProductDetail, "slug" | "name" | "heroImage" | "cardImage" | "card"> = {
   category: "",

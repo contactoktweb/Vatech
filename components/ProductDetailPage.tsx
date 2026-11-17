@@ -1,7 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect } from "react";
+import { useCallback, useEffect, useState } from "react";
+import CatalogModal from "./CatalogModal";
+import { DownloadIcon } from "./icons";
 import OriginalAssetImage from "./OriginalAssetImage";
 import SiteHeader from "./SiteHeader";
 import SiteFooter from "./SiteFooter";
@@ -56,6 +58,9 @@ export default function ProductDetailPage({ product, related, labels: L }: { pro
   const { contact } = useSiteSettings();
   const whatsapp = useWhatsAppLink();
   const preorderUrl = whatsapp(withProduct(L.preorderMessage, product.name));
+  const infoUrl = whatsapp(withProduct(L.infoMessage, product.name));
+  const [catalogOpen, setCatalogOpen] = useState(false);
+  const closeCatalog = useCallback(() => setCatalogOpen(false), []);
   useEffect(() => {
     const nodes = document.querySelectorAll("[data-pd-reveal]");
     const observer = new IntersectionObserver((entries) => {
@@ -101,7 +106,8 @@ export default function ProductDetailPage({ product, related, labels: L }: { pro
             ) : (
               <>
                 <a href="#caracteristicas" className="pd-primary">{L.primaryButton} <span>↓</span></a>
-                <a href={`mailto:${contact.email}?subject=${encodeURIComponent(`Información sobre ${product.name}`)}`} className="pd-secondary">{L.secondaryButton} <span>→</span></a>
+                <a href={infoUrl} target="_blank" rel="noopener noreferrer" className="pd-secondary">{L.secondaryButton} <span>→</span></a>
+                <button type="button" className="pd-secondary" onClick={() => setCatalogOpen(true)}>{L.catalogHeroButton} <DownloadIcon size={14} /></button>
               </>
             )}
           </div>
@@ -255,7 +261,7 @@ export default function ProductDetailPage({ product, related, labels: L }: { pro
 
       {!product.isComingSoon && product.catalogPdf && <section className="pd-catalog" id="catalogo" data-pd-reveal>
         <div><p className="pd-section-label">{L.catalogLabel}</p><h2><Lines text={L.catalogTitle} /></h2></div>
-        <a href={product.catalogPdf.local} target="_blank" rel="noreferrer">{L.catalogButton} <span>↗</span></a>
+        <button type="button" onClick={() => setCatalogOpen(true)}>{L.catalogButton} <span>↓</span></button>
       </section>}
 
       <section className="pd-contact" data-pd-reveal>
@@ -272,5 +278,6 @@ export default function ProductDetailPage({ product, related, labels: L }: { pro
       </section>}
     </main>
     <SiteFooter />
+    {catalogOpen && <CatalogModal productSlug={product.slug} productName={product.name} pdfUrl={product.catalogPdf?.local} labels={L} onClose={closeCatalog} />}
   </>;
 }
