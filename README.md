@@ -84,3 +84,7 @@ Productos activos integrados en el catálogo de VATECH Colombia: A9, Green X 12,
 - Se incrementó ligeramente el tamaño de la tipografía de lectura en Home, fichas de producto, catálogo y subpáginas.
 # Vatech
 # Vatech
+
+## Actualizaciones automáticas
+
+Dependabot (`.github/dependabot.yml`) revisa a diario si hay versiones nuevas de las dependencias, incluidas las de seguridad. Cada propuesta pasa por `.github/workflows/dependencias.yml`, que comprueba los tipos, el esquema del administrador, la compilación y que no haya vulnerabilidades graves; si todo pasa, se une sola a `main` y Vercel la publica. Las versiones mayores (que pueden romper el sitio) no se publican solas: quedan como propuesta para revisar.

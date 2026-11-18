@@ -1,0 +1,60 @@
+# Comprueba cada actualización propuesta por Dependabot y, si compila, la publica sola.
+# Solo se publican versiones menores y parches (las mayores se revisan a mano).
+name: Dependencias
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: dependencias-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  comprobar:
+    name: Compilar y revisar
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      NEXT_PUBLIC_SANITY_PROJECT_ID: 0lmi4dsb
+      NEXT_PUBLIC_SANITY_DATASET: production
+      NEXT_TELEMETRY_DISABLED: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.28.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Tipos
+        run: pnpm exec tsc --noEmit -p .
+      - name: Esquema del administrador
+        run: pnpm exec sanity schema validate
+      - name: Compilación
+        run: pnpm build
+      - name: Vulnerabilidades graves
+        run: pnpm audit --prod --audit-level=high
+
+  publicar:
+    name: Publicar actualización
+    needs: comprobar
+    if: github.event.pull_request.user.login == 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - id: meta
+        uses: dependabot/fetch-metadata@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Unir a main
+        if: steps.meta.outputs.update-type != 'version-update:semver-major'
+        run: gh pr merge --squash --delete-branch "$PR"
+        env:
+          PR: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
