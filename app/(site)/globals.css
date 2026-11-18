@@ -2763,3 +2763,5 @@ body:has(.catalog-modal-overlay) .whatsapp-floating-widget { display: none !impo
 @media (max-width: 760px) {
   .site-header { grid-template-columns: 1fr auto; padding: 0 20px; }
 }
+/* Vatech Sans trae un interlineado «normal» muy corto: los antetítulos en dos líneas se montaban en celular */
+.eyebrow, .pd-kicker, .pd-section-label { line-height: 1.5; }
