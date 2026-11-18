@@ -2753,3 +2753,13 @@ h1, .hero-title { line-height: 1 !important; }
 .distributor-form .consent-check, .distributor-form .consent-check span { text-transform: none; letter-spacing: 0; font-weight: 400; font-size: 13px; }
 .catalog-modal h3 { margin-bottom: 12px !important; }
 body:has(.catalog-modal-overlay) .whatsapp-floating-widget { display: none !important; }
+
+/* ===== Encabezado en tableta y celular =====
+   La regla de max-width:1200px (más arriba) se imponía sobre estas y dejaba el botón del menú en el centro */
+@media (max-width: 1100px) {
+  .site-header { grid-template-columns: 1fr auto auto; gap: 14px; }
+  .menu-button { justify-self: end; }
+}
+@media (max-width: 760px) {
+  .site-header { grid-template-columns: 1fr auto; padding: 0 20px; }
+}
