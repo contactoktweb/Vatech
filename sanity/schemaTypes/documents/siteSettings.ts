@@ -1,6 +1,6 @@
 import { defineField, defineType } from "sanity";
-import { CogIcon, EnvelopeIcon, ImageIcon, MenuIcon, SearchIcon, ShareIcon, ThLargeIcon, WrenchIcon } from "../../icons";
-import { bool, image, link, list, section, str, strings, txt } from "../helpers";
+import { CogIcon, EnvelopeIcon, ImageIcon, MenuIcon, SearchIcon, ShareIcon, ThLargeIcon } from "../../icons";
+import { image, link, list, section, str, strings, txt } from "../helpers";
 
 export const siteSettings = defineType({
   name: "siteSettings",
@@ -13,7 +13,6 @@ export const siteSettings = defineType({
     { name: "social", title: "Redes sociales", icon: ShareIcon },
     { name: "menu", title: "Menú", icon: MenuIcon },
     { name: "footer", title: "Pie de página", icon: ThLargeIcon },
-    { name: "construction", title: "Página en construcción", icon: WrenchIcon },
     { name: "seo", title: "SEO general", icon: SearchIcon },
   ],
   fields: [
@@ -26,7 +25,7 @@ export const siteSettings = defineType({
         image("dark", "Logo negro", { description: "Para fondos claros." }),
         image("color", "Logo a color", { description: "Para datos de Google y documentos." }),
       ],
-      { description: "Logos del menú superior, el pie de página y la página en construcción.", group: "brand", collapsed: false },
+      { description: "Logos del menú superior y del pie de página.", group: "brand", collapsed: false },
     ),
 
     section(
@@ -88,8 +87,6 @@ export const siteSettings = defineType({
         str("contactTitle", "Título de la columna de contacto"),
         str("whatsappLabel", "Texto antes del número de WhatsApp"),
         str("copyright", "Texto de derechos", { description: "El año se agrega solo." }),
-        bool("showConstructionNotice", "Mostrar aviso de sitio en construcción"),
-        str("constructionNotice", "Aviso de sitio en construcción"),
         link("credit", "Crédito de desarrollo"),
       ],
       { description: "Pie de página que aparece al final de todas las páginas.", group: "footer", collapsed: false },
@@ -105,18 +102,6 @@ export const siteSettings = defineType({
       { description: "Autorización para el tratamiento y el uso compartido de los datos personales (Ley 1581 de 2012).", group: "contact", collapsed: false },
     ),
 
-    section(
-      "underConstruction",
-      "Página en construcción",
-      [
-        str("badge", "Etiqueta"),
-        str("title", "Título"),
-        txt("text", "Texto", { rows: 2, description: "El dominio se agrega al final en negrita." }),
-        str("domain", "Dominio"),
-        str("buttonLabel", "Texto del botón de WhatsApp"),
-      ],
-      { description: "Página que ven los visitantes del dominio vatechcolombia.com.co mientras el sitio está en construcción.", group: "construction", collapsed: false },
-    ),
 
     section(
       "seo",

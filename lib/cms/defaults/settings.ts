@@ -97,20 +97,11 @@ export const defaultSettings: SiteSettings = {
     contactTitle: "Contacto",
     whatsappLabel: "WhatsApp directo:",
     copyright: "VATECH Colombia. Todos los derechos reservados.",
-    showConstructionNotice: true,
-    constructionNotice: "Sitio en construcción — próximamente www.vatechcolombia.com",
     credit: { label: "Desarrollado por K&T", href: "https://www.kytcode.lat" },
   },
   consent: {
     text: "Autorizo a VATECH Colombia el tratamiento de mis datos personales para atender esta solicitud y a compartirlos con VATECH Global y su red de distribuidores autorizados en Colombia, de acuerdo con la",
     linkLabel: "Política de privacidad y tratamiento de datos",
-  },
-  underConstruction: {
-    badge: "Próximamente",
-    title: "Sitio en construcción",
-    text: "Estamos preparando nuestra nueva plataforma oficial para",
-    domain: "www.vatechcolombia.com.co",
-    buttonLabel: "Asesoría directa por WhatsApp",
   },
   seo: {
     title: "VATECH Colombia | Radiología dental 3D y 2D para tu clínica",

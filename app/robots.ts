@@ -7,7 +7,7 @@ const AI_CRAWLERS = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Cl
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
-      { userAgent: "*", allow: "/", disallow: ["/api/", "/admin", "/en-construccion"] },
+      { userAgent: "*", allow: "/", disallow: ["/api/", "/admin"] },
       ...AI_CRAWLERS.map((userAgent) => ({ userAgent, allow: "/", disallow: ["/api/", "/admin"] })),
     ],
     sitemap: `${SITE_URL}/sitemap.xml`,

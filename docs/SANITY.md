@@ -40,7 +40,7 @@ El administrador está dentro del mismo sitio, en **`/admin`** (por ejemplo `htt
 
 | En el Studio | Qué contiene |
 | --- | --- |
-| **Configuración general** | Nombre del sitio, logos, correo, WhatsApp, dirección y mapa, redes sociales, menú principal, botón "Cotizar", pie de página, aviso de sitio en construcción, página en construcción y SEO general |
+| **Configuración general** | Nombre del sitio, logos, correo, WhatsApp, dirección y mapa, redes sociales, menú principal, botón "Cotizar", pie de página, autorización de datos en formularios y SEO general |
 | **Páginas → Inicio** | Portada, cifras, beneficios, tecnología, historia, equipos destacados, servicios, contacto, cotizador y ventana de especialista |
 | **Páginas → Quiénes somos / Filosofía / Red mundial / Distribuidores** | Todos los textos e imágenes de cada página, oficinas del mundo, directorio de distribuidores y formulario |
 | **Páginas → Página de productos** | Encabezado, nombres de pestañas, tabla comparativa 3D, lanzamiento destacado (Green X21), sección de software y textos fijos de las fichas |

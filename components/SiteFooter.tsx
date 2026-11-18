@@ -20,12 +20,6 @@ export default function SiteFooter() {
       <div className="footer-brand">
         <img src={sanityWidth(logos.light.local, 480)} alt={logos.light.alt || siteName} style={{ maxWidth: "180px", height: "auto" }} />
         <p>{footer.tagline}</p>
-        {footer.showConstructionNotice && footer.constructionNotice && (
-          <div className="footer-status-pill">
-            <span className="footer-status-pulse" aria-hidden="true" />
-            <span>{footer.constructionNotice}</span>
-          </div>
-        )}
         <div className="socials">
           {social.map(({ platform, url }) => {
             const Icon = SOCIAL_ICONS[platform];
@@ -80,7 +74,6 @@ export default function SiteFooter() {
 
       <div className="footer-bottom">
         <span>© {new Date().getFullYear()} {footer.copyright}</span>
-        {footer.showConstructionNotice && footer.constructionNotice && <span className="footer-site-construction">{footer.constructionNotice}</span>}
         <a
           href={footer.credit.href}
           target="_blank"

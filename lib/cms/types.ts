@@ -38,19 +38,10 @@ export type SiteSettings = {
     contactTitle: string;
     whatsappLabel: string;
     copyright: string;
-    showConstructionNotice: boolean;
-    constructionNotice: string;
     credit: CmsLink;
   };
   /** Casilla de autorización de datos que aparece en todos los formularios */
   consent: { text: string; linkLabel: string };
-  underConstruction: {
-    badge: string;
-    title: string;
-    text: string;
-    domain: string;
-    buttonLabel: string;
-  };
   seo: { title: string; description: string; keywords: string[] };
 };
 
