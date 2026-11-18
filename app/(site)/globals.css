@@ -2765,3 +2765,25 @@ body:has(.catalog-modal-overlay) .whatsapp-floating-widget { display: none !impo
 }
 /* Vatech Sans trae un interlineado «normal» muy corto: los antetítulos en dos líneas se montaban en celular */
 .eyebrow, .pd-kicker, .pd-section-label { line-height: 1.5; }
+
+/* ===== Logo más grande (encabezado y pie de página) ===== */
+.site-header { grid-template-columns: 270px 1fr 180px; }
+.brand img, .site-header .brand-logo { height: auto; width: 250px; max-width: 100%; }
+.footer-brand img { max-width: 230px !important; width: 230px; }
+@media (max-width: 1200px) {
+  .site-header { grid-template-columns: 230px 1fr 150px; }
+  .brand img, .site-header .brand-logo { width: 215px; }
+}
+@media (max-width: 1100px) {
+  .site-header { grid-template-columns: 1fr auto auto; }
+}
+@media (max-width: 760px) {
+  .site-header { grid-template-columns: 1fr auto; }
+  .brand img, .site-header .brand-logo { width: 170px; }
+  .footer-brand img { width: 200px; }
+}
+/* El archivo del logo trae ~3,4 % de margen transparente a la izquierda: se compensa para alinearlo con el texto */
+.brand img, .site-header .brand-logo { margin-left: -8px; }
+.footer-brand img { margin-left: -8px; }
+@media (max-width: 1200px) { .brand img, .site-header .brand-logo { margin-left: -7px; } }
+@media (max-width: 760px) { .brand img, .site-header .brand-logo, .footer-brand img { margin-left: -6px; } }
