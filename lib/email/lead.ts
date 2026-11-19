@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { getSiteSettings } from "@/lib/cms";
 import { absoluteUrl, SITE_URL } from "@/lib/site";
 import { renderLeadEmail, type Lead } from "./lead-template";
-import { sendLeadEmail } from "./send";
+import { LeadEmailError, sendLeadEmail } from "./send";
 
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
@@ -49,6 +49,7 @@ export async function deliverLead(lead: Lead, honeypot: string, consent: string)
     return NextResponse.json({ success: true, id });
   } catch (error) {
     console.error(`[Prospecto] No se pudo enviar el correo (${lead.kind}):`, error);
-    return NextResponse.json({ error: "No se pudo enviar la solicitud por correo." }, { status: 502 });
+    const code = error instanceof LeadEmailError ? error.code : "error_interno";
+    return NextResponse.json({ error: "No se pudo enviar la solicitud por correo.", codigo: code }, { status: 502 });
   }
 }
