@@ -11,7 +11,7 @@ export const lead = defineType({
   fields: [
     defineField({ name: "kind", title: "Tipo de solicitud", type: "string", description: "Cotización, distribuidor o descarga de catálogo." }),
     defineField({ name: "source", title: "Formulario", type: "string", description: "Dónde se llenó el formulario." }),
-    defineField({ name: "receivedAt", title: "Fecha", type: "datetime", options: { dateFormat: "D [de] MMMM [de] YYYY", timeFormat: "h:mm a" } }),
+    defineField({ name: "receivedAt", title: "Fecha", type: "datetime", options: { dateFormat: "DD/MM/YYYY", timeFormat: "h:mm a" } }),
     defineField({ name: "name", title: "Nombre", type: "string" }),
     defineField({ name: "email", title: "Correo", type: "string" }),
     defineField({ name: "phone", title: "Celular / WhatsApp", type: "string" }),
