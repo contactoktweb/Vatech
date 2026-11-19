@@ -17,7 +17,8 @@ export class LeadEmailError extends Error {
 }
 
 export async function sendLeadEmail({ subject, html, text, replyTo }: Email) {
-  const apiKey = process.env.RESEND_API_KEY;
+  // Se limpian espacios y comillas que suelen colarse al pegar la clave en el panel de Vercel
+  const apiKey = process.env.RESEND_API_KEY?.trim().replace(/^["']+|["']+$/g, "").trim();
   if (!apiKey) throw new LeadEmailError("sin_clave", "Falta la variable RESEND_API_KEY");
 
   const response = await fetch("https://api.resend.com/emails", {
