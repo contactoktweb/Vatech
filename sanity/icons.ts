@@ -3,6 +3,8 @@ export { CogIcon } from "@sanity/icons/Cog";
 export { LockIcon } from "@sanity/icons/Lock";
 export { HomeIcon } from "@sanity/icons/Home";
 export { UsersIcon } from "@sanity/icons/Users";
+export { UserIcon } from "@sanity/icons/User";
+export { InboxIcon } from "@sanity/icons/Inbox";
 export { HeartIcon } from "@sanity/icons/Heart";
 export { EarthGlobeIcon } from "@sanity/icons/EarthGlobe";
 export { PackageIcon } from "@sanity/icons/Package";

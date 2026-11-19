@@ -19,12 +19,18 @@ export default defineConfig({
   schema: {
     types: schemaTypes,
     // Las páginas únicas no aparecen en «Crear nuevo»
-    templates: (templates) => templates.filter(({ schemaType }) => !singletonTypes.has(schemaType)),
+    // Los prospectos los crea el sitio, no se crean a mano
+    templates: (templates) => templates.filter(({ schemaType }) => !singletonTypes.has(schemaType) && schemaType !== "lead"),
   },
   document: {
     // Las páginas únicas no se pueden duplicar ni borrar
+    // Los prospectos solo se pueden consultar o borrar
     actions: (input, context) =>
-      singletonTypes.has(context.schemaType) ? input.filter(({ action }) => action && singletonActions.has(action)) : input,
+      singletonTypes.has(context.schemaType)
+        ? input.filter(({ action }) => action && singletonActions.has(action))
+        : context.schemaType === "lead"
+          ? input.filter(({ action }) => action === "delete")
+          : input,
   },
   plugins: [structureTool({ structure }), visionTool({ defaultApiVersion: apiVersion })],
 });

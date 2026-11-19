@@ -21,7 +21,7 @@ El administrador está dentro del mismo sitio, en **`/admin`** (por ejemplo `htt
    | `SANITY_API_WRITE_TOKEN` | El token de escritura |
    | `SANITY_REVALIDATE_SECRET` | (Opcional) Una clave secreta inventada, para el webhook |
 
-   En **Vercel** agrega `NEXT_PUBLIC_SANITY_PROJECT_ID`, `NEXT_PUBLIC_SANITY_DATASET` y, si usas el webhook, `SANITY_REVALIDATE_SECRET`. El token de escritura no es necesario en Vercel.
+   En **Vercel** agrega `NEXT_PUBLIC_SANITY_PROJECT_ID`, `NEXT_PUBLIC_SANITY_DATASET`, `SANITY_API_WRITE_TOKEN` (para guardar los prospectos de los formularios en «Prospectos») y, si usas el webhook, `SANITY_REVALIDATE_SECRET`.
 
 6. **Subir el contenido actual** a Sanity:
 

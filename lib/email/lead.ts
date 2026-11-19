@@ -3,6 +3,7 @@ import { getSiteSettings } from "@/lib/cms";
 import { absoluteUrl, SITE_URL } from "@/lib/site";
 import { renderLeadEmail, type Lead } from "./lead-template";
 import { LeadEmailError, sendLeadEmail } from "./send";
+import { saveLead, setLeadEmailStatus } from "./store";
 
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
@@ -35,6 +36,9 @@ export async function deliverLead(lead: Lead, honeypot: string, consent: string)
     return NextResponse.json({ error: "Revisa el nombre, el celular y el correo electrónico." }, { status: 400 });
   }
 
+  // Primero se guarda en el administrador; así el prospecto queda registrado aunque el correo falle
+  const saved = await saveLead(lead);
+
   try {
     const settings = await getSiteSettings();
     const logo = settings.logos.light?.local || "/brand/vatech-colombia-white.png";
@@ -46,10 +50,14 @@ export async function deliverLead(lead: Lead, honeypot: string, consent: string)
       address: settings.contact.addressLines.join(", "),
     });
     const { id } = await sendLeadEmail({ ...email, replyTo: lead.email });
+    await setLeadEmailStatus(saved, "Enviado");
     return NextResponse.json({ success: true, id });
   } catch (error) {
     console.error(`[Prospecto] No se pudo enviar el correo (${lead.kind}):`, error);
     const code = error instanceof LeadEmailError ? error.code : "error_interno";
+    await setLeadEmailStatus(saved, `No enviado (${code})`);
+    // Si quedó guardado en el administrador, la solicitud no se pierde
+    if (saved) return NextResponse.json({ success: true, guardado: true, correo: code });
     return NextResponse.json({ error: "No se pudo enviar la solicitud por correo.", codigo: code }, { status: 502 });
   }
 }

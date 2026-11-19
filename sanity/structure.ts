@@ -1,5 +1,5 @@
 import type { StructureResolver } from "sanity/structure";
-import { CogIcon, CubeIcon, DesktopIcon, DocumentsIcon, LockIcon, PackageIcon } from "./icons";
+import { CogIcon, CubeIcon, DesktopIcon, DocumentsIcon, InboxIcon, LockIcon, PackageIcon } from "./icons";
 
 const singleton = (S: Parameters<StructureResolver>[0], id: string, title: string) =>
   S.listItem().id(id).title(title).schemaType(id).child(S.document().schemaType(id).documentId(id).title(title));
@@ -17,6 +17,17 @@ export const structure: StructureResolver = (S) =>
   S.list()
     .title("Contenido del sitio")
     .items([
+      S.listItem()
+        .id("prospectos")
+        .title("Prospectos")
+        .icon(InboxIcon)
+        .child(
+          S.documentTypeList("lead")
+            .title("Prospectos")
+            .defaultOrdering([{ field: "receivedAt", direction: "desc" }])
+            .initialValueTemplates([]),
+        ),
+      S.divider(),
       singleton(S, "siteSettings", "Configuración general").icon(CogIcon),
       S.divider(),
       S.listItem()

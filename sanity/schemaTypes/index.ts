@@ -3,6 +3,7 @@ import { siteSettings } from "./documents/siteSettings";
 import { homePage } from "./documents/homePage";
 import { aboutPage, distributorsPage, philosophyPage, privacyPage, worldNetworkPage } from "./documents/pages";
 import { product, productsPage } from "./documents/products";
+import { lead } from "./documents/lead";
 
 export const schemaTypes = [
   ...objectTypes,
@@ -15,6 +16,7 @@ export const schemaTypes = [
   productsPage,
   privacyPage,
   product,
+  lead,
 ];
 
 /** Documentos únicos: se editan, no se crean ni se borran. */
